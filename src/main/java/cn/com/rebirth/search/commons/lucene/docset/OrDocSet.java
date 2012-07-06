@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons OrDocSet.java 2012-3-29 15:15:13 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons OrDocSet.java 2012-7-6 10:23:53 l.xue.nong$$
  */
 
 
@@ -36,7 +36,7 @@ public class OrDocSet extends DocSet {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.lucene.docset.DocSet#get(int)
+	 * @see cn.com.rebirth.search.commons.lucene.docset.DocSet#get(int)
 	 */
 	@Override
 	public boolean get(int doc) {
@@ -78,7 +78,7 @@ public class OrDocSet extends DocSet {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.lucene.docset.DocSet#sizeInBytes()
+	 * @see cn.com.rebirth.search.commons.lucene.docset.DocSet#sizeInBytes()
 	 */
 	@Override
 	public long sizeInBytes() {

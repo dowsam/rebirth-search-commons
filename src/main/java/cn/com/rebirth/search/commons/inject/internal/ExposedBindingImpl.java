@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons ExposedBindingImpl.java 2012-3-29 15:15:08 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons ExposedBindingImpl.java 2012-7-6 10:23:54 l.xue.nong$$
  */
 
 
@@ -63,7 +63,7 @@ public class ExposedBindingImpl<T> extends BindingImpl<T> implements ExposedBind
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Binding#acceptTargetVisitor(cn.com.summall.search.commons.inject.spi.BindingTargetVisitor)
+	 * @see cn.com.rebirth.search.commons.inject.Binding#acceptTargetVisitor(cn.com.rebirth.search.commons.inject.spi.BindingTargetVisitor)
 	 */
 	public <V> V acceptTargetVisitor(BindingTargetVisitor<? super T, V> visitor) {
 		return visitor.visit(this);
@@ -71,7 +71,7 @@ public class ExposedBindingImpl<T> extends BindingImpl<T> implements ExposedBind
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.HasDependencies#getDependencies()
+	 * @see cn.com.rebirth.search.commons.inject.spi.HasDependencies#getDependencies()
 	 */
 	public Set<Dependency<?>> getDependencies() {
 		return ImmutableSet.<Dependency<?>> of(Dependency.get(Key.get(Injector.class)));
@@ -79,7 +79,7 @@ public class ExposedBindingImpl<T> extends BindingImpl<T> implements ExposedBind
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.ExposedBinding#getPrivateElements()
+	 * @see cn.com.rebirth.search.commons.inject.spi.ExposedBinding#getPrivateElements()
 	 */
 	public PrivateElements getPrivateElements() {
 		return privateElements;
@@ -87,7 +87,7 @@ public class ExposedBindingImpl<T> extends BindingImpl<T> implements ExposedBind
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.internal.BindingImpl#withScoping(cn.com.summall.search.commons.inject.internal.Scoping)
+	 * @see cn.com.rebirth.search.commons.inject.internal.BindingImpl#withScoping(cn.com.rebirth.search.commons.inject.internal.Scoping)
 	 */
 	public BindingImpl<T> withScoping(Scoping scoping) {
 		return new ExposedBindingImpl<T>(getSource(), getKey(), scoping, privateElements);
@@ -95,7 +95,7 @@ public class ExposedBindingImpl<T> extends BindingImpl<T> implements ExposedBind
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.internal.BindingImpl#withKey(cn.com.summall.search.commons.inject.Key)
+	 * @see cn.com.rebirth.search.commons.inject.internal.BindingImpl#withKey(cn.com.rebirth.search.commons.inject.Key)
 	 */
 	public ExposedBindingImpl<T> withKey(Key<T> key) {
 		return new ExposedBindingImpl<T>(getSource(), key, getScoping(), privateElements);
@@ -103,7 +103,7 @@ public class ExposedBindingImpl<T> extends BindingImpl<T> implements ExposedBind
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.internal.BindingImpl#toString()
+	 * @see cn.com.rebirth.search.commons.inject.internal.BindingImpl#toString()
 	 */
 	@Override
 	public String toString() {
@@ -113,7 +113,7 @@ public class ExposedBindingImpl<T> extends BindingImpl<T> implements ExposedBind
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.Element#applyTo(cn.com.summall.search.commons.inject.Binder)
+	 * @see cn.com.rebirth.search.commons.inject.spi.Element#applyTo(cn.com.rebirth.search.commons.inject.Binder)
 	 */
 	public void applyTo(Binder binder) {
 		throw new UnsupportedOperationException("This element represents a synthetic binding.");

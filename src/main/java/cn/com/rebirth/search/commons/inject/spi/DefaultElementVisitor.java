@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons DefaultElementVisitor.java 2012-3-29 15:15:17 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons DefaultElementVisitor.java 2012-7-6 10:23:42 l.xue.nong$$
  */
 
 
@@ -30,7 +30,7 @@ public abstract class DefaultElementVisitor<V> implements ElementVisitor<V> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.spi.Message)
+	 * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.spi.Message)
 	 */
 	public V visit(Message message) {
 		return visitOther(message);
@@ -38,7 +38,7 @@ public abstract class DefaultElementVisitor<V> implements ElementVisitor<V> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.Binding)
+	 * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.Binding)
 	 */
 	public <T> V visit(Binding<T> binding) {
 		return visitOther(binding);
@@ -46,7 +46,7 @@ public abstract class DefaultElementVisitor<V> implements ElementVisitor<V> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.spi.ScopeBinding)
+	 * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.spi.ScopeBinding)
 	 */
 	public V visit(ScopeBinding scopeBinding) {
 		return visitOther(scopeBinding);
@@ -54,7 +54,7 @@ public abstract class DefaultElementVisitor<V> implements ElementVisitor<V> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.spi.TypeConverterBinding)
+	 * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.spi.TypeConverterBinding)
 	 */
 	public V visit(TypeConverterBinding typeConverterBinding) {
 		return visitOther(typeConverterBinding);
@@ -62,7 +62,7 @@ public abstract class DefaultElementVisitor<V> implements ElementVisitor<V> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.spi.ProviderLookup)
+	 * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.spi.ProviderLookup)
 	 */
 	public <T> V visit(ProviderLookup<T> providerLookup) {
 		return visitOther(providerLookup);
@@ -70,7 +70,7 @@ public abstract class DefaultElementVisitor<V> implements ElementVisitor<V> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.spi.InjectionRequest)
+	 * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.spi.InjectionRequest)
 	 */
 	@SuppressWarnings("rawtypes")
 	public V visit(InjectionRequest injectionRequest) {
@@ -79,7 +79,7 @@ public abstract class DefaultElementVisitor<V> implements ElementVisitor<V> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.spi.StaticInjectionRequest)
+	 * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.spi.StaticInjectionRequest)
 	 */
 	public V visit(StaticInjectionRequest staticInjectionRequest) {
 		return visitOther(staticInjectionRequest);
@@ -87,7 +87,7 @@ public abstract class DefaultElementVisitor<V> implements ElementVisitor<V> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.spi.PrivateElements)
+	 * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.spi.PrivateElements)
 	 */
 	public V visit(PrivateElements privateElements) {
 		return visitOther(privateElements);
@@ -95,7 +95,7 @@ public abstract class DefaultElementVisitor<V> implements ElementVisitor<V> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.spi.MembersInjectorLookup)
+	 * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.spi.MembersInjectorLookup)
 	 */
 	public <T> V visit(MembersInjectorLookup<T> lookup) {
 		return visitOther(lookup);
@@ -103,7 +103,7 @@ public abstract class DefaultElementVisitor<V> implements ElementVisitor<V> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.spi.TypeListenerBinding)
+	 * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.spi.TypeListenerBinding)
 	 */
 	public V visit(TypeListenerBinding binding) {
 		return visitOther(binding);

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons LookupProcessor.java 2012-3-29 15:15:08 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons LookupProcessor.java 2012-7-6 10:23:48 l.xue.nong$$
  */
 
 
@@ -31,7 +31,7 @@ class LookupProcessor extends AbstractProcessor {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.AbstractProcessor#visit(cn.com.summall.search.commons.inject.spi.MembersInjectorLookup)
+	 * @see cn.com.rebirth.search.commons.inject.AbstractProcessor#visit(cn.com.rebirth.search.commons.inject.spi.MembersInjectorLookup)
 	 */
 	@Override
 	public <T> Boolean visit(MembersInjectorLookup<T> lookup) {
@@ -47,7 +47,7 @@ class LookupProcessor extends AbstractProcessor {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.AbstractProcessor#visit(cn.com.summall.search.commons.inject.spi.ProviderLookup)
+	 * @see cn.com.rebirth.search.commons.inject.AbstractProcessor#visit(cn.com.rebirth.search.commons.inject.spi.ProviderLookup)
 	 */
 	@Override
 	public <T> Boolean visit(ProviderLookup<T> lookup) {

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons PropertiesSettingsLoader.java 2012-3-29 15:15:14 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons PropertiesSettingsLoader.java 2012-7-6 10:23:51 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.settings.loader;
 
@@ -15,7 +15,6 @@ import cn.com.rebirth.search.commons.io.FastStringReader;
 
 import com.google.common.io.Closeables;
 
-
 /**
  * The Class PropertiesSettingsLoader.
  *
@@ -23,9 +22,8 @@ import com.google.common.io.Closeables;
  */
 public class PropertiesSettingsLoader implements SettingsLoader {
 
-	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.loader.SettingsLoader#load(java.lang.String)
+	 * @see cn.com.rebirth.search.commons.settings.loader.SettingsLoader#load(java.lang.String)
 	 */
 	@Override
 	public Map<String, String> load(String source) throws IOException {
@@ -43,9 +41,8 @@ public class PropertiesSettingsLoader implements SettingsLoader {
 		}
 	}
 
-	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.loader.SettingsLoader#load(byte[])
+	 * @see cn.com.rebirth.search.commons.settings.loader.SettingsLoader#load(byte[])
 	 */
 	@Override
 	public Map<String, String> load(byte[] source) throws IOException {

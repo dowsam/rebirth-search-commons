@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons PlainBlobMetaData.java 2012-3-29 15:15:17 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons PlainBlobMetaData.java 2012-7-6 10:23:52 l.xue.nong$$
  */
 
 
@@ -37,18 +37,11 @@ public class PlainBlobMetaData implements BlobMetaData {
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.blobstore.BlobMetaData#name()
-	 */
 	@Override
 	public String name() {
 		return this.name;
 	}
 
-	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.blobstore.BlobMetaData#length()
-	 */
 	@Override
 	public long length() {
 		return this.length;

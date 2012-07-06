@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons FactoryProxy.java 2012-3-29 15:15:13 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons FactoryProxy.java 2012-7-6 10:23:53 l.xue.nong$$
  */
 
 
@@ -60,7 +60,7 @@ class FactoryProxy<T> implements InternalFactory<T>, BindingProcessor.CreationLi
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.BindingProcessor.CreationListener#notify(cn.com.summall.search.commons.inject.internal.Errors)
+	 * @see cn.com.rebirth.search.commons.inject.BindingProcessor.CreationListener#notify(cn.com.rebirth.search.commons.inject.internal.Errors)
 	 */
 	public void notify(final Errors errors) {
 		try {
@@ -72,7 +72,7 @@ class FactoryProxy<T> implements InternalFactory<T>, BindingProcessor.CreationLi
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.internal.InternalFactory#get(cn.com.summall.search.commons.inject.internal.Errors, cn.com.summall.search.commons.inject.internal.InternalContext, cn.com.summall.search.commons.inject.spi.Dependency)
+	 * @see cn.com.rebirth.search.commons.inject.internal.InternalFactory#get(cn.com.rebirth.search.commons.inject.internal.Errors, cn.com.rebirth.search.commons.inject.internal.InternalContext, cn.com.rebirth.search.commons.inject.spi.Dependency)
 	 */
 	public T get(Errors errors, InternalContext context, Dependency<?> dependency) throws ErrorsException {
 		return targetFactory.get(errors.withSource(targetKey), context, dependency);

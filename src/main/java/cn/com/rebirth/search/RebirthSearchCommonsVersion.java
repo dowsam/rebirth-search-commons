@@ -1,23 +1,23 @@
 /*
  * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
- * Info:restart-search-commons RestartSearchCommonsVersion.java 2012-7-5 12:01:12 l.xue.nong$$
+ * Info:rebirth-search-commons rebirthSearchCommonsVersion.java 2012-7-6 10:23:45 l.xue.nong$$
  */
 package cn.com.rebirth.search;
 
 import cn.com.rebirth.commons.Version;
 
 /**
- * The Class RestartSearchCommonsVersion.
+ * The Class rebirthSearchCommonsVersion.
  *
  * @author l.xue.nong
  */
-public class RestartSearchCommonsVersion implements Version {
+public class RebirthSearchCommonsVersion implements Version {
 
 	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = -2459348649169511884L;
 
 	/* (non-Javadoc)
-	 * @see cn.com.restart.commons.Version#getModuleVersion()
+	 * @see cn.com.rebirth.commons.Version#getModuleVersion()
 	 */
 	@Override
 	public String getModuleVersion() {
@@ -25,11 +25,11 @@ public class RestartSearchCommonsVersion implements Version {
 	}
 
 	/* (non-Javadoc)
-	 * @see cn.com.restart.commons.Version#getModuleName()
+	 * @see cn.com.rebirth.commons.Version#getModuleName()
 	 */
 	@Override
 	public String getModuleName() {
-		return "restart-search-commons";
+		return "rebirth-search-commons";
 	}
 
 }

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons Preconditions.java 2012-3-29 15:15:10 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons Preconditions.java 2012-7-6 10:23:52 l.xue.nong$$
  */
 
 
@@ -8,9 +8,9 @@ package cn.com.rebirth.search.commons;
 
 import java.util.Collection;
 
-import cn.com.rebirth.commons.exception.RestartIllegalArgumentException;
-import cn.com.rebirth.commons.exception.RestartIllegalStateException;
-import cn.com.rebirth.commons.exception.RestartNullPointerException;
+import cn.com.rebirth.commons.exception.RebirthIllegalArgumentException;
+import cn.com.rebirth.commons.exception.RebirthIllegalStateException;
+import cn.com.rebirth.commons.exception.RebirthNullPointerException;
 
 
 /**
@@ -35,7 +35,7 @@ public final class Preconditions {
 	 */
 	public static void checkArgument(boolean expression) {
 		if (!expression) {
-			throw new RestartIllegalArgumentException();
+			throw new RebirthIllegalArgumentException();
 		}
 	}
 
@@ -48,7 +48,7 @@ public final class Preconditions {
 	 */
 	public static void checkArgument(boolean expression, Object errorMessage) {
 		if (!expression) {
-			throw new RestartIllegalArgumentException(String.valueOf(errorMessage));
+			throw new RebirthIllegalArgumentException(String.valueOf(errorMessage));
 		}
 	}
 
@@ -62,7 +62,7 @@ public final class Preconditions {
 	 */
 	public static void checkArgument(boolean expression, String errorMessageTemplate, Object... errorMessageArgs) {
 		if (!expression) {
-			throw new RestartIllegalArgumentException(format(errorMessageTemplate, errorMessageArgs));
+			throw new RebirthIllegalArgumentException(format(errorMessageTemplate, errorMessageArgs));
 		}
 	}
 
@@ -74,7 +74,7 @@ public final class Preconditions {
 	 */
 	public static void checkState(boolean expression) {
 		if (!expression) {
-			throw new RestartIllegalStateException();
+			throw new RebirthIllegalStateException();
 		}
 	}
 
@@ -87,7 +87,7 @@ public final class Preconditions {
 	 */
 	public static void checkState(boolean expression, Object errorMessage) {
 		if (!expression) {
-			throw new RestartIllegalStateException(String.valueOf(errorMessage));
+			throw new RebirthIllegalStateException(String.valueOf(errorMessage));
 		}
 	}
 
@@ -101,7 +101,7 @@ public final class Preconditions {
 	 */
 	public static void checkState(boolean expression, String errorMessageTemplate, Object... errorMessageArgs) {
 		if (!expression) {
-			throw new RestartIllegalStateException(format(errorMessageTemplate, errorMessageArgs));
+			throw new RebirthIllegalStateException(format(errorMessageTemplate, errorMessageArgs));
 		}
 	}
 
@@ -115,7 +115,7 @@ public final class Preconditions {
 	 */
 	public static <T> T checkNotNull(T reference) {
 		if (reference == null) {
-			throw new RestartNullPointerException();
+			throw new RebirthNullPointerException();
 		}
 		return reference;
 	}
@@ -131,7 +131,7 @@ public final class Preconditions {
 	 */
 	public static <T> T checkNotNull(T reference, Object errorMessage) {
 		if (reference == null) {
-			throw new RestartNullPointerException(String.valueOf(errorMessage));
+			throw new RebirthNullPointerException(String.valueOf(errorMessage));
 		}
 		return reference;
 	}
@@ -149,7 +149,7 @@ public final class Preconditions {
 	public static <T> T checkNotNull(T reference, String errorMessageTemplate, Object... errorMessageArgs) {
 		if (reference == null) {
 			
-			throw new RestartNullPointerException(format(errorMessageTemplate, errorMessageArgs));
+			throw new RebirthNullPointerException(format(errorMessageTemplate, errorMessageArgs));
 		}
 		return reference;
 	}
@@ -164,7 +164,7 @@ public final class Preconditions {
 	 */
 	public static <T extends Iterable<?>> T checkContentsNotNull(T iterable) {
 		if (containsOrIsNull(iterable)) {
-			throw new RestartNullPointerException();
+			throw new RebirthNullPointerException();
 		}
 		return iterable;
 	}
@@ -180,7 +180,7 @@ public final class Preconditions {
 	 */
 	public static <T extends Iterable<?>> T checkContentsNotNull(T iterable, Object errorMessage) {
 		if (containsOrIsNull(iterable)) {
-			throw new RestartNullPointerException(String.valueOf(errorMessage));
+			throw new RebirthNullPointerException(String.valueOf(errorMessage));
 		}
 		return iterable;
 	}
@@ -198,7 +198,7 @@ public final class Preconditions {
 	public static <T extends Iterable<?>> T checkContentsNotNull(T iterable, String errorMessageTemplate,
 			Object... errorMessageArgs) {
 		if (containsOrIsNull(iterable)) {
-			throw new RestartNullPointerException(format(errorMessageTemplate, errorMessageArgs));
+			throw new RebirthNullPointerException(format(errorMessageTemplate, errorMessageArgs));
 		}
 		return iterable;
 	}
@@ -219,7 +219,7 @@ public final class Preconditions {
 			Collection<?> collection = (Collection<?>) iterable;
 			try {
 				return collection.contains(null);
-			} catch (RestartNullPointerException e) {
+			} catch (RebirthNullPointerException e) {
 				return false;
 			}
 		} else {

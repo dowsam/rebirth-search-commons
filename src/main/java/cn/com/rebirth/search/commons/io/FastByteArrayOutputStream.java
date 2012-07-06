@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons FastByteArrayOutputStream.java 2012-3-29 15:15:14 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons FastByteArrayOutputStream.java 2012-7-6 10:23:51 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.io;
 
@@ -96,7 +96,7 @@ public class FastByteArrayOutputStream extends OutputStream implements BytesStre
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.BytesStream#copiedByteArray()
+	 * @see cn.com.rebirth.search.commons.io.BytesStream#copiedByteArray()
 	 */
 	public byte copiedByteArray()[] {
 		return Arrays.copyOf(buf, count);
@@ -104,7 +104,7 @@ public class FastByteArrayOutputStream extends OutputStream implements BytesStre
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.BytesStream#underlyingBytes()
+	 * @see cn.com.rebirth.search.commons.io.BytesStream#underlyingBytes()
 	 */
 	public byte[] underlyingBytes() {
 		return buf;
@@ -112,7 +112,7 @@ public class FastByteArrayOutputStream extends OutputStream implements BytesStre
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.BytesStream#size()
+	 * @see cn.com.rebirth.search.commons.io.BytesStream#size()
 	 */
 	public int size() {
 		return count;

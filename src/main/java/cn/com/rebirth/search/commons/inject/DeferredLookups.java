@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons DeferredLookups.java 2012-3-29 15:15:09 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons DeferredLookups.java 2012-7-6 10:23:47 l.xue.nong$$
  */
 
 
@@ -54,7 +54,7 @@ class DeferredLookups implements Lookups {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Lookups#getProvider(cn.com.summall.search.commons.inject.Key)
+	 * @see cn.com.rebirth.search.commons.inject.Lookups#getProvider(cn.com.rebirth.search.commons.inject.Key)
 	 */
 	public <T> Provider<T> getProvider(Key<T> key) {
 		ProviderLookup<T> lookup = new ProviderLookup<T>(key, key);
@@ -64,7 +64,7 @@ class DeferredLookups implements Lookups {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Lookups#getMembersInjector(cn.com.summall.search.commons.inject.TypeLiteral)
+	 * @see cn.com.rebirth.search.commons.inject.Lookups#getMembersInjector(cn.com.rebirth.search.commons.inject.TypeLiteral)
 	 */
 	public <T> MembersInjector<T> getMembersInjector(TypeLiteral<T> type) {
 		MembersInjectorLookup<T> lookup = new MembersInjectorLookup<T>(type, type);

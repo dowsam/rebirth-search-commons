@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons MoreTypes.java 2012-3-29 15:15:19 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons MoreTypes.java 2012-7-6 10:23:51 l.xue.nong$$
  */
 
 
@@ -577,7 +577,7 @@ public class MoreTypes {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.internal.MoreTypes.CompositeType#isFullySpecified()
+		 * @see cn.com.rebirth.search.commons.inject.internal.MoreTypes.CompositeType#isFullySpecified()
 		 */
 		public boolean isFullySpecified() {
 			if (ownerType != null && !MoreTypes.isFullySpecified(ownerType)) {
@@ -661,7 +661,7 @@ public class MoreTypes {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.internal.MoreTypes.CompositeType#isFullySpecified()
+		 * @see cn.com.rebirth.search.commons.inject.internal.MoreTypes.CompositeType#isFullySpecified()
 		 */
 		public boolean isFullySpecified() {
 			return MoreTypes.isFullySpecified(componentType);
@@ -759,7 +759,7 @@ public class MoreTypes {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.internal.MoreTypes.CompositeType#isFullySpecified()
+		 * @see cn.com.rebirth.search.commons.inject.internal.MoreTypes.CompositeType#isFullySpecified()
 		 */
 		public boolean isFullySpecified() {
 			return MoreTypes.isFullySpecified(upperBound)

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons AbstractFsBlobContainer.java 2012-3-29 15:15:15 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons AbstractFsBlobContainer.java 2012-7-6 10:23:49 l.xue.nong$$
  */
 
 
@@ -61,9 +61,6 @@ public abstract class AbstractFsBlobContainer extends AbstractBlobContainer {
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.blobstore.BlobContainer#listBlobs()
-	 */
 	public ImmutableMap<String, BlobMetaData> listBlobs() throws IOException {
 		File[] files = path.listFiles();
 		if (files == null || files.length == 0) {
@@ -80,26 +77,17 @@ public abstract class AbstractFsBlobContainer extends AbstractBlobContainer {
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.blobstore.BlobContainer#deleteBlob(java.lang.String)
-	 */
 	public boolean deleteBlob(String blobName) throws IOException {
 		return new File(path, blobName).delete();
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.blobstore.BlobContainer#blobExists(java.lang.String)
-	 */
 	@Override
 	public boolean blobExists(String blobName) {
 		return new File(path, blobName).exists();
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.blobstore.BlobContainer#readBlob(java.lang.String, cn.com.summall.search.commons.blobstore.BlobContainer.ReadBlobListener)
-	 */
 	@Override
 	public void readBlob(final String blobName, final ReadBlobListener listener) {
 		blobStore.executor().execute(new Runnable() {

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons YamlSettingsLoader.java 2012-3-29 15:15:20 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons YamlSettingsLoader.java 2012-7-6 10:23:50 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.settings.loader;
 
@@ -25,7 +25,7 @@ public class YamlSettingsLoader implements SettingsLoader {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.loader.SettingsLoader#load(java.lang.String)
+	 * @see cn.com.rebirth.search.commons.settings.loader.SettingsLoader#load(java.lang.String)
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
@@ -46,7 +46,7 @@ public class YamlSettingsLoader implements SettingsLoader {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.loader.SettingsLoader#load(byte[])
+	 * @see cn.com.rebirth.search.commons.settings.loader.SettingsLoader#load(byte[])
 	 */
 	@SuppressWarnings("unchecked")
 	@Override

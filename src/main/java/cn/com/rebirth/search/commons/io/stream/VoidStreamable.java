@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons VoidStreamable.java 2012-3-29 15:15:09 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons VoidStreamable.java 2012-7-6 10:23:49 l.xue.nong$$
  */
 
 
@@ -26,7 +26,7 @@ public class VoidStreamable implements Streamable {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.io.stream.Streamable#readFrom(cn.com.summall.search.commons.io.stream.StreamInput)
+     * @see cn.com.rebirth.search.commons.io.stream.Streamable#readFrom(cn.com.rebirth.search.commons.io.stream.StreamInput)
      */
     @Override
     public void readFrom(StreamInput in) throws IOException {
@@ -34,7 +34,7 @@ public class VoidStreamable implements Streamable {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.io.stream.Streamable#writeTo(cn.com.summall.search.commons.io.stream.StreamOutput)
+     * @see cn.com.rebirth.search.commons.io.stream.Streamable#writeTo(cn.com.rebirth.search.commons.io.stream.StreamOutput)
      */
     @Override
     public void writeTo(StreamOutput out) throws IOException {

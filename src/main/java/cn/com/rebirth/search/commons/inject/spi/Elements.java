@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons Elements.java 2012-3-29 15:15:16 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons Elements.java 2012-7-6 10:23:44 l.xue.nong$$
  */
 
 
@@ -238,7 +238,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#bindScope(java.lang.Class, cn.com.summall.search.commons.inject.Scope)
+		 * @see cn.com.rebirth.search.commons.inject.Binder#bindScope(java.lang.Class, cn.com.rebirth.search.commons.inject.Scope)
 		 */
 		public void bindScope(Class<? extends Annotation> annotationType, Scope scope) {
 			elements.add(new ScopeBinding(getSource(), annotationType, scope));
@@ -246,7 +246,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#requestInjection(java.lang.Object)
+		 * @see cn.com.rebirth.search.commons.inject.Binder#requestInjection(java.lang.Object)
 		 */
 		@SuppressWarnings({ "unchecked", "rawtypes" })
 		
@@ -256,7 +256,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#requestInjection(cn.com.summall.search.commons.inject.TypeLiteral, java.lang.Object)
+		 * @see cn.com.rebirth.search.commons.inject.Binder#requestInjection(cn.com.rebirth.search.commons.inject.TypeLiteral, java.lang.Object)
 		 */
 		public <T> void requestInjection(TypeLiteral<T> type, T instance) {
 			elements.add(new InjectionRequest<T>(getSource(), type, instance));
@@ -264,7 +264,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#getMembersInjector(cn.com.summall.search.commons.inject.TypeLiteral)
+		 * @see cn.com.rebirth.search.commons.inject.Binder#getMembersInjector(cn.com.rebirth.search.commons.inject.TypeLiteral)
 		 */
 		public <T> MembersInjector<T> getMembersInjector(final TypeLiteral<T> typeLiteral) {
 			final MembersInjectorLookup<T> element = new MembersInjectorLookup<T>(getSource(), typeLiteral);
@@ -274,7 +274,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#getMembersInjector(java.lang.Class)
+		 * @see cn.com.rebirth.search.commons.inject.Binder#getMembersInjector(java.lang.Class)
 		 */
 		public <T> MembersInjector<T> getMembersInjector(Class<T> type) {
 			return getMembersInjector(TypeLiteral.get(type));
@@ -282,7 +282,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#bindListener(cn.com.summall.search.commons.inject.matcher.Matcher, cn.com.summall.search.commons.inject.spi.TypeListener)
+		 * @see cn.com.rebirth.search.commons.inject.Binder#bindListener(cn.com.rebirth.search.commons.inject.matcher.Matcher, cn.com.rebirth.search.commons.inject.spi.TypeListener)
 		 */
 		public void bindListener(Matcher<? super TypeLiteral<?>> typeMatcher, TypeListener listener) {
 			elements.add(new TypeListenerBinding(getSource(), listener, typeMatcher));
@@ -290,7 +290,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#requestStaticInjection(java.lang.Class<?>[])
+		 * @see cn.com.rebirth.search.commons.inject.Binder#requestStaticInjection(java.lang.Class<?>[])
 		 */
 		public void requestStaticInjection(Class<?>... types) {
 			for (Class<?> type : types) {
@@ -300,7 +300,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#install(cn.com.summall.search.commons.inject.Module)
+		 * @see cn.com.rebirth.search.commons.inject.Binder#install(cn.com.rebirth.search.commons.inject.Module)
 		 */
 		public void install(Module module) {
 			if (modules.add(module)) {
@@ -325,7 +325,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#currentStage()
+		 * @see cn.com.rebirth.search.commons.inject.Binder#currentStage()
 		 */
 		public Stage currentStage() {
 			return stage;
@@ -333,7 +333,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#addError(java.lang.String, java.lang.Object[])
+		 * @see cn.com.rebirth.search.commons.inject.Binder#addError(java.lang.String, java.lang.Object[])
 		 */
 		public void addError(String message, Object... arguments) {
 			elements.add(new Message(getSource(), Errors.format(message, arguments)));
@@ -341,7 +341,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#addError(java.lang.Throwable)
+		 * @see cn.com.rebirth.search.commons.inject.Binder#addError(java.lang.Throwable)
 		 */
 		public void addError(Throwable t) {
 			String message = "An exception was caught and reported. Message: " + t.getMessage();
@@ -350,7 +350,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#addError(cn.com.summall.search.commons.inject.spi.Message)
+		 * @see cn.com.rebirth.search.commons.inject.Binder#addError(cn.com.rebirth.search.commons.inject.spi.Message)
 		 */
 		public void addError(Message message) {
 			elements.add(message);
@@ -358,7 +358,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#bind(cn.com.summall.search.commons.inject.Key)
+		 * @see cn.com.rebirth.search.commons.inject.Binder#bind(cn.com.rebirth.search.commons.inject.Key)
 		 */
 		public <T> AnnotatedBindingBuilder<T> bind(Key<T> key) {
 			return new BindingBuilder<T>(this, elements, getSource(), key);
@@ -366,7 +366,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#bind(cn.com.summall.search.commons.inject.TypeLiteral)
+		 * @see cn.com.rebirth.search.commons.inject.Binder#bind(cn.com.rebirth.search.commons.inject.TypeLiteral)
 		 */
 		public <T> AnnotatedBindingBuilder<T> bind(TypeLiteral<T> typeLiteral) {
 			return bind(Key.get(typeLiteral));
@@ -374,7 +374,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#bind(java.lang.Class)
+		 * @see cn.com.rebirth.search.commons.inject.Binder#bind(java.lang.Class)
 		 */
 		public <T> AnnotatedBindingBuilder<T> bind(Class<T> type) {
 			return bind(Key.get(type));
@@ -382,7 +382,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#bindConstant()
+		 * @see cn.com.rebirth.search.commons.inject.Binder#bindConstant()
 		 */
 		public AnnotatedConstantBindingBuilder bindConstant() {
 			return new ConstantBindingBuilderImpl<Void>(this, elements, getSource());
@@ -390,7 +390,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#getProvider(cn.com.summall.search.commons.inject.Key)
+		 * @see cn.com.rebirth.search.commons.inject.Binder#getProvider(cn.com.rebirth.search.commons.inject.Key)
 		 */
 		public <T> Provider<T> getProvider(final Key<T> key) {
 			final ProviderLookup<T> element = new ProviderLookup<T>(getSource(), key);
@@ -400,7 +400,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#getProvider(java.lang.Class)
+		 * @see cn.com.rebirth.search.commons.inject.Binder#getProvider(java.lang.Class)
 		 */
 		public <T> Provider<T> getProvider(Class<T> type) {
 			return getProvider(Key.get(type));
@@ -408,7 +408,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#convertToTypes(cn.com.summall.search.commons.inject.matcher.Matcher, cn.com.summall.search.commons.inject.spi.TypeConverter)
+		 * @see cn.com.rebirth.search.commons.inject.Binder#convertToTypes(cn.com.rebirth.search.commons.inject.matcher.Matcher, cn.com.rebirth.search.commons.inject.spi.TypeConverter)
 		 */
 		public void convertToTypes(Matcher<? super TypeLiteral<?>> typeMatcher, TypeConverter converter) {
 			elements.add(new TypeConverterBinding(getSource(), typeMatcher, converter));
@@ -416,7 +416,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#withSource(java.lang.Object)
+		 * @see cn.com.rebirth.search.commons.inject.Binder#withSource(java.lang.Object)
 		 */
 		public RecordingBinder withSource(final Object source) {
 			return new RecordingBinder(this, source, null);
@@ -424,7 +424,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#skipSources(java.lang.Class[])
+		 * @see cn.com.rebirth.search.commons.inject.Binder#skipSources(java.lang.Class[])
 		 */
 		@SuppressWarnings("rawtypes")
 		public RecordingBinder skipSources(Class... classesToSkip) {
@@ -439,7 +439,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binder#newPrivateBinder()
+		 * @see cn.com.rebirth.search.commons.inject.Binder#newPrivateBinder()
 		 */
 		public PrivateBinder newPrivateBinder() {
 			PrivateElementsImpl privateElements = new PrivateElementsImpl(getSource());
@@ -449,7 +449,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.PrivateBinder#expose(cn.com.summall.search.commons.inject.Key)
+		 * @see cn.com.rebirth.search.commons.inject.PrivateBinder#expose(cn.com.rebirth.search.commons.inject.Key)
 		 */
 		public void expose(Key<?> key) {
 			exposeInternal(key);
@@ -457,7 +457,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.PrivateBinder#expose(java.lang.Class)
+		 * @see cn.com.rebirth.search.commons.inject.PrivateBinder#expose(java.lang.Class)
 		 */
 		public AnnotatedElementBuilder expose(Class<?> type) {
 			return exposeInternal(Key.get(type));
@@ -465,7 +465,7 @@ public final class Elements {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.PrivateBinder#expose(cn.com.summall.search.commons.inject.TypeLiteral)
+		 * @see cn.com.rebirth.search.commons.inject.PrivateBinder#expose(cn.com.rebirth.search.commons.inject.TypeLiteral)
 		 */
 		public AnnotatedElementBuilder expose(TypeLiteral<?> type) {
 			return exposeInternal(Key.get(type));

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons AbstractModule.java 2012-3-29 15:15:11 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons AbstractModule.java 2012-7-6 10:23:51 l.xue.nong$$
  */
 
 package cn.com.rebirth.search.commons.inject;
@@ -32,7 +32,7 @@ public abstract class AbstractModule implements Module {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Module#configure(cn.com.summall.search.commons.inject.Binder)
+	 * @see cn.com.rebirth.search.commons.inject.Module#configure(cn.com.rebirth.search.commons.inject.Binder)
 	 */
 	public final synchronized void configure(Binder builder) {
 		checkState(this.binder == null, "Re-entry is not allowed.");

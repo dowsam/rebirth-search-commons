@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons AbstractBlobContainer.java 2012-3-29 15:15:17 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons AbstractBlobContainer.java 2012-7-6 10:23:51 l.xue.nong$$
  */
 
 
@@ -41,18 +41,12 @@ public abstract class AbstractBlobContainer implements BlobContainer {
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.blobstore.BlobContainer#path()
-	 */
 	@Override
 	public BlobPath path() {
 		return this.path;
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.blobstore.BlobContainer#readBlobFully(java.lang.String)
-	 */
 	@Override
 	public byte[] readBlobFully(String blobName) throws IOException {
 		final CountDownLatch latch = new CountDownLatch(1);
@@ -94,9 +88,6 @@ public abstract class AbstractBlobContainer implements BlobContainer {
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.blobstore.BlobContainer#listBlobsByPrefix(java.lang.String)
-	 */
 	@Override
 	public ImmutableMap<String, BlobMetaData> listBlobsByPrefix(String blobNamePrefix) throws IOException {
 		ImmutableMap<String, BlobMetaData> allBlobs = listBlobs();
@@ -110,9 +101,6 @@ public abstract class AbstractBlobContainer implements BlobContainer {
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.blobstore.BlobContainer#deleteBlobsByPrefix(java.lang.String)
-	 */
 	@Override
 	public void deleteBlobsByPrefix(final String blobNamePrefix) throws IOException {
 		deleteBlobsByFilter(new BlobNameFilter() {
@@ -124,9 +112,6 @@ public abstract class AbstractBlobContainer implements BlobContainer {
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.blobstore.BlobContainer#deleteBlobsByFilter(cn.com.summall.search.commons.blobstore.BlobContainer.BlobNameFilter)
-	 */
 	@Override
 	public void deleteBlobsByFilter(BlobNameFilter filter) throws IOException {
 		ImmutableMap<String, BlobMetaData> blobs = listBlobs();

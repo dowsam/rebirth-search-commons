@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons AbstractXContentParser.java 2012-3-29 15:15:07 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons AbstractXContentParser.java 2012-7-6 10:23:53 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.xcontent.support;
 
@@ -21,7 +21,7 @@ public abstract class AbstractXContentParser implements XContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#booleanValue()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#booleanValue()
 	 */
 	@Override
 	public boolean booleanValue() throws IOException {
@@ -45,7 +45,7 @@ public abstract class AbstractXContentParser implements XContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#shortValue()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#shortValue()
 	 */
 	@Override
 	public short shortValue() throws IOException {
@@ -67,7 +67,7 @@ public abstract class AbstractXContentParser implements XContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#intValue()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#intValue()
 	 */
 	@Override
 	public int intValue() throws IOException {
@@ -89,7 +89,7 @@ public abstract class AbstractXContentParser implements XContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#longValue()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#longValue()
 	 */
 	@Override
 	public long longValue() throws IOException {
@@ -111,7 +111,7 @@ public abstract class AbstractXContentParser implements XContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#floatValue()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#floatValue()
 	 */
 	@Override
 	public float floatValue() throws IOException {
@@ -133,7 +133,7 @@ public abstract class AbstractXContentParser implements XContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#doubleValue()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#doubleValue()
 	 */
 	@Override
 	public double doubleValue() throws IOException {
@@ -155,7 +155,7 @@ public abstract class AbstractXContentParser implements XContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#textOrNull()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#textOrNull()
 	 */
 	@Override
 	public String textOrNull() throws IOException {
@@ -167,7 +167,7 @@ public abstract class AbstractXContentParser implements XContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#map()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#map()
 	 */
 	@Override
 	public Map<String, Object> map() throws IOException {
@@ -176,7 +176,7 @@ public abstract class AbstractXContentParser implements XContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#mapOrdered()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#mapOrdered()
 	 */
 	@Override
 	public Map<String, Object> mapOrdered() throws IOException {
@@ -185,7 +185,7 @@ public abstract class AbstractXContentParser implements XContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#mapAndClose()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#mapAndClose()
 	 */
 	@Override
 	public Map<String, Object> mapAndClose() throws IOException {
@@ -198,7 +198,7 @@ public abstract class AbstractXContentParser implements XContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#mapOrderedAndClose()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#mapOrderedAndClose()
 	 */
 	@Override
 	public Map<String, Object> mapOrderedAndClose() throws IOException {

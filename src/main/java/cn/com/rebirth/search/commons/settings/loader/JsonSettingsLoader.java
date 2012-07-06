@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons JsonSettingsLoader.java 2012-3-29 15:15:20 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons JsonSettingsLoader.java 2012-7-6 10:23:48 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.settings.loader;
 
@@ -25,7 +25,7 @@ public class JsonSettingsLoader implements SettingsLoader {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.loader.SettingsLoader#load(java.lang.String)
+	 * @see cn.com.rebirth.search.commons.settings.loader.SettingsLoader#load(java.lang.String)
 	 */
 	@Override
 	public Map<String, String> load(String source) throws IOException {
@@ -39,7 +39,7 @@ public class JsonSettingsLoader implements SettingsLoader {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.loader.SettingsLoader#load(byte[])
+	 * @see cn.com.rebirth.search.commons.settings.loader.SettingsLoader#load(byte[])
 	 */
 	@Override
 	public Map<String, String> load(byte[] source) throws IOException {

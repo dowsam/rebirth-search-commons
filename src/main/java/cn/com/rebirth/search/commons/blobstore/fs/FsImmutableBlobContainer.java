@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons FsImmutableBlobContainer.java 2012-3-29 15:15:07 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons FsImmutableBlobContainer.java 2012-7-6 10:23:53 l.xue.nong$$
  */
 
 
@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.RandomAccessFile;
 
-import cn.com.rebirth.commons.exception.RestartIllegalStateException;
+import cn.com.rebirth.commons.exception.RebirthIllegalStateException;
 import cn.com.rebirth.search.commons.blobstore.BlobPath;
 import cn.com.rebirth.search.commons.blobstore.ImmutableBlobContainer;
 import cn.com.rebirth.search.commons.blobstore.support.BlobStores;
@@ -38,9 +38,6 @@ public class FsImmutableBlobContainer extends AbstractFsBlobContainer implements
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.blobstore.ImmutableBlobContainer#writeBlob(java.lang.String, java.io.InputStream, long, cn.com.summall.search.commons.blobstore.ImmutableBlobContainer.WriterListener)
-	 */
 	@Override
 	public void writeBlob(final String blobName, final InputStream is, final long sizeInBytes,
 			final WriterListener listener) {
@@ -67,7 +64,7 @@ public class FsImmutableBlobContainer extends AbstractFsBlobContainer implements
 							bytesWritten += bytesRead;
 						}
 						if (bytesWritten != sizeInBytes) {
-							listener.onFailure(new RestartIllegalStateException("[" + blobName + "]: wrote ["
+							listener.onFailure(new RebirthIllegalStateException("[" + blobName + "]: wrote ["
 									+ bytesWritten + "], expected to write [" + sizeInBytes + "]"));
 							return;
 						}
@@ -101,9 +98,6 @@ public class FsImmutableBlobContainer extends AbstractFsBlobContainer implements
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.blobstore.ImmutableBlobContainer#writeBlob(java.lang.String, java.io.InputStream, long)
-	 */
 	@Override
 	public void writeBlob(String blobName, InputStream is, long sizeInBytes) throws IOException {
 		BlobStores.syncWriteBlob(this, blobName, is, sizeInBytes);

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons InheritingState.java 2012-3-29 15:15:21 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons InheritingState.java 2012-7-6 10:23:48 l.xue.nong$$
  */
 
 
@@ -76,7 +76,7 @@ class InheritingState implements State {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.State#parent()
+	 * @see cn.com.rebirth.search.commons.inject.State#parent()
 	 */
 	public State parent() {
 		return parent;
@@ -84,7 +84,7 @@ class InheritingState implements State {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.State#getExplicitBinding(cn.com.summall.search.commons.inject.Key)
+	 * @see cn.com.rebirth.search.commons.inject.State#getExplicitBinding(cn.com.rebirth.search.commons.inject.Key)
 	 */
 	@SuppressWarnings("unchecked")
 	
@@ -95,7 +95,7 @@ class InheritingState implements State {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.State#getExplicitBindingsThisLevel()
+	 * @see cn.com.rebirth.search.commons.inject.State#getExplicitBindingsThisLevel()
 	 */
 	public Map<Key<?>, Binding<?>> getExplicitBindingsThisLevel() {
 		return explicitBindings;
@@ -103,7 +103,7 @@ class InheritingState implements State {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.State#putBinding(cn.com.summall.search.commons.inject.Key, cn.com.summall.search.commons.inject.internal.BindingImpl)
+	 * @see cn.com.rebirth.search.commons.inject.State#putBinding(cn.com.rebirth.search.commons.inject.Key, cn.com.rebirth.search.commons.inject.internal.BindingImpl)
 	 */
 	public void putBinding(Key<?> key, BindingImpl<?> binding) {
 		explicitBindingsMutable.put(key, binding);
@@ -111,7 +111,7 @@ class InheritingState implements State {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.State#getScope(java.lang.Class)
+	 * @see cn.com.rebirth.search.commons.inject.State#getScope(java.lang.Class)
 	 */
 	public Scope getScope(Class<? extends Annotation> annotationType) {
 		Scope scope = scopes.get(annotationType);
@@ -120,7 +120,7 @@ class InheritingState implements State {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.State#putAnnotation(java.lang.Class, cn.com.summall.search.commons.inject.Scope)
+	 * @see cn.com.rebirth.search.commons.inject.State#putAnnotation(java.lang.Class, cn.com.rebirth.search.commons.inject.Scope)
 	 */
 	public void putAnnotation(Class<? extends Annotation> annotationType, Scope scope) {
 		scopes.put(annotationType, scope);
@@ -128,7 +128,7 @@ class InheritingState implements State {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.State#getConvertersThisLevel()
+	 * @see cn.com.rebirth.search.commons.inject.State#getConvertersThisLevel()
 	 */
 	public Iterable<MatcherAndConverter> getConvertersThisLevel() {
 		return converters;
@@ -136,7 +136,7 @@ class InheritingState implements State {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.State#addConverter(cn.com.summall.search.commons.inject.internal.MatcherAndConverter)
+	 * @see cn.com.rebirth.search.commons.inject.State#addConverter(cn.com.rebirth.search.commons.inject.internal.MatcherAndConverter)
 	 */
 	public void addConverter(MatcherAndConverter matcherAndConverter) {
 		converters.add(matcherAndConverter);
@@ -144,7 +144,7 @@ class InheritingState implements State {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.State#getConverter(java.lang.String, cn.com.summall.search.commons.inject.TypeLiteral, cn.com.summall.search.commons.inject.internal.Errors, java.lang.Object)
+	 * @see cn.com.rebirth.search.commons.inject.State#getConverter(java.lang.String, cn.com.rebirth.search.commons.inject.TypeLiteral, cn.com.rebirth.search.commons.inject.internal.Errors, java.lang.Object)
 	 */
 	public MatcherAndConverter getConverter(String stringValue, TypeLiteral<?> type, Errors errors, Object source) {
 		MatcherAndConverter matchingConverter = null;
@@ -163,7 +163,7 @@ class InheritingState implements State {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.State#addTypeListener(cn.com.summall.search.commons.inject.spi.TypeListenerBinding)
+	 * @see cn.com.rebirth.search.commons.inject.State#addTypeListener(cn.com.rebirth.search.commons.inject.spi.TypeListenerBinding)
 	 */
 	public void addTypeListener(TypeListenerBinding listenerBinding) {
 		listenerBindings.add(listenerBinding);
@@ -171,7 +171,7 @@ class InheritingState implements State {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.State#getTypeListenerBindings()
+	 * @see cn.com.rebirth.search.commons.inject.State#getTypeListenerBindings()
 	 */
 	public List<TypeListenerBinding> getTypeListenerBindings() {
 		List<TypeListenerBinding> parentBindings = parent.getTypeListenerBindings();
@@ -183,7 +183,7 @@ class InheritingState implements State {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.State#blacklist(cn.com.summall.search.commons.inject.Key)
+	 * @see cn.com.rebirth.search.commons.inject.State#blacklist(cn.com.rebirth.search.commons.inject.Key)
 	 */
 	public void blacklist(Key<?> key) {
 		parent.blacklist(key);
@@ -192,7 +192,7 @@ class InheritingState implements State {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.State#isBlacklisted(cn.com.summall.search.commons.inject.Key)
+	 * @see cn.com.rebirth.search.commons.inject.State#isBlacklisted(cn.com.rebirth.search.commons.inject.Key)
 	 */
 	public boolean isBlacklisted(Key<?> key) {
 		return blacklistedKeys.contains(key);
@@ -200,7 +200,7 @@ class InheritingState implements State {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.State#clearBlacklisted()
+	 * @see cn.com.rebirth.search.commons.inject.State#clearBlacklisted()
 	 */
 	@Override
 	public void clearBlacklisted() {
@@ -209,7 +209,7 @@ class InheritingState implements State {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.State#lock()
+	 * @see cn.com.rebirth.search.commons.inject.State#lock()
 	 */
 	public Object lock() {
 		return lock;

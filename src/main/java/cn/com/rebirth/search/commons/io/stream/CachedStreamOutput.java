@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons CachedStreamOutput.java 2012-3-29 15:15:12 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons CachedStreamOutput.java 2012-7-6 10:23:41 l.xue.nong$$
  */
 
 
@@ -197,11 +197,11 @@ public class CachedStreamOutput {
 	private static final AtomicInteger counter = new AtomicInteger();
 
 	
-	/** The BYTE s_ limit. */
+	/** The bytes limit. */
 	public static int BYTES_LIMIT = 1 * 1024 * 1024; 
 
 	
-	/** The COUN t_ limit. */
+	/** The count limit. */
 	public static int COUNT_LIMIT = 100;
 
 	

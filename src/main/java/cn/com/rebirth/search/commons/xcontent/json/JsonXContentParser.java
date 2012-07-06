@@ -1,12 +1,12 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons JsonXContentParser.java 2012-3-29 15:15:15 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons JsonXContentParser.java 2012-7-6 10:23:40 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.xcontent.json;
 
 import java.io.IOException;
 
-import cn.com.rebirth.commons.exception.RestartIllegalStateException;
+import cn.com.rebirth.commons.exception.RebirthIllegalStateException;
 import cn.com.rebirth.search.commons.xcontent.XContentType;
 import cn.com.rebirth.search.commons.xcontent.support.AbstractXContentParser;
 
@@ -37,7 +37,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#contentType()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#contentType()
 	 */
 	@Override
 	public XContentType contentType() {
@@ -46,7 +46,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#nextToken()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#nextToken()
 	 */
 	@Override
 	public Token nextToken() throws IOException {
@@ -55,7 +55,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#skipChildren()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#skipChildren()
 	 */
 	@Override
 	public void skipChildren() throws IOException {
@@ -64,7 +64,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#currentToken()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#currentToken()
 	 */
 	@Override
 	public Token currentToken() {
@@ -73,7 +73,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#numberType()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#numberType()
 	 */
 	@Override
 	public NumberType numberType() throws IOException {
@@ -82,7 +82,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#estimatedNumberType()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#estimatedNumberType()
 	 */
 	@Override
 	public boolean estimatedNumberType() {
@@ -91,7 +91,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#currentName()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#currentName()
 	 */
 	@Override
 	public String currentName() throws IOException {
@@ -100,7 +100,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.support.AbstractXContentParser#doBooleanValue()
+	 * @see cn.com.rebirth.search.commons.xcontent.support.AbstractXContentParser#doBooleanValue()
 	 */
 	@Override
 	protected boolean doBooleanValue() throws IOException {
@@ -109,7 +109,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#text()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#text()
 	 */
 	@Override
 	public String text() throws IOException {
@@ -118,7 +118,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#hasTextCharacters()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#hasTextCharacters()
 	 */
 	@Override
 	public boolean hasTextCharacters() {
@@ -127,7 +127,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#textCharacters()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#textCharacters()
 	 */
 	@Override
 	public char[] textCharacters() throws IOException {
@@ -136,7 +136,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#textLength()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#textLength()
 	 */
 	@Override
 	public int textLength() throws IOException {
@@ -145,7 +145,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#textOffset()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#textOffset()
 	 */
 	@Override
 	public int textOffset() throws IOException {
@@ -154,7 +154,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#numberValue()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#numberValue()
 	 */
 	@Override
 	public Number numberValue() throws IOException {
@@ -163,7 +163,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.support.AbstractXContentParser#doShortValue()
+	 * @see cn.com.rebirth.search.commons.xcontent.support.AbstractXContentParser#doShortValue()
 	 */
 	@Override
 	public short doShortValue() throws IOException {
@@ -172,7 +172,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.support.AbstractXContentParser#doIntValue()
+	 * @see cn.com.rebirth.search.commons.xcontent.support.AbstractXContentParser#doIntValue()
 	 */
 	@Override
 	public int doIntValue() throws IOException {
@@ -181,7 +181,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.support.AbstractXContentParser#doLongValue()
+	 * @see cn.com.rebirth.search.commons.xcontent.support.AbstractXContentParser#doLongValue()
 	 */
 	@Override
 	public long doLongValue() throws IOException {
@@ -190,7 +190,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.support.AbstractXContentParser#doFloatValue()
+	 * @see cn.com.rebirth.search.commons.xcontent.support.AbstractXContentParser#doFloatValue()
 	 */
 	@Override
 	public float doFloatValue() throws IOException {
@@ -199,7 +199,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.support.AbstractXContentParser#doDoubleValue()
+	 * @see cn.com.rebirth.search.commons.xcontent.support.AbstractXContentParser#doDoubleValue()
 	 */
 	@Override
 	public double doDoubleValue() throws IOException {
@@ -208,7 +208,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#binaryValue()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#binaryValue()
 	 */
 	@Override
 	public byte[] binaryValue() throws IOException {
@@ -217,7 +217,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.xcontent.XContentParser#close()
+	 * @see cn.com.rebirth.search.commons.xcontent.XContentParser#close()
 	 */
 	@Override
 	public void close() {
@@ -246,7 +246,7 @@ public class JsonXContentParser extends AbstractXContentParser {
 		case DOUBLE:
 			return NumberType.DOUBLE;
 		}
-		throw new RestartIllegalStateException("No matching token for number_type [" + numberType + "]");
+		throw new RebirthIllegalStateException("No matching token for number_type [" + numberType + "]");
 	}
 
 	
@@ -284,6 +284,6 @@ public class JsonXContentParser extends AbstractXContentParser {
 		case VALUE_EMBEDDED_OBJECT:
 			return Token.VALUE_EMBEDDED_OBJECT;
 		}
-		throw new RestartIllegalStateException("No matching token for json_token [" + token + "]");
+		throw new RebirthIllegalStateException("No matching token for json_token [" + token + "]");
 	}
 }

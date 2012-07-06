@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons RealElement.java 2012-3-29 15:15:10 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons RealElement.java 2012-7-6 10:23:41 l.xue.nong$$
  */
 
 
@@ -43,7 +43,7 @@ class RealElement implements Element {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.multibindings.Element#setName()
+	 * @see cn.com.rebirth.search.commons.inject.multibindings.Element#setName()
 	 */
 	public String setName() {
 		return setName;
@@ -51,7 +51,7 @@ class RealElement implements Element {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.multibindings.Element#uniqueId()
+	 * @see cn.com.rebirth.search.commons.inject.multibindings.Element#uniqueId()
 	 */
 	public int uniqueId() {
 		return uniqueId;

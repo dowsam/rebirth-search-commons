@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons Modules.java 2012-3-29 15:15:21 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons Modules.java 2012-7-6 10:23:44 l.xue.nong$$
  */
 
 
@@ -9,7 +9,7 @@ package cn.com.rebirth.search.commons.inject;
 import java.lang.reflect.Constructor;
 
 import cn.com.rebirth.commons.Nullable;
-import cn.com.rebirth.commons.exception.RestartException;
+import cn.com.rebirth.commons.exception.RebirthException;
 import cn.com.rebirth.commons.settings.Settings;
 
 
@@ -49,7 +49,7 @@ public class Modules {
 			try {
 				return constructor.newInstance(settings);
 			} catch (Exception e) {
-				throw new RestartException("Failed to create module [" + moduleClass + "]", e);
+				throw new RebirthException("Failed to create module [" + moduleClass + "]", e);
 			}
 		} catch (NoSuchMethodException e) {
 			try {
@@ -57,10 +57,10 @@ public class Modules {
 				try {
 					return constructor.newInstance();
 				} catch (Exception e1) {
-					throw new RestartException("Failed to create module [" + moduleClass + "]", e);
+					throw new RebirthException("Failed to create module [" + moduleClass + "]", e);
 				}
 			} catch (NoSuchMethodException e1) {
-				throw new RestartException("No constructor for [" + moduleClass + "]");
+				throw new RebirthException("No constructor for [" + moduleClass + "]");
 			}
 		}
 	}

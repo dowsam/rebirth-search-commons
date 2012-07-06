@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons LimitFilter.java 2012-3-29 15:15:08 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons LimitFilter.java 2012-7-6 10:23:42 l.xue.nong$$
  */
 
 
@@ -90,7 +90,7 @@ public class LimitFilter extends NoCacheFilter {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.lucene.docset.DocSet#get(int)
+		 * @see cn.com.rebirth.search.commons.lucene.docset.DocSet#get(int)
 		 */
 		@Override
 		public boolean get(int doc) {

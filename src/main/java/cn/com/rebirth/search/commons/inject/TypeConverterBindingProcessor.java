@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons TypeConverterBindingProcessor.java 2012-3-29 15:15:13 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons TypeConverterBindingProcessor.java 2012-7-6 10:23:54 l.xue.nong$$
  */
 
 
@@ -197,7 +197,7 @@ class TypeConverterBindingProcessor extends AbstractProcessor {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.AbstractProcessor#visit(cn.com.summall.search.commons.inject.spi.TypeConverterBinding)
+	 * @see cn.com.rebirth.search.commons.inject.AbstractProcessor#visit(cn.com.rebirth.search.commons.inject.spi.TypeConverterBinding)
 	 */
 	@Override
 	public Boolean visit(TypeConverterBinding command) {

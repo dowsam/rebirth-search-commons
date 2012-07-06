@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons BoostScoreFunction.java 2012-3-29 15:15:15 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons BoostScoreFunction.java 2012-7-6 10:23:48 l.xue.nong$$
  */
 
 
@@ -43,7 +43,7 @@ public class BoostScoreFunction implements ScoreFunction {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.lucene.search.function.ScoreFunction#setNextReader(org.apache.lucene.index.IndexReader)
+	 * @see cn.com.rebirth.search.commons.lucene.search.function.ScoreFunction#setNextReader(org.apache.lucene.index.IndexReader)
 	 */
 	@Override
 	public void setNextReader(IndexReader reader) {
@@ -52,7 +52,7 @@ public class BoostScoreFunction implements ScoreFunction {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.lucene.search.function.ScoreFunction#score(int, float)
+	 * @see cn.com.rebirth.search.commons.lucene.search.function.ScoreFunction#score(int, float)
 	 */
 	@Override
 	public float score(int docId, float subQueryScore) {
@@ -61,7 +61,7 @@ public class BoostScoreFunction implements ScoreFunction {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.lucene.search.function.ScoreFunction#factor(int)
+	 * @see cn.com.rebirth.search.commons.lucene.search.function.ScoreFunction#factor(int)
 	 */
 	@Override
 	public float factor(int docId) {
@@ -70,7 +70,7 @@ public class BoostScoreFunction implements ScoreFunction {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.lucene.search.function.ScoreFunction#explainScore(int, org.apache.lucene.search.Explanation)
+	 * @see cn.com.rebirth.search.commons.lucene.search.function.ScoreFunction#explainScore(int, org.apache.lucene.search.Explanation)
 	 */
 	@Override
 	public Explanation explainScore(int docId, Explanation subQueryExpl) {
@@ -82,7 +82,7 @@ public class BoostScoreFunction implements ScoreFunction {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.lucene.search.function.ScoreFunction#explainFactor(int)
+	 * @see cn.com.rebirth.search.commons.lucene.search.function.ScoreFunction#explainFactor(int)
 	 */
 	@Override
 	public Explanation explainFactor(int docId) {

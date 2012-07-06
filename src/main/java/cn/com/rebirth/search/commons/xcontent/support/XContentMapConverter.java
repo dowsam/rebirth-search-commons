@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons XContentMapConverter.java 2012-3-29 15:15:11 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons XContentMapConverter.java 2012-7-6 10:23:40 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.xcontent.support;
 

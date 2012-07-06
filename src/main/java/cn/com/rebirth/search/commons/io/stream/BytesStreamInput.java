@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons BytesStreamInput.java 2012-3-29 15:15:16 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons BytesStreamInput.java 2012-7-6 10:23:47 l.xue.nong$$
  */
 
 
@@ -65,7 +65,7 @@ public class BytesStreamInput extends StreamInput {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.io.stream.StreamInput#readBytesReference()
+     * @see cn.com.rebirth.search.commons.io.stream.StreamInput#readBytesReference()
      */
     @Override
     public BytesHolder readBytesReference() throws IOException {
@@ -150,7 +150,7 @@ public class BytesStreamInput extends StreamInput {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.io.stream.StreamInput#readByte()
+     * @see cn.com.rebirth.search.commons.io.stream.StreamInput#readByte()
      */
     @Override
     public byte readByte() throws IOException {
@@ -162,7 +162,7 @@ public class BytesStreamInput extends StreamInput {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.io.stream.StreamInput#readBytes(byte[], int, int)
+     * @see cn.com.rebirth.search.commons.io.stream.StreamInput#readBytes(byte[], int, int)
      */
     @Override
     public void readBytes(byte[] b, int offset, int len) throws IOException {
@@ -184,7 +184,7 @@ public class BytesStreamInput extends StreamInput {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.io.stream.StreamInput#reset()
+     * @see cn.com.rebirth.search.commons.io.stream.StreamInput#reset()
      */
     @Override
     public void reset() throws IOException {
@@ -193,7 +193,7 @@ public class BytesStreamInput extends StreamInput {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.io.stream.StreamInput#close()
+     * @see cn.com.rebirth.search.commons.io.stream.StreamInput#close()
      */
     @Override
     public void close() throws IOException {

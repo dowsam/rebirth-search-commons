@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons SmileXContentGenerator.java 2012-3-29 15:15:16 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons SmileXContentGenerator.java 2012-7-6 10:23:54 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.xcontent.smile;
 
@@ -34,7 +34,7 @@ public class SmileXContentGenerator extends JsonXContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.json.JsonXContentGenerator#contentType()
+     * @see cn.com.rebirth.search.commons.xcontent.json.JsonXContentGenerator#contentType()
      */
     @Override
     public XContentType contentType() {
@@ -43,7 +43,7 @@ public class SmileXContentGenerator extends JsonXContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.json.JsonXContentGenerator#writeRawField(java.lang.String, java.io.InputStream, java.io.OutputStream)
+     * @see cn.com.rebirth.search.commons.xcontent.json.JsonXContentGenerator#writeRawField(java.lang.String, java.io.InputStream, java.io.OutputStream)
      */
     @Override
     public void writeRawField(String fieldName, InputStream content, OutputStream bos) throws IOException {
@@ -59,7 +59,7 @@ public class SmileXContentGenerator extends JsonXContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.json.JsonXContentGenerator#writeRawField(java.lang.String, byte[], java.io.OutputStream)
+     * @see cn.com.rebirth.search.commons.xcontent.json.JsonXContentGenerator#writeRawField(java.lang.String, byte[], java.io.OutputStream)
      */
     @Override
     public void writeRawField(String fieldName, byte[] content, OutputStream bos) throws IOException {
@@ -75,7 +75,7 @@ public class SmileXContentGenerator extends JsonXContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.json.JsonXContentGenerator#writeRawField(java.lang.String, byte[], int, int, java.io.OutputStream)
+     * @see cn.com.rebirth.search.commons.xcontent.json.JsonXContentGenerator#writeRawField(java.lang.String, byte[], int, int, java.io.OutputStream)
      */
     @Override
     public void writeRawField(String fieldName, byte[] content, int offset, int length, OutputStream bos) throws IOException {

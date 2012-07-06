@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons ConstantBindingBuilderImpl.java 2012-3-29 15:15:20 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons ConstantBindingBuilderImpl.java 2012-7-6 10:23:45 l.xue.nong$$
  */
 
 
@@ -44,7 +44,7 @@ public final class ConstantBindingBuilderImpl<T> extends AbstractBindingBuilder<
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.AnnotatedConstantBindingBuilder#annotatedWith(java.lang.Class)
+	 * @see cn.com.rebirth.search.commons.inject.binder.AnnotatedConstantBindingBuilder#annotatedWith(java.lang.Class)
 	 */
 	public ConstantBindingBuilder annotatedWith(Class<? extends Annotation> annotationType) {
 		annotatedWithInternal(annotationType);
@@ -53,7 +53,7 @@ public final class ConstantBindingBuilderImpl<T> extends AbstractBindingBuilder<
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.AnnotatedConstantBindingBuilder#annotatedWith(java.lang.annotation.Annotation)
+	 * @see cn.com.rebirth.search.commons.inject.binder.AnnotatedConstantBindingBuilder#annotatedWith(java.lang.annotation.Annotation)
 	 */
 	public ConstantBindingBuilder annotatedWith(Annotation annotation) {
 		annotatedWithInternal(annotation);
@@ -62,7 +62,7 @@ public final class ConstantBindingBuilderImpl<T> extends AbstractBindingBuilder<
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.ConstantBindingBuilder#to(java.lang.String)
+	 * @see cn.com.rebirth.search.commons.inject.binder.ConstantBindingBuilder#to(java.lang.String)
 	 */
 	public void to(final String value) {
 		toConstant(String.class, value);
@@ -70,7 +70,7 @@ public final class ConstantBindingBuilderImpl<T> extends AbstractBindingBuilder<
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.ConstantBindingBuilder#to(int)
+	 * @see cn.com.rebirth.search.commons.inject.binder.ConstantBindingBuilder#to(int)
 	 */
 	public void to(final int value) {
 		toConstant(Integer.class, value);
@@ -78,7 +78,7 @@ public final class ConstantBindingBuilderImpl<T> extends AbstractBindingBuilder<
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.ConstantBindingBuilder#to(long)
+	 * @see cn.com.rebirth.search.commons.inject.binder.ConstantBindingBuilder#to(long)
 	 */
 	public void to(final long value) {
 		toConstant(Long.class, value);
@@ -86,7 +86,7 @@ public final class ConstantBindingBuilderImpl<T> extends AbstractBindingBuilder<
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.ConstantBindingBuilder#to(boolean)
+	 * @see cn.com.rebirth.search.commons.inject.binder.ConstantBindingBuilder#to(boolean)
 	 */
 	public void to(final boolean value) {
 		toConstant(Boolean.class, value);
@@ -94,7 +94,7 @@ public final class ConstantBindingBuilderImpl<T> extends AbstractBindingBuilder<
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.ConstantBindingBuilder#to(double)
+	 * @see cn.com.rebirth.search.commons.inject.binder.ConstantBindingBuilder#to(double)
 	 */
 	public void to(final double value) {
 		toConstant(Double.class, value);
@@ -102,7 +102,7 @@ public final class ConstantBindingBuilderImpl<T> extends AbstractBindingBuilder<
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.ConstantBindingBuilder#to(float)
+	 * @see cn.com.rebirth.search.commons.inject.binder.ConstantBindingBuilder#to(float)
 	 */
 	public void to(final float value) {
 		toConstant(Float.class, value);
@@ -110,7 +110,7 @@ public final class ConstantBindingBuilderImpl<T> extends AbstractBindingBuilder<
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.ConstantBindingBuilder#to(short)
+	 * @see cn.com.rebirth.search.commons.inject.binder.ConstantBindingBuilder#to(short)
 	 */
 	public void to(final short value) {
 		toConstant(Short.class, value);
@@ -118,7 +118,7 @@ public final class ConstantBindingBuilderImpl<T> extends AbstractBindingBuilder<
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.ConstantBindingBuilder#to(char)
+	 * @see cn.com.rebirth.search.commons.inject.binder.ConstantBindingBuilder#to(char)
 	 */
 	public void to(final char value) {
 		toConstant(Character.class, value);
@@ -126,7 +126,7 @@ public final class ConstantBindingBuilderImpl<T> extends AbstractBindingBuilder<
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.ConstantBindingBuilder#to(java.lang.Class)
+	 * @see cn.com.rebirth.search.commons.inject.binder.ConstantBindingBuilder#to(java.lang.Class)
 	 */
 	public void to(final Class<?> value) {
 		toConstant(Class.class, value);
@@ -134,7 +134,7 @@ public final class ConstantBindingBuilderImpl<T> extends AbstractBindingBuilder<
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.ConstantBindingBuilder#to(java.lang.Enum)
+	 * @see cn.com.rebirth.search.commons.inject.binder.ConstantBindingBuilder#to(java.lang.Enum)
 	 */
 	public <E extends Enum<E>> void to(final E value) {
 		toConstant(value.getDeclaringClass(), value);

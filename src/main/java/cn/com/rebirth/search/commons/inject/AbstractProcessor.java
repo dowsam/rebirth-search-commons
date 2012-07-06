@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons AbstractProcessor.java 2012-3-29 15:15:14 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons AbstractProcessor.java 2012-7-6 10:23:51 l.xue.nong$$
  */
 
 
@@ -86,7 +86,7 @@ abstract class AbstractProcessor implements ElementVisitor<Boolean> {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.spi.Message)
+     * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.spi.Message)
      */
     public Boolean visit(Message message) {
         return false;
@@ -94,7 +94,7 @@ abstract class AbstractProcessor implements ElementVisitor<Boolean> {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.spi.ScopeBinding)
+     * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.spi.ScopeBinding)
      */
     public Boolean visit(ScopeBinding scopeBinding) {
         return false;
@@ -102,7 +102,7 @@ abstract class AbstractProcessor implements ElementVisitor<Boolean> {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.spi.InjectionRequest)
+     * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.spi.InjectionRequest)
      */
     @SuppressWarnings("rawtypes")
 	public Boolean visit(InjectionRequest injectionRequest) {
@@ -111,7 +111,7 @@ abstract class AbstractProcessor implements ElementVisitor<Boolean> {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.spi.StaticInjectionRequest)
+     * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.spi.StaticInjectionRequest)
      */
     public Boolean visit(StaticInjectionRequest staticInjectionRequest) {
         return false;
@@ -119,7 +119,7 @@ abstract class AbstractProcessor implements ElementVisitor<Boolean> {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.spi.TypeConverterBinding)
+     * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.spi.TypeConverterBinding)
      */
     public Boolean visit(TypeConverterBinding typeConverterBinding) {
         return false;
@@ -127,7 +127,7 @@ abstract class AbstractProcessor implements ElementVisitor<Boolean> {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.Binding)
+     * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.Binding)
      */
     public <T> Boolean visit(Binding<T> binding) {
         return false;
@@ -135,7 +135,7 @@ abstract class AbstractProcessor implements ElementVisitor<Boolean> {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.spi.ProviderLookup)
+     * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.spi.ProviderLookup)
      */
     public <T> Boolean visit(ProviderLookup<T> providerLookup) {
         return false;
@@ -143,7 +143,7 @@ abstract class AbstractProcessor implements ElementVisitor<Boolean> {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.spi.PrivateElements)
+     * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.spi.PrivateElements)
      */
     public Boolean visit(PrivateElements privateElements) {
         return false;
@@ -151,7 +151,7 @@ abstract class AbstractProcessor implements ElementVisitor<Boolean> {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.spi.MembersInjectorLookup)
+     * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.spi.MembersInjectorLookup)
      */
     public <T> Boolean visit(MembersInjectorLookup<T> lookup) {
         return false;
@@ -159,7 +159,7 @@ abstract class AbstractProcessor implements ElementVisitor<Boolean> {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.inject.spi.ElementVisitor#visit(cn.com.summall.search.commons.inject.spi.TypeListenerBinding)
+     * @see cn.com.rebirth.search.commons.inject.spi.ElementVisitor#visit(cn.com.rebirth.search.commons.inject.spi.TypeListenerBinding)
      */
     public Boolean visit(TypeListenerBinding binding) {
         return false;

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons DefaultBindingTargetVisitor.java 2012-3-29 15:15:11 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons DefaultBindingTargetVisitor.java 2012-7-6 10:23:53 l.xue.nong$$
  */
 
 
@@ -31,7 +31,7 @@ public abstract class DefaultBindingTargetVisitor<T, V> implements BindingTarget
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.BindingTargetVisitor#visit(cn.com.summall.search.commons.inject.spi.InstanceBinding)
+	 * @see cn.com.rebirth.search.commons.inject.spi.BindingTargetVisitor#visit(cn.com.rebirth.search.commons.inject.spi.InstanceBinding)
 	 */
 	public V visit(InstanceBinding<? extends T> instanceBinding) {
 		return visitOther(instanceBinding);
@@ -39,7 +39,7 @@ public abstract class DefaultBindingTargetVisitor<T, V> implements BindingTarget
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.BindingTargetVisitor#visit(cn.com.summall.search.commons.inject.spi.ProviderInstanceBinding)
+	 * @see cn.com.rebirth.search.commons.inject.spi.BindingTargetVisitor#visit(cn.com.rebirth.search.commons.inject.spi.ProviderInstanceBinding)
 	 */
 	public V visit(ProviderInstanceBinding<? extends T> providerInstanceBinding) {
 		return visitOther(providerInstanceBinding);
@@ -47,7 +47,7 @@ public abstract class DefaultBindingTargetVisitor<T, V> implements BindingTarget
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.BindingTargetVisitor#visit(cn.com.summall.search.commons.inject.spi.ProviderKeyBinding)
+	 * @see cn.com.rebirth.search.commons.inject.spi.BindingTargetVisitor#visit(cn.com.rebirth.search.commons.inject.spi.ProviderKeyBinding)
 	 */
 	public V visit(ProviderKeyBinding<? extends T> providerKeyBinding) {
 		return visitOther(providerKeyBinding);
@@ -55,7 +55,7 @@ public abstract class DefaultBindingTargetVisitor<T, V> implements BindingTarget
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.BindingTargetVisitor#visit(cn.com.summall.search.commons.inject.spi.LinkedKeyBinding)
+	 * @see cn.com.rebirth.search.commons.inject.spi.BindingTargetVisitor#visit(cn.com.rebirth.search.commons.inject.spi.LinkedKeyBinding)
 	 */
 	public V visit(LinkedKeyBinding<? extends T> linkedKeyBinding) {
 		return visitOther(linkedKeyBinding);
@@ -63,7 +63,7 @@ public abstract class DefaultBindingTargetVisitor<T, V> implements BindingTarget
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.BindingTargetVisitor#visit(cn.com.summall.search.commons.inject.spi.ExposedBinding)
+	 * @see cn.com.rebirth.search.commons.inject.spi.BindingTargetVisitor#visit(cn.com.rebirth.search.commons.inject.spi.ExposedBinding)
 	 */
 	public V visit(ExposedBinding<? extends T> exposedBinding) {
 		return visitOther(exposedBinding);
@@ -71,7 +71,7 @@ public abstract class DefaultBindingTargetVisitor<T, V> implements BindingTarget
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.BindingTargetVisitor#visit(cn.com.summall.search.commons.inject.spi.UntargettedBinding)
+	 * @see cn.com.rebirth.search.commons.inject.spi.BindingTargetVisitor#visit(cn.com.rebirth.search.commons.inject.spi.UntargettedBinding)
 	 */
 	public V visit(UntargettedBinding<? extends T> untargettedBinding) {
 		return visitOther(untargettedBinding);
@@ -79,7 +79,7 @@ public abstract class DefaultBindingTargetVisitor<T, V> implements BindingTarget
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.BindingTargetVisitor#visit(cn.com.summall.search.commons.inject.spi.ConstructorBinding)
+	 * @see cn.com.rebirth.search.commons.inject.spi.BindingTargetVisitor#visit(cn.com.rebirth.search.commons.inject.spi.ConstructorBinding)
 	 */
 	public V visit(ConstructorBinding<? extends T> constructorBinding) {
 		return visitOther(constructorBinding);
@@ -87,7 +87,7 @@ public abstract class DefaultBindingTargetVisitor<T, V> implements BindingTarget
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.BindingTargetVisitor#visit(cn.com.summall.search.commons.inject.spi.ConvertedConstantBinding)
+	 * @see cn.com.rebirth.search.commons.inject.spi.BindingTargetVisitor#visit(cn.com.rebirth.search.commons.inject.spi.ConvertedConstantBinding)
 	 */
 	public V visit(ConvertedConstantBinding<? extends T> convertedConstantBinding) {
 		return visitOther(convertedConstantBinding);
@@ -96,7 +96,7 @@ public abstract class DefaultBindingTargetVisitor<T, V> implements BindingTarget
 	
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.BindingTargetVisitor#visit(cn.com.summall.search.commons.inject.spi.ProviderBinding)
+	 * @see cn.com.rebirth.search.commons.inject.spi.BindingTargetVisitor#visit(cn.com.rebirth.search.commons.inject.spi.ProviderBinding)
 	 */
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public V visit(ProviderBinding<? extends T> providerBinding) {

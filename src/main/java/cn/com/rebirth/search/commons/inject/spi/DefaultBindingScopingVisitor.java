@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons DefaultBindingScopingVisitor.java 2012-3-29 15:15:13 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons DefaultBindingScopingVisitor.java 2012-7-6 10:23:50 l.xue.nong$$
  */
 
 
@@ -31,7 +31,7 @@ public class DefaultBindingScopingVisitor<V> implements BindingScopingVisitor<V>
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.BindingScopingVisitor#visitEagerSingleton()
+	 * @see cn.com.rebirth.search.commons.inject.spi.BindingScopingVisitor#visitEagerSingleton()
 	 */
 	public V visitEagerSingleton() {
 		return visitOther();
@@ -39,7 +39,7 @@ public class DefaultBindingScopingVisitor<V> implements BindingScopingVisitor<V>
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.BindingScopingVisitor#visitScope(cn.com.summall.search.commons.inject.Scope)
+	 * @see cn.com.rebirth.search.commons.inject.spi.BindingScopingVisitor#visitScope(cn.com.rebirth.search.commons.inject.Scope)
 	 */
 	public V visitScope(Scope scope) {
 		return visitOther();
@@ -47,7 +47,7 @@ public class DefaultBindingScopingVisitor<V> implements BindingScopingVisitor<V>
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.BindingScopingVisitor#visitScopeAnnotation(java.lang.Class)
+	 * @see cn.com.rebirth.search.commons.inject.spi.BindingScopingVisitor#visitScopeAnnotation(java.lang.Class)
 	 */
 	public V visitScopeAnnotation(Class<? extends Annotation> scopeAnnotation) {
 		return visitOther();
@@ -55,7 +55,7 @@ public class DefaultBindingScopingVisitor<V> implements BindingScopingVisitor<V>
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.BindingScopingVisitor#visitNoScoping()
+	 * @see cn.com.rebirth.search.commons.inject.spi.BindingScopingVisitor#visitNoScoping()
 	 */
 	public V visitNoScoping() {
 		return visitOther();

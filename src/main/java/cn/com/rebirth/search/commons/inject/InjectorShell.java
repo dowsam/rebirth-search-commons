@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons InjectorShell.java 2012-3-29 15:15:10 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons InjectorShell.java 2012-7-6 10:23:45 l.xue.nong$$
  */
 
 
@@ -299,7 +299,7 @@ class InjectorShell {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.internal.InternalFactory#get(cn.com.summall.search.commons.inject.internal.Errors, cn.com.summall.search.commons.inject.internal.InternalContext, cn.com.summall.search.commons.inject.spi.Dependency)
+		 * @see cn.com.rebirth.search.commons.inject.internal.InternalFactory#get(cn.com.rebirth.search.commons.inject.internal.Errors, cn.com.rebirth.search.commons.inject.internal.InternalContext, cn.com.rebirth.search.commons.inject.spi.Dependency)
 		 */
 		public Injector get(Errors errors, InternalContext context, Dependency<?> dependency) throws ErrorsException {
 			return injector;
@@ -307,7 +307,7 @@ class InjectorShell {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Provider#get()
+		 * @see cn.com.rebirth.search.commons.inject.Provider#get()
 		 */
 		public Injector get() {
 			return injector;
@@ -344,7 +344,7 @@ class InjectorShell {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.internal.InternalFactory#get(cn.com.summall.search.commons.inject.internal.Errors, cn.com.summall.search.commons.inject.internal.InternalContext, cn.com.summall.search.commons.inject.spi.Dependency)
+		 * @see cn.com.rebirth.search.commons.inject.internal.InternalFactory#get(cn.com.rebirth.search.commons.inject.internal.Errors, cn.com.rebirth.search.commons.inject.internal.InternalContext, cn.com.rebirth.search.commons.inject.spi.Dependency)
 		 */
 		public Logger get(Errors errors, InternalContext context, Dependency<?> dependency) {
 			InjectionPoint injectionPoint = dependency.getInjectionPoint();
@@ -354,7 +354,7 @@ class InjectorShell {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Provider#get()
+		 * @see cn.com.rebirth.search.commons.inject.Provider#get()
 		 */
 		public Logger get() {
 			return Logger.getAnonymousLogger();
@@ -393,7 +393,7 @@ class InjectorShell {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Module#configure(cn.com.summall.search.commons.inject.Binder)
+		 * @see cn.com.rebirth.search.commons.inject.Module#configure(cn.com.rebirth.search.commons.inject.Binder)
 		 */
 		public void configure(Binder binder) {
 			binder = binder.withSource(SourceProvider.UNKNOWN_SOURCE);

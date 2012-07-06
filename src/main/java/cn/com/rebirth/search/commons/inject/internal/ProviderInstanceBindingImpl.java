@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons ProviderInstanceBindingImpl.java 2012-3-29 15:15:14 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons ProviderInstanceBindingImpl.java 2012-7-6 10:23:49 l.xue.nong$$
  */
 
 
@@ -76,7 +76,7 @@ public final class ProviderInstanceBindingImpl<T> extends BindingImpl<T> impleme
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Binding#acceptTargetVisitor(cn.com.summall.search.commons.inject.spi.BindingTargetVisitor)
+	 * @see cn.com.rebirth.search.commons.inject.Binding#acceptTargetVisitor(cn.com.rebirth.search.commons.inject.spi.BindingTargetVisitor)
 	 */
 	public <V> V acceptTargetVisitor(BindingTargetVisitor<? super T, V> visitor) {
 		return visitor.visit(this);
@@ -84,7 +84,7 @@ public final class ProviderInstanceBindingImpl<T> extends BindingImpl<T> impleme
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.ProviderInstanceBinding#getProviderInstance()
+	 * @see cn.com.rebirth.search.commons.inject.spi.ProviderInstanceBinding#getProviderInstance()
 	 */
 	public Provider<? extends T> getProviderInstance() {
 		return providerInstance;
@@ -92,7 +92,7 @@ public final class ProviderInstanceBindingImpl<T> extends BindingImpl<T> impleme
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.ProviderInstanceBinding#getInjectionPoints()
+	 * @see cn.com.rebirth.search.commons.inject.spi.ProviderInstanceBinding#getInjectionPoints()
 	 */
 	public Set<InjectionPoint> getInjectionPoints() {
 		return injectionPoints;
@@ -100,7 +100,7 @@ public final class ProviderInstanceBindingImpl<T> extends BindingImpl<T> impleme
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.HasDependencies#getDependencies()
+	 * @see cn.com.rebirth.search.commons.inject.spi.HasDependencies#getDependencies()
 	 */
 	public Set<Dependency<?>> getDependencies() {
 		return providerInstance instanceof HasDependencies ? ImmutableSet.copyOf(((HasDependencies) providerInstance)
@@ -109,7 +109,7 @@ public final class ProviderInstanceBindingImpl<T> extends BindingImpl<T> impleme
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.internal.BindingImpl#withScoping(cn.com.summall.search.commons.inject.internal.Scoping)
+	 * @see cn.com.rebirth.search.commons.inject.internal.BindingImpl#withScoping(cn.com.rebirth.search.commons.inject.internal.Scoping)
 	 */
 	public BindingImpl<T> withScoping(Scoping scoping) {
 		return new ProviderInstanceBindingImpl<T>(getSource(), getKey(), scoping, injectionPoints, providerInstance);
@@ -117,7 +117,7 @@ public final class ProviderInstanceBindingImpl<T> extends BindingImpl<T> impleme
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.internal.BindingImpl#withKey(cn.com.summall.search.commons.inject.Key)
+	 * @see cn.com.rebirth.search.commons.inject.internal.BindingImpl#withKey(cn.com.rebirth.search.commons.inject.Key)
 	 */
 	public BindingImpl<T> withKey(Key<T> key) {
 		return new ProviderInstanceBindingImpl<T>(getSource(), key, getScoping(), injectionPoints, providerInstance);
@@ -125,7 +125,7 @@ public final class ProviderInstanceBindingImpl<T> extends BindingImpl<T> impleme
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.Element#applyTo(cn.com.summall.search.commons.inject.Binder)
+	 * @see cn.com.rebirth.search.commons.inject.spi.Element#applyTo(cn.com.rebirth.search.commons.inject.Binder)
 	 */
 	public void applyTo(Binder binder) {
 		getScoping().applyTo(binder.withSource(getSource()).bind(getKey()).toProvider(getProviderInstance()));
@@ -133,7 +133,7 @@ public final class ProviderInstanceBindingImpl<T> extends BindingImpl<T> impleme
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.internal.BindingImpl#toString()
+	 * @see cn.com.rebirth.search.commons.inject.internal.BindingImpl#toString()
 	 */
 	@Override
 	public String toString() {

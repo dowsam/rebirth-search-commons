@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons JsonXContentGenerator.java 2012-3-29 15:15:15 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons JsonXContentGenerator.java 2012-7-6 10:23:43 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.xcontent.json;
 
@@ -41,7 +41,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#contentType()
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#contentType()
      */
     @Override
     public XContentType contentType() {
@@ -50,7 +50,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#usePrettyPrint()
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#usePrettyPrint()
      */
     @Override
     public void usePrettyPrint() {
@@ -59,7 +59,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeStartArray()
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeStartArray()
      */
     @Override
     public void writeStartArray() throws IOException {
@@ -68,7 +68,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeEndArray()
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeEndArray()
      */
     @Override
     public void writeEndArray() throws IOException {
@@ -77,7 +77,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeStartObject()
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeStartObject()
      */
     @Override
     public void writeStartObject() throws IOException {
@@ -86,7 +86,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeEndObject()
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeEndObject()
      */
     @Override
     public void writeEndObject() throws IOException {
@@ -95,7 +95,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeFieldName(java.lang.String)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeFieldName(java.lang.String)
      */
     @Override
     public void writeFieldName(String name) throws IOException {
@@ -104,7 +104,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeFieldName(cn.com.summall.search.commons.xcontent.XContentString)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeFieldName(cn.com.rebirth.search.commons.xcontent.XContentString)
      */
     @Override
     public void writeFieldName(XContentString name) throws IOException {
@@ -113,7 +113,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeString(java.lang.String)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeString(java.lang.String)
      */
     @Override
     public void writeString(String text) throws IOException {
@@ -122,7 +122,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeString(char[], int, int)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeString(char[], int, int)
      */
     @Override
     public void writeString(char[] text, int offset, int len) throws IOException {
@@ -131,7 +131,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeBinary(byte[], int, int)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeBinary(byte[], int, int)
      */
     @Override
     public void writeBinary(byte[] data, int offset, int len) throws IOException {
@@ -140,7 +140,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeBinary(byte[])
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeBinary(byte[])
      */
     @Override
     public void writeBinary(byte[] data) throws IOException {
@@ -149,7 +149,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeNumber(int)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeNumber(int)
      */
     @Override
     public void writeNumber(int v) throws IOException {
@@ -158,7 +158,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeNumber(long)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeNumber(long)
      */
     @Override
     public void writeNumber(long v) throws IOException {
@@ -167,7 +167,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeNumber(double)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeNumber(double)
      */
     @Override
     public void writeNumber(double d) throws IOException {
@@ -176,7 +176,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeNumber(float)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeNumber(float)
      */
     @Override
     public void writeNumber(float f) throws IOException {
@@ -185,7 +185,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeBoolean(boolean)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeBoolean(boolean)
      */
     @Override
     public void writeBoolean(boolean state) throws IOException {
@@ -194,7 +194,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeNull()
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeNull()
      */
     @Override
     public void writeNull() throws IOException {
@@ -203,7 +203,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeStringField(java.lang.String, java.lang.String)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeStringField(java.lang.String, java.lang.String)
      */
     @Override
     public void writeStringField(String fieldName, String value) throws IOException {
@@ -212,7 +212,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeStringField(cn.com.summall.search.commons.xcontent.XContentString, java.lang.String)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeStringField(cn.com.rebirth.search.commons.xcontent.XContentString, java.lang.String)
      */
     @Override
     public void writeStringField(XContentString fieldName, String value) throws IOException {
@@ -222,7 +222,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeBooleanField(java.lang.String, boolean)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeBooleanField(java.lang.String, boolean)
      */
     @Override
     public void writeBooleanField(String fieldName, boolean value) throws IOException {
@@ -231,7 +231,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeBooleanField(cn.com.summall.search.commons.xcontent.XContentString, boolean)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeBooleanField(cn.com.rebirth.search.commons.xcontent.XContentString, boolean)
      */
     @Override
     public void writeBooleanField(XContentString fieldName, boolean value) throws IOException {
@@ -241,7 +241,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeNullField(java.lang.String)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeNullField(java.lang.String)
      */
     @Override
     public void writeNullField(String fieldName) throws IOException {
@@ -250,7 +250,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeNullField(cn.com.summall.search.commons.xcontent.XContentString)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeNullField(cn.com.rebirth.search.commons.xcontent.XContentString)
      */
     @Override
     public void writeNullField(XContentString fieldName) throws IOException {
@@ -260,7 +260,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeNumberField(java.lang.String, int)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeNumberField(java.lang.String, int)
      */
     @Override
     public void writeNumberField(String fieldName, int value) throws IOException {
@@ -269,7 +269,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeNumberField(cn.com.summall.search.commons.xcontent.XContentString, int)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeNumberField(cn.com.rebirth.search.commons.xcontent.XContentString, int)
      */
     @Override
     public void writeNumberField(XContentString fieldName, int value) throws IOException {
@@ -279,7 +279,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeNumberField(java.lang.String, long)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeNumberField(java.lang.String, long)
      */
     @Override
     public void writeNumberField(String fieldName, long value) throws IOException {
@@ -288,7 +288,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeNumberField(cn.com.summall.search.commons.xcontent.XContentString, long)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeNumberField(cn.com.rebirth.search.commons.xcontent.XContentString, long)
      */
     @Override
     public void writeNumberField(XContentString fieldName, long value) throws IOException {
@@ -298,7 +298,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeNumberField(java.lang.String, double)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeNumberField(java.lang.String, double)
      */
     @Override
     public void writeNumberField(String fieldName, double value) throws IOException {
@@ -307,7 +307,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeNumberField(cn.com.summall.search.commons.xcontent.XContentString, double)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeNumberField(cn.com.rebirth.search.commons.xcontent.XContentString, double)
      */
     @Override
     public void writeNumberField(XContentString fieldName, double value) throws IOException {
@@ -317,7 +317,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeNumberField(java.lang.String, float)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeNumberField(java.lang.String, float)
      */
     @Override
     public void writeNumberField(String fieldName, float value) throws IOException {
@@ -326,7 +326,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeNumberField(cn.com.summall.search.commons.xcontent.XContentString, float)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeNumberField(cn.com.rebirth.search.commons.xcontent.XContentString, float)
      */
     @Override
     public void writeNumberField(XContentString fieldName, float value) throws IOException {
@@ -336,7 +336,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeBinaryField(java.lang.String, byte[])
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeBinaryField(java.lang.String, byte[])
      */
     @Override
     public void writeBinaryField(String fieldName, byte[] data) throws IOException {
@@ -345,7 +345,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeBinaryField(cn.com.summall.search.commons.xcontent.XContentString, byte[])
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeBinaryField(cn.com.rebirth.search.commons.xcontent.XContentString, byte[])
      */
     @Override
     public void writeBinaryField(XContentString fieldName, byte[] value) throws IOException {
@@ -355,7 +355,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeArrayFieldStart(java.lang.String)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeArrayFieldStart(java.lang.String)
      */
     @Override
     public void writeArrayFieldStart(String fieldName) throws IOException {
@@ -364,7 +364,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeArrayFieldStart(cn.com.summall.search.commons.xcontent.XContentString)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeArrayFieldStart(cn.com.rebirth.search.commons.xcontent.XContentString)
      */
     @Override
     public void writeArrayFieldStart(XContentString fieldName) throws IOException {
@@ -374,7 +374,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeObjectFieldStart(java.lang.String)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeObjectFieldStart(java.lang.String)
      */
     @Override
     public void writeObjectFieldStart(String fieldName) throws IOException {
@@ -383,7 +383,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeObjectFieldStart(cn.com.summall.search.commons.xcontent.XContentString)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeObjectFieldStart(cn.com.rebirth.search.commons.xcontent.XContentString)
      */
     @Override
     public void writeObjectFieldStart(XContentString fieldName) throws IOException {
@@ -393,7 +393,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeRawField(java.lang.String, byte[], java.io.OutputStream)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeRawField(java.lang.String, byte[], java.io.OutputStream)
      */
     @Override
     public void writeRawField(String fieldName, byte[] content, OutputStream bos) throws IOException {
@@ -406,7 +406,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeRawField(java.lang.String, byte[], int, int, java.io.OutputStream)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeRawField(java.lang.String, byte[], int, int, java.io.OutputStream)
      */
     @Override
     public void writeRawField(String fieldName, byte[] content, int offset, int length, OutputStream bos) throws IOException {
@@ -419,7 +419,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#writeRawField(java.lang.String, java.io.InputStream, java.io.OutputStream)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#writeRawField(java.lang.String, java.io.InputStream, java.io.OutputStream)
      */
     @Override
     public void writeRawField(String fieldName, InputStream content, OutputStream bos) throws IOException {
@@ -432,7 +432,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#copyCurrentStructure(cn.com.summall.search.commons.xcontent.XContentParser)
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#copyCurrentStructure(cn.com.rebirth.search.commons.xcontent.XContentParser)
      */
     @Override
     public void copyCurrentStructure(XContentParser parser) throws IOException {
@@ -449,7 +449,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#flush()
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#flush()
      */
     @Override
     public void flush() throws IOException {
@@ -458,7 +458,7 @@ public class JsonXContentGenerator implements XContentGenerator {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContentGenerator#close()
+     * @see cn.com.rebirth.search.commons.xcontent.XContentGenerator#close()
      */
     @Override
     public void close() throws IOException {

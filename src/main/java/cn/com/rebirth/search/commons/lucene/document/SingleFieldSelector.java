@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons SingleFieldSelector.java 2012-3-29 15:15:17 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons SingleFieldSelector.java 2012-7-6 10:23:49 l.xue.nong$$
  */
 
 
@@ -63,7 +63,7 @@ public class SingleFieldSelector implements ResetFieldSelector {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.lucene.document.ResetFieldSelector#reset()
+	 * @see cn.com.rebirth.search.commons.lucene.document.ResetFieldSelector#reset()
 	 */
 	@Override
 	public void reset() {

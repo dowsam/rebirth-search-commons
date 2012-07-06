@@ -1,10 +1,10 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons CloseableComponent.java 2012-3-29 15:15:14 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons CloseableComponent.java 2012-7-6 10:23:51 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.component;
 
-import cn.com.rebirth.commons.exception.RestartException;
+import cn.com.rebirth.commons.exception.RebirthException;
 
 
 
@@ -19,7 +19,7 @@ public interface CloseableComponent {
 	/**
 	 * Close.
 	 *
-	 * @throws SumMallSearchException the sum mall search exception
+	 * @throws rebirthException the rebirth exception
 	 */
-	void close() throws RestartException;
+	void close() throws RebirthException;
 }

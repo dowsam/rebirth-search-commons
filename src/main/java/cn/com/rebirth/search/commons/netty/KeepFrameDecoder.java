@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons KeepFrameDecoder.java 2012-3-29 15:15:09 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons KeepFrameDecoder.java 2012-7-6 10:23:52 l.xue.nong$$
  */
 
 package cn.com.rebirth.search.commons.netty;

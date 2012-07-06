@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons ConvertedConstantBinding.java 2012-3-29 15:15:07 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons ConvertedConstantBinding.java 2012-7-6 10:23:45 l.xue.nong$$
  */
 
 
@@ -38,7 +38,7 @@ public interface ConvertedConstantBinding<T> extends Binding<T>, HasDependencies
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.HasDependencies#getDependencies()
+	 * @see cn.com.rebirth.search.commons.inject.spi.HasDependencies#getDependencies()
 	 */
 	Set<Dependency<?>> getDependencies();
 }

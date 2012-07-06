@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons InjectionPoint.java 2012-3-29 15:15:18 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons InjectionPoint.java 2012-7-6 10:23:48 l.xue.nong$$
  */
 
 
@@ -463,7 +463,7 @@ public final class InjectionPoint {
 	private interface Factory<M extends Member & AnnotatedElement> {
 
 		
-		/** The FIELDS. */
+		/** The fields. */
 		Factory<Field> FIELDS = new Factory<Field>() {
 			public Field[] getMembers(Class<?> type) {
 				return type.getDeclaredFields();
@@ -475,7 +475,7 @@ public final class InjectionPoint {
 		};
 
 		
-		/** The METHODS. */
+		/** The methods. */
 		Factory<Method> METHODS = new Factory<Method>() {
 			public Method[] getMembers(Class<?> type) {
 				return type.getDeclaredMethods();

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons MapBinder.java 2012-3-29 15:15:07 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons MapBinder.java 2012-7-6 10:23:49 l.xue.nong$$
  */
 
 package cn.com.rebirth.search.commons.inject.multibindings;
@@ -284,7 +284,7 @@ public abstract class MapBinder<K, V> {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.multibindings.MapBinder#addBinding(java.lang.Object)
+		 * @see cn.com.rebirth.search.commons.inject.multibindings.MapBinder#addBinding(java.lang.Object)
 		 */
 		@Override
 		public LinkedBindingBuilder<V> addBinding(K key) {
@@ -298,7 +298,7 @@ public abstract class MapBinder<K, V> {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Module#configure(cn.com.summall.search.commons.inject.Binder)
+		 * @see cn.com.rebirth.search.commons.inject.Module#configure(cn.com.rebirth.search.commons.inject.Binder)
 		 */
 		public void configure(Binder binder) {
 			Multibinder.checkConfiguration(!isInitialized(), "MapBinder was already initialized");

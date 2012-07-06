@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons ImmutableSettings.java 2012-3-29 15:15:20 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons ImmutableSettings.java 2012-7-6 10:23:47 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.settings;
 
@@ -28,7 +28,7 @@ import cn.com.rebirth.commons.unit.ByteSizeValue;
 import cn.com.rebirth.commons.unit.SizeValue;
 import cn.com.rebirth.commons.unit.TimeValue;
 import cn.com.rebirth.commons.utils.TemplateMatcher;
-import cn.com.rebirth.search.RestartSearchCommonsVersion;
+import cn.com.rebirth.search.RebirthSearchCommonsVersion;
 import cn.com.rebirth.search.commons.Classes;
 import cn.com.rebirth.search.commons.io.Streams;
 import cn.com.rebirth.search.commons.settings.loader.SettingsLoader;
@@ -67,7 +67,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getClassLoader()
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getClassLoader()
 	 */
 	@Override
 	public ClassLoader getClassLoader() {
@@ -76,7 +76,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getClassLoaderIfSet()
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getClassLoaderIfSet()
 	 */
 	@Override
 	public ClassLoader getClassLoaderIfSet() {
@@ -85,7 +85,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getAsMap()
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getAsMap()
 	 */
 	@Override
 	public ImmutableMap<String, String> getAsMap() {
@@ -94,12 +94,12 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getComponentSettings(java.lang.Class)
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getComponentSettings(java.lang.Class)
 	 */
 	@Override
 	public Settings getComponentSettings(Class<?> component) {
-		if (component.getName().startsWith("cn.com.summall")) {
-			return getComponentSettings("cn.com.summall", component);
+		if (component.getName().startsWith("cn.com.rebirth")) {
+			return getComponentSettings("cn.com.rebirth", component);
 		}
 		
 		return getComponentSettings(component.getName().substring(0, component.getName().indexOf('.')), component);
@@ -107,7 +107,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getComponentSettings(java.lang.String, java.lang.Class)
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getComponentSettings(java.lang.String, java.lang.Class)
 	 */
 	@Override
 	public Settings getComponentSettings(String prefix, Class<?> component) {
@@ -122,7 +122,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getByPrefix(java.lang.String)
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getByPrefix(java.lang.String)
 	 */
 	@Override
 	public Settings getByPrefix(String prefix) {
@@ -142,7 +142,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#get(java.lang.String)
+	 * @see cn.com.rebirth.search.commons.settings.Settings#get(java.lang.String)
 	 */
 	@Override
 	public String get(String setting) {
@@ -156,7 +156,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#get(java.lang.String, java.lang.String)
+	 * @see cn.com.rebirth.search.commons.settings.Settings#get(java.lang.String, java.lang.String)
 	 */
 	@Override
 	public String get(String setting, String defaultValue) {
@@ -166,7 +166,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getAsFloat(java.lang.String, java.lang.Float)
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getAsFloat(java.lang.String, java.lang.Float)
 	 */
 	@Override
 	public Float getAsFloat(String setting, Float defaultValue) {
@@ -184,7 +184,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getAsDouble(java.lang.String, java.lang.Double)
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getAsDouble(java.lang.String, java.lang.Double)
 	 */
 	@Override
 	public Double getAsDouble(String setting, Double defaultValue) {
@@ -202,7 +202,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getAsInt(java.lang.String, java.lang.Integer)
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getAsInt(java.lang.String, java.lang.Integer)
 	 */
 	@Override
 	public Integer getAsInt(String setting, Integer defaultValue) {
@@ -219,7 +219,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getAsLong(java.lang.String, java.lang.Long)
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getAsLong(java.lang.String, java.lang.Long)
 	 */
 	@Override
 	public Long getAsLong(String setting, Long defaultValue) {
@@ -236,7 +236,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getAsBoolean(java.lang.String, java.lang.Boolean)
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getAsBoolean(java.lang.String, java.lang.Boolean)
 	 */
 	@Override
 	public Boolean getAsBoolean(String setting, Boolean defaultValue) {
@@ -245,7 +245,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getAsTime(java.lang.String, cn.com.summall.search.commons.unit.TimeValue)
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getAsTime(java.lang.String, cn.com.rebirth.search.commons.unit.TimeValue)
 	 */
 	@Override
 	public TimeValue getAsTime(String setting, TimeValue defaultValue) {
@@ -254,7 +254,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getAsBytesSize(java.lang.String, cn.com.summall.search.commons.unit.ByteSizeValue)
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getAsBytesSize(java.lang.String, cn.com.rebirth.search.commons.unit.ByteSizeValue)
 	 */
 	@Override
 	public ByteSizeValue getAsBytesSize(String setting, ByteSizeValue defaultValue) throws SettingsException {
@@ -263,7 +263,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getAsSize(java.lang.String, cn.com.summall.search.commons.unit.SizeValue)
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getAsSize(java.lang.String, cn.com.rebirth.search.commons.unit.SizeValue)
 	 */
 	@Override
 	public SizeValue getAsSize(String setting, SizeValue defaultValue) throws SettingsException {
@@ -272,7 +272,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getAsClass(java.lang.String, java.lang.Class)
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getAsClass(java.lang.String, java.lang.Class)
 	 */
 	@SuppressWarnings({ "unchecked" })
 	@Override
@@ -292,7 +292,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getAsClass(java.lang.String, java.lang.Class, java.lang.String, java.lang.String)
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getAsClass(java.lang.String, java.lang.Class, java.lang.String, java.lang.String)
 	 */
 	@SuppressWarnings({ "unchecked" })
 	@Override
@@ -330,7 +330,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getAsArray(java.lang.String)
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getAsArray(java.lang.String)
 	 */
 	@Override
 	public String[] getAsArray(String settingPrefix) throws SettingsException {
@@ -339,7 +339,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getAsArray(java.lang.String, java.lang.String[])
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getAsArray(java.lang.String, java.lang.String[])
 	 */
 	@Override
 	public String[] getAsArray(String settingPrefix, String[] defaultArray) throws SettingsException {
@@ -370,7 +370,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getGroups(java.lang.String)
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getGroups(java.lang.String)
 	 */
 	@Override
 	public Map<String, Settings> getGroups(String settingPrefix) throws SettingsException {
@@ -408,7 +408,7 @@ public class ImmutableSettings implements Settings {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.settings.Settings#getAsVersion(java.lang.String, cn.com.summall.commons.Version)
+	 * @see cn.com.rebirth.search.commons.settings.Settings#getAsVersion(java.lang.String, cn.com.rebirth.commons.Version)
 	 */
 	@Override
 	public Version getAsVersion(String setting, Version defaultVersion) throws SettingsException {
@@ -417,7 +417,7 @@ public class ImmutableSettings implements Settings {
 			return defaultVersion;
 		}
 		try {
-			return new RestartSearchCommonsVersion();
+			return new RebirthSearchCommonsVersion();
 		} catch (Exception e) {
 			throw new SettingsException(
 					"Failed to parse version setting [" + setting + "] with value [" + sValue + "]", e);
@@ -921,7 +921,7 @@ public class ImmutableSettings implements Settings {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.settings.Settings.Builder#build()
+		 * @see cn.com.rebirth.search.commons.settings.Settings.Builder#build()
 		 */
 		public Settings build() {
 			return new ImmutableSettings(Collections.unmodifiableMap(map), classLoader);

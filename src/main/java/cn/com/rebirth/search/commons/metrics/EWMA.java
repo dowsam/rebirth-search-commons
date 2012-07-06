@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons EWMA.java 2012-3-29 15:15:14 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons EWMA.java 2012-7-6 10:23:51 l.xue.nong$$
  */
 
 
@@ -50,7 +50,7 @@ public class EWMA {
 	/**
 	 * One minute ewma.
 	 *
-	 * @return the eWMA
+	 * @return the ewma
 	 */
 	public static EWMA oneMinuteEWMA() {
 		return new EWMA(M1_ALPHA, 5, TimeUnit.SECONDS);
@@ -60,7 +60,7 @@ public class EWMA {
 	/**
 	 * Five minute ewma.
 	 *
-	 * @return the eWMA
+	 * @return the ewma
 	 */
 	public static EWMA fiveMinuteEWMA() {
 		return new EWMA(M5_ALPHA, 5, TimeUnit.SECONDS);
@@ -70,7 +70,7 @@ public class EWMA {
 	/**
 	 * Fifteen minute ewma.
 	 *
-	 * @return the eWMA
+	 * @return the ewma
 	 */
 	public static EWMA fifteenMinuteEWMA() {
 		return new EWMA(M15_ALPHA, 5, TimeUnit.SECONDS);
@@ -78,7 +78,7 @@ public class EWMA {
 
 	
 	/**
-	 * Instantiates a new eWMA.
+	 * Instantiates a new ewma.
 	 *
 	 * @param alpha the alpha
 	 * @param interval the interval

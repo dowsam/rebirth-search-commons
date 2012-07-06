@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons ProviderMethodsModule.java 2012-3-29 15:15:14 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons ProviderMethodsModule.java 2012-7-6 10:23:42 l.xue.nong$$
  */
 
 
@@ -82,7 +82,7 @@ public final class ProviderMethodsModule implements Module {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Module#configure(cn.com.summall.search.commons.inject.Binder)
+	 * @see cn.com.rebirth.search.commons.inject.Module#configure(cn.com.rebirth.search.commons.inject.Binder)
 	 */
 	public synchronized void configure(Binder binder) {
 		for (ProviderMethod<?> providerMethod : getProviderMethods(binder)) {

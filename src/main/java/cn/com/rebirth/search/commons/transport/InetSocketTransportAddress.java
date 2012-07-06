@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons InetSocketTransportAddress.java 2012-3-29 15:15:10 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons InetSocketTransportAddress.java 2012-7-6 10:23:42 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.transport;
 
@@ -85,7 +85,7 @@ public class InetSocketTransportAddress implements TransportAddress {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.transport.TransportAddress#uniqueAddressTypeId()
+	 * @see cn.com.rebirth.search.commons.transport.TransportAddress#uniqueAddressTypeId()
 	 */
 	@Override
 	public short uniqueAddressTypeId() {
@@ -94,7 +94,7 @@ public class InetSocketTransportAddress implements TransportAddress {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.transport.TransportAddress#match(java.lang.String)
+	 * @see cn.com.rebirth.search.commons.transport.TransportAddress#match(java.lang.String)
 	 */
 	@Override
 	public boolean match(String otherAddress) {
@@ -116,7 +116,7 @@ public class InetSocketTransportAddress implements TransportAddress {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.transport.TransportAddress#sameHost(cn.com.summall.search.commons.transport.TransportAddress)
+	 * @see cn.com.rebirth.search.commons.transport.TransportAddress#sameHost(cn.com.rebirth.search.commons.transport.TransportAddress)
 	 */
 	@Override
 	public boolean sameHost(TransportAddress other) {
@@ -144,7 +144,7 @@ public class InetSocketTransportAddress implements TransportAddress {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.Streamable#readFrom(cn.com.summall.search.commons.io.stream.StreamInput)
+	 * @see cn.com.rebirth.search.commons.io.stream.Streamable#readFrom(cn.com.rebirth.search.commons.io.stream.StreamInput)
 	 */
 	@Override
 	public void readFrom(StreamInput in) throws IOException {
@@ -168,7 +168,7 @@ public class InetSocketTransportAddress implements TransportAddress {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.Streamable#writeTo(cn.com.summall.search.commons.io.stream.StreamOutput)
+	 * @see cn.com.rebirth.search.commons.io.stream.Streamable#writeTo(cn.com.rebirth.search.commons.io.stream.StreamOutput)
 	 */
 	@Override
 	public void writeTo(StreamOutput out) throws IOException {

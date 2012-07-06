@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons MatchNoDocsQuery.java 2012-3-29 15:15:18 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons MatchNoDocsQuery.java 2012-7-6 10:23:47 l.xue.nong$$
  */
 
 
@@ -33,7 +33,7 @@ public final class MatchNoDocsQuery extends Query {
 	private static final long serialVersionUID = -8787328597468328504L;
 
 	
-	/** The INSTANCE. */
+	/** The instance. */
 	public static MatchNoDocsQuery INSTANCE = new MatchNoDocsQuery();
 
 	

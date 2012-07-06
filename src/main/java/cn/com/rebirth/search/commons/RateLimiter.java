@@ -1,12 +1,12 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons RateLimiter.java 2012-3-29 15:15:11 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons RateLimiter.java 2012-7-6 10:23:54 l.xue.nong$$
  */
 
 
 package cn.com.rebirth.search.commons;
 
-import cn.com.rebirth.commons.exception.RestartInterruptedException;
+import cn.com.rebirth.commons.exception.RebirthInterruptedException;
 
 
 /**
@@ -62,7 +62,7 @@ public class RateLimiter {
 				try {
 					Thread.sleep((int) (pauseNS / 1000000), (int) (pauseNS % 1000000));
 				} catch (InterruptedException ie) {
-					throw new RestartInterruptedException("interrupted while rate limiting", ie);
+					throw new RebirthInterruptedException("interrupted while rate limiting", ie);
 				}
 				curNS = System.nanoTime();
 				continue;

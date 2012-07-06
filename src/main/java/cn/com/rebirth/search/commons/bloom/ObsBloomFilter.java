@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons ObsBloomFilter.java 2012-3-29 15:15:15 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons ObsBloomFilter.java 2012-7-6 10:23:50 l.xue.nong$$
  */
 
 
@@ -146,9 +146,6 @@ public class ObsBloomFilter implements BloomFilter {
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.bloom.BloomFilter#add(byte[], int, int)
-	 */
 	@Override
 	public void add(byte[] key, int offset, int length) {
 		for (long bucketIndex : getHashBuckets(key, offset, length)) {
@@ -157,9 +154,6 @@ public class ObsBloomFilter implements BloomFilter {
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.bloom.BloomFilter#add(java.nio.ByteBuffer)
-	 */
 	public void add(ByteBuffer key) {
 		for (long bucketIndex : getHashBuckets(key)) {
 			bitset.fastSet(bucketIndex);
@@ -167,9 +161,6 @@ public class ObsBloomFilter implements BloomFilter {
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.bloom.BloomFilter#isPresent(byte[], int, int)
-	 */
 	@Override
 	public boolean isPresent(byte[] key, int offset, int length) {
 		for (long bucketIndex : getHashBuckets(key, offset, length)) {
@@ -181,9 +172,6 @@ public class ObsBloomFilter implements BloomFilter {
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.bloom.BloomFilter#isPresent(java.nio.ByteBuffer)
-	 */
 	public boolean isPresent(ByteBuffer key) {
 		for (long bucketIndex : getHashBuckets(key)) {
 			if (!bitset.fastGet(bucketIndex)) {
@@ -202,9 +190,6 @@ public class ObsBloomFilter implements BloomFilter {
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.bloom.BloomFilter#sizeInBytes()
-	 */
 	@Override
 	public long sizeInBytes() {
 		return bitset.getBits().length * RamUsage.NUM_BYTES_LONG + RamUsage.NUM_BYTES_ARRAY_HEADER

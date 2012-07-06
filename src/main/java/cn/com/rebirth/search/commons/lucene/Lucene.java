@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons Lucene.java 2012-3-29 15:15:13 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons Lucene.java 2012-7-6 10:23:45 l.xue.nong$$
  */
 
 
@@ -78,7 +78,7 @@ public class Lucene {
 	public static final int NO_DOC = -1;
 
 	
-	/** The EMPT y_ scor e_ docs. */
+	/** The empty score docs. */
 	public static ScoreDoc[] EMPTY_SCORE_DOCS = new ScoreDoc[0];
 
 	

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons InjectionRequestProcessor.java 2012-3-29 15:15:13 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons InjectionRequestProcessor.java 2012-7-6 10:23:43 l.xue.nong$$
  */
 
 
@@ -49,7 +49,7 @@ class InjectionRequestProcessor extends AbstractProcessor {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.AbstractProcessor#visit(cn.com.summall.search.commons.inject.spi.StaticInjectionRequest)
+	 * @see cn.com.rebirth.search.commons.inject.AbstractProcessor#visit(cn.com.rebirth.search.commons.inject.spi.StaticInjectionRequest)
 	 */
 	@Override
 	public Boolean visit(StaticInjectionRequest request) {
@@ -59,7 +59,7 @@ class InjectionRequestProcessor extends AbstractProcessor {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.AbstractProcessor#visit(cn.com.summall.search.commons.inject.spi.InjectionRequest)
+	 * @see cn.com.rebirth.search.commons.inject.AbstractProcessor#visit(cn.com.rebirth.search.commons.inject.spi.InjectionRequest)
 	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@Override

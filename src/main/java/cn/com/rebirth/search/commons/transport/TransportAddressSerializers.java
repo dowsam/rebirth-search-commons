@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons TransportAddressSerializers.java 2012-3-29 15:15:13 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons TransportAddressSerializers.java 2012-7-6 10:23:49 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.transport;
 
@@ -11,7 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import cn.com.rebirth.commons.collect.MapBuilder;
-import cn.com.rebirth.commons.exception.RestartIllegalStateException;
+import cn.com.rebirth.commons.exception.RebirthIllegalStateException;
 import cn.com.rebirth.commons.io.stream.StreamInput;
 import cn.com.rebirth.commons.io.stream.StreamOutput;
 
@@ -52,7 +52,7 @@ public abstract class TransportAddressSerializers {
 	 */
 	public static synchronized void addAddressType(TransportAddress address) throws Exception {
 		if (addressConstructors.containsKey(address.uniqueAddressTypeId())) {
-			throw new RestartIllegalStateException("Address [" + address.uniqueAddressTypeId()
+			throw new RebirthIllegalStateException("Address [" + address.uniqueAddressTypeId()
 					+ "] already bound");
 		}
 		Constructor<? extends TransportAddress> constructor = address.getClass().getDeclaredConstructor();

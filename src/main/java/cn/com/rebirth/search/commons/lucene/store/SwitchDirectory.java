@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons SwitchDirectory.java 2012-3-29 15:15:12 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons SwitchDirectory.java 2012-7-6 10:23:54 l.xue.nong$$
  */
 
 
@@ -241,7 +241,7 @@ public class SwitchDirectory extends Directory implements ForceSyncDirectory {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.index.store.support.ForceSyncDirectory#forceSync(java.lang.String)
+	 * @see cn.com.rebirth.search.index.store.support.ForceSyncDirectory#forceSync(java.lang.String)
 	 */
 	@SuppressWarnings("deprecation")
 	@Override

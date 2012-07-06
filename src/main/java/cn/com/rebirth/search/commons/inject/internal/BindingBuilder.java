@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons BindingBuilder.java 2012-3-29 15:15:20 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons BindingBuilder.java 2012-7-6 10:23:44 l.xue.nong$$
  */
 
 package cn.com.rebirth.search.commons.inject.internal;
@@ -46,43 +46,28 @@ public class BindingBuilder<T> extends AbstractBindingBuilder<T> implements Anno
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.AnnotatedBindingBuilder#annotatedWith(java.lang.Class)
-	 */
 	public BindingBuilder<T> annotatedWith(Class<? extends Annotation> annotationType) {
 		annotatedWithInternal(annotationType);
 		return this;
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.AnnotatedBindingBuilder#annotatedWith(java.lang.annotation.Annotation)
-	 */
 	public BindingBuilder<T> annotatedWith(Annotation annotation) {
 		annotatedWithInternal(annotation);
 		return this;
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.LinkedBindingBuilder#to(java.lang.Class)
-	 */
 	public BindingBuilder<T> to(Class<? extends T> implementation) {
 		return to(Key.get(implementation));
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.LinkedBindingBuilder#to(cn.com.summall.search.commons.inject.TypeLiteral)
-	 */
 	public BindingBuilder<T> to(TypeLiteral<? extends T> implementation) {
 		return to(Key.get(implementation));
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.LinkedBindingBuilder#to(cn.com.summall.search.commons.inject.Key)
-	 */
 	public BindingBuilder<T> to(Key<? extends T> linkedKey) {
 		checkNotNull(linkedKey, "linkedKey");
 		checkNotTargetted();
@@ -92,9 +77,6 @@ public class BindingBuilder<T> extends AbstractBindingBuilder<T> implements Anno
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.LinkedBindingBuilder#toInstance(java.lang.Object)
-	 */
 	public void toInstance(T instance) {
 		checkNotTargetted();
 
@@ -120,9 +102,6 @@ public class BindingBuilder<T> extends AbstractBindingBuilder<T> implements Anno
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.LinkedBindingBuilder#toProvider(cn.com.summall.search.commons.inject.Provider)
-	 */
 	public BindingBuilder<T> toProvider(Provider<? extends T> provider) {
 		checkNotNull(provider, "provider");
 		checkNotTargetted();
@@ -145,17 +124,11 @@ public class BindingBuilder<T> extends AbstractBindingBuilder<T> implements Anno
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.LinkedBindingBuilder#toProvider(java.lang.Class)
-	 */
 	public BindingBuilder<T> toProvider(Class<? extends Provider<? extends T>> providerType) {
 		return toProvider(Key.get(providerType));
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.binder.LinkedBindingBuilder#toProvider(cn.com.summall.search.commons.inject.Key)
-	 */
 	public BindingBuilder<T> toProvider(Key<? extends Provider<? extends T>> providerKey) {
 		checkNotNull(providerKey, "providerKey");
 		checkNotTargetted();

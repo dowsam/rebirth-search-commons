@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons ProviderToInternalFactoryAdapter.java 2012-3-29 15:15:12 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons ProviderToInternalFactoryAdapter.java 2012-7-6 10:23:45 l.xue.nong$$
  */
 
 
@@ -43,7 +43,7 @@ class ProviderToInternalFactoryAdapter<T> implements Provider<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Provider#get()
+	 * @see cn.com.rebirth.search.commons.inject.Provider#get()
 	 */
 	public T get() {
 		final Errors errors = new Errors();

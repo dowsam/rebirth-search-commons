@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons BindingImpl.java 2012-3-29 15:15:18 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons BindingImpl.java 2012-7-6 10:23:46 l.xue.nong$$
  */
 
 
@@ -80,7 +80,7 @@ public abstract class BindingImpl<T> implements Binding<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Binding#getKey()
+	 * @see cn.com.rebirth.search.commons.inject.Binding#getKey()
 	 */
 	public Key<T> getKey() {
 		return key;
@@ -88,7 +88,7 @@ public abstract class BindingImpl<T> implements Binding<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.Element#getSource()
+	 * @see cn.com.rebirth.search.commons.inject.spi.Element#getSource()
 	 */
 	public Object getSource() {
 		return source;
@@ -100,7 +100,7 @@ public abstract class BindingImpl<T> implements Binding<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Binding#getProvider()
+	 * @see cn.com.rebirth.search.commons.inject.Binding#getProvider()
 	 */
 	public Provider<T> getProvider() {
 		if (provider == null) {
@@ -145,7 +145,7 @@ public abstract class BindingImpl<T> implements Binding<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.Element#acceptVisitor(cn.com.summall.search.commons.inject.spi.ElementVisitor)
+	 * @see cn.com.rebirth.search.commons.inject.spi.Element#acceptVisitor(cn.com.rebirth.search.commons.inject.spi.ElementVisitor)
 	 */
 	public <V> V acceptVisitor(ElementVisitor<V> visitor) {
 		return visitor.visit(this);
@@ -153,7 +153,7 @@ public abstract class BindingImpl<T> implements Binding<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Binding#acceptScopingVisitor(cn.com.summall.search.commons.inject.spi.BindingScopingVisitor)
+	 * @see cn.com.rebirth.search.commons.inject.Binding#acceptScopingVisitor(cn.com.rebirth.search.commons.inject.spi.BindingScopingVisitor)
 	 */
 	public <V> V acceptScopingVisitor(BindingScopingVisitor<V> visitor) {
 		return scoping.acceptVisitor(visitor);

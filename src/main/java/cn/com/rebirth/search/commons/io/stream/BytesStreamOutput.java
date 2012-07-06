@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons BytesStreamOutput.java 2012-3-29 15:15:08 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons BytesStreamOutput.java 2012-7-6 10:23:40 l.xue.nong$$
  */
 
 
@@ -49,7 +49,7 @@ public class BytesStreamOutput extends StreamOutput implements BytesStream {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#writeByte(byte)
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#writeByte(byte)
 	 */
 	@Override
 	public void writeByte(byte b) throws IOException {
@@ -63,7 +63,7 @@ public class BytesStreamOutput extends StreamOutput implements BytesStream {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#writeBytes(byte[], int, int)
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#writeBytes(byte[], int, int)
 	 */
 	@Override
 	public void writeBytes(byte[] b, int offset, int length) throws IOException {
@@ -90,7 +90,7 @@ public class BytesStreamOutput extends StreamOutput implements BytesStream {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#reset()
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#reset()
 	 */
 	public void reset() {
 		count = 0;
@@ -98,7 +98,7 @@ public class BytesStreamOutput extends StreamOutput implements BytesStream {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#flush()
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#flush()
 	 */
 	@Override
 	public void flush() throws IOException {
@@ -107,7 +107,7 @@ public class BytesStreamOutput extends StreamOutput implements BytesStream {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#close()
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#close()
 	 */
 	@Override
 	public void close() throws IOException {
@@ -116,7 +116,7 @@ public class BytesStreamOutput extends StreamOutput implements BytesStream {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.BytesStream#copiedByteArray()
+	 * @see cn.com.rebirth.search.commons.io.BytesStream#copiedByteArray()
 	 */
 	public byte copiedByteArray()[] {
 		return Arrays.copyOf(buf, count);
@@ -124,7 +124,7 @@ public class BytesStreamOutput extends StreamOutput implements BytesStream {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.BytesStream#underlyingBytes()
+	 * @see cn.com.rebirth.search.commons.io.BytesStream#underlyingBytes()
 	 */
 	public byte[] underlyingBytes() {
 		return buf;
@@ -132,7 +132,7 @@ public class BytesStreamOutput extends StreamOutput implements BytesStream {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.BytesStream#size()
+	 * @see cn.com.rebirth.search.commons.io.BytesStream#size()
 	 */
 	public int size() {
 		return count;

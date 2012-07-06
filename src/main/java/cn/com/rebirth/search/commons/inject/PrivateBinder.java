@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons PrivateBinder.java 2012-3-29 15:15:14 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons PrivateBinder.java 2012-7-6 10:23:50 l.xue.nong$$
  */
 
 
@@ -44,7 +44,7 @@ public interface PrivateBinder extends Binder {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Binder#withSource(java.lang.Object)
+	 * @see cn.com.rebirth.search.commons.inject.Binder#withSource(java.lang.Object)
 	 */
 	PrivateBinder withSource(Object source);
 

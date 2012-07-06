@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons ToXContent.java 2012-3-29 15:15:09 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons ToXContent.java 2012-7-6 10:23:44 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.xcontent;
 
@@ -113,7 +113,7 @@ public interface ToXContent {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.xcontent.ToXContent.Params#param(java.lang.String)
+		 * @see cn.com.rebirth.search.commons.xcontent.ToXContent.Params#param(java.lang.String)
 		 */
 		@Override
 		public String param(String key) {
@@ -122,7 +122,7 @@ public interface ToXContent {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.xcontent.ToXContent.Params#param(java.lang.String, java.lang.String)
+		 * @see cn.com.rebirth.search.commons.xcontent.ToXContent.Params#param(java.lang.String, java.lang.String)
 		 */
 		@Override
 		public String param(String key, String defaultValue) {
@@ -135,7 +135,7 @@ public interface ToXContent {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.xcontent.ToXContent.Params#paramAsBoolean(java.lang.String, boolean)
+		 * @see cn.com.rebirth.search.commons.xcontent.ToXContent.Params#paramAsBoolean(java.lang.String, boolean)
 		 */
 		@Override
 		public boolean paramAsBoolean(String key, boolean defaultValue) {
@@ -144,7 +144,7 @@ public interface ToXContent {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.xcontent.ToXContent.Params#paramAsBooleanOptional(java.lang.String, java.lang.Boolean)
+		 * @see cn.com.rebirth.search.commons.xcontent.ToXContent.Params#paramAsBooleanOptional(java.lang.String, java.lang.Boolean)
 		 */
 		@Override
 		public Boolean paramAsBooleanOptional(String key, Boolean defaultValue) {

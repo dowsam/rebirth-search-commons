@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons AllEntries.java 2012-3-29 15:15:12 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons AllEntries.java 2012-7-6 10:23:53 l.xue.nong$$
  */
 
 
@@ -14,7 +14,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-import cn.com.rebirth.commons.exception.RestartIllegalStateException;
+import cn.com.rebirth.commons.exception.RebirthIllegalStateException;
 import cn.com.rebirth.search.commons.io.FastCharArrayWriter;
 import cn.com.rebirth.search.commons.io.FastStringReader;
 
@@ -150,7 +150,7 @@ public class AllEntries extends Reader {
 				entry.reader().reset();
 			}
 		} catch (IOException e) {
-			throw new RestartIllegalStateException("should not happen");
+			throw new RebirthIllegalStateException("should not happen");
 		}
 		it = entries.iterator();
 		if (it.hasNext()) {

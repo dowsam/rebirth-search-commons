@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons Key.java 2012-3-29 15:15:11 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons Key.java 2012-7-6 10:23:43 l.xue.nong$$
  */
 
 
@@ -519,12 +519,12 @@ public class Key<T> {
 	static enum NullAnnotationStrategy implements AnnotationStrategy {
 
 		
-		/** The INSTANCE. */
+		/** The instance. */
 		INSTANCE;
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Key.AnnotationStrategy#hasAttributes()
+		 * @see cn.com.rebirth.search.commons.inject.Key.AnnotationStrategy#hasAttributes()
 		 */
 		public boolean hasAttributes() {
 			return false;
@@ -532,7 +532,7 @@ public class Key<T> {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Key.AnnotationStrategy#withoutAttributes()
+		 * @see cn.com.rebirth.search.commons.inject.Key.AnnotationStrategy#withoutAttributes()
 		 */
 		public AnnotationStrategy withoutAttributes() {
 			throw new UnsupportedOperationException("Key already has no attributes.");
@@ -540,7 +540,7 @@ public class Key<T> {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Key.AnnotationStrategy#getAnnotation()
+		 * @see cn.com.rebirth.search.commons.inject.Key.AnnotationStrategy#getAnnotation()
 		 */
 		public Annotation getAnnotation() {
 			return null;
@@ -548,7 +548,7 @@ public class Key<T> {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Key.AnnotationStrategy#getAnnotationType()
+		 * @see cn.com.rebirth.search.commons.inject.Key.AnnotationStrategy#getAnnotationType()
 		 */
 		public Class<? extends Annotation> getAnnotationType() {
 			return null;
@@ -589,7 +589,7 @@ public class Key<T> {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Key.AnnotationStrategy#hasAttributes()
+		 * @see cn.com.rebirth.search.commons.inject.Key.AnnotationStrategy#hasAttributes()
 		 */
 		public boolean hasAttributes() {
 			return true;
@@ -597,7 +597,7 @@ public class Key<T> {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Key.AnnotationStrategy#withoutAttributes()
+		 * @see cn.com.rebirth.search.commons.inject.Key.AnnotationStrategy#withoutAttributes()
 		 */
 		public AnnotationStrategy withoutAttributes() {
 			return new AnnotationTypeStrategy(getAnnotationType(), annotation);
@@ -605,7 +605,7 @@ public class Key<T> {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Key.AnnotationStrategy#getAnnotation()
+		 * @see cn.com.rebirth.search.commons.inject.Key.AnnotationStrategy#getAnnotation()
 		 */
 		public Annotation getAnnotation() {
 			return annotation;
@@ -613,7 +613,7 @@ public class Key<T> {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Key.AnnotationStrategy#getAnnotationType()
+		 * @see cn.com.rebirth.search.commons.inject.Key.AnnotationStrategy#getAnnotationType()
 		 */
 		public Class<? extends Annotation> getAnnotationType() {
 			return annotation.annotationType();
@@ -683,7 +683,7 @@ public class Key<T> {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Key.AnnotationStrategy#hasAttributes()
+		 * @see cn.com.rebirth.search.commons.inject.Key.AnnotationStrategy#hasAttributes()
 		 */
 		public boolean hasAttributes() {
 			return false;
@@ -691,7 +691,7 @@ public class Key<T> {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Key.AnnotationStrategy#withoutAttributes()
+		 * @see cn.com.rebirth.search.commons.inject.Key.AnnotationStrategy#withoutAttributes()
 		 */
 		public AnnotationStrategy withoutAttributes() {
 			throw new UnsupportedOperationException("Key already has no attributes.");
@@ -699,7 +699,7 @@ public class Key<T> {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Key.AnnotationStrategy#getAnnotation()
+		 * @see cn.com.rebirth.search.commons.inject.Key.AnnotationStrategy#getAnnotation()
 		 */
 		public Annotation getAnnotation() {
 			return annotation;
@@ -707,7 +707,7 @@ public class Key<T> {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Key.AnnotationStrategy#getAnnotationType()
+		 * @see cn.com.rebirth.search.commons.inject.Key.AnnotationStrategy#getAnnotationType()
 		 */
 		public Class<? extends Annotation> getAnnotationType() {
 			return annotationType;

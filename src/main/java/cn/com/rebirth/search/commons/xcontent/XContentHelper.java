@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons XContentHelper.java 2012-3-29 15:15:18 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons XContentHelper.java 2012-7-6 10:23:51 l.xue.nong$$
  */
 
 package cn.com.rebirth.search.commons.xcontent;
@@ -13,7 +13,7 @@ import java.util.Map;
 
 import cn.com.rebirth.commons.collect.Tuple;
 import cn.com.rebirth.commons.compress.lzf.LZF;
-import cn.com.rebirth.commons.exception.RestartParseException;
+import cn.com.rebirth.commons.exception.RebirthParseException;
 import cn.com.rebirth.commons.io.stream.CachedStreamInput;
 import cn.com.rebirth.commons.io.stream.LZFStreamInput;
 import cn.com.rebirth.search.commons.io.stream.BytesStreamInput;
@@ -59,10 +59,10 @@ public class XContentHelper {
 	 * @param length the length
 	 * @param ordered the ordered
 	 * @return the tuple
-	 * @throws SumMallSearchParseException the sum mall search parse exception
+	 * @throws rebirthParseException the rebirth parse exception
 	 */
 	public static Tuple<XContentType, Map<String, Object>> convertToMap(byte[] data, int offset, int length,
-			boolean ordered) throws RestartParseException {
+			boolean ordered) throws RebirthParseException {
 		try {
 			XContentParser parser;
 			XContentType contentType;
@@ -82,7 +82,7 @@ public class XContentHelper {
 				return Tuple.create(contentType, parser.mapAndClose());
 			}
 		} catch (IOException e) {
-			throw new RestartParseException("Failed to parse content to map", e);
+			throw new RebirthParseException("Failed to parse content to map", e);
 		}
 	}
 

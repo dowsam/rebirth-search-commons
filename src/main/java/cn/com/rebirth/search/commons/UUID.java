@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons UUID.java 2012-3-29 15:15:10 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons UUID.java 2012-7-6 10:23:51 l.xue.nong$$
  */
 
 package cn.com.rebirth.search.commons;
@@ -10,7 +10,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
 
-import cn.com.rebirth.commons.exception.RestartIllegalStateException;
+import cn.com.rebirth.commons.exception.RebirthIllegalStateException;
 
 
 
@@ -42,7 +42,7 @@ public class UUID implements Comparable<UUID> {
 
 	
 	/**
-	 * Instantiates a new uUID.
+	 * Instantiates a new uuid.
 	 *
 	 * @param data the data
 	 */
@@ -60,7 +60,7 @@ public class UUID implements Comparable<UUID> {
 
 	
 	/**
-	 * Instantiates a new uUID.
+	 * Instantiates a new uuid.
 	 *
 	 * @param mostSigBits the most sig bits
 	 * @param leastSigBits the least sig bits
@@ -74,7 +74,7 @@ public class UUID implements Comparable<UUID> {
 	/**
 	 * Random uuid.
 	 *
-	 * @return the uUID
+	 * @return the uuid
 	 */
 	public static UUID randomUUID() {
 		SecureRandom ng = numberGenerator;
@@ -118,7 +118,7 @@ public class UUID implements Comparable<UUID> {
 			
 			return new String(encoded, 0, encoded.length - 2, Base64.PREFERRED_ENCODING);
 		} catch (IOException e) {
-			throw new RestartIllegalStateException("should not be thrown");
+			throw new RebirthIllegalStateException("should not be thrown");
 		}
 	}
 
@@ -127,7 +127,7 @@ public class UUID implements Comparable<UUID> {
 	 * Name uuid from bytes.
 	 *
 	 * @param name the name
-	 * @return the uUID
+	 * @return the uuid
 	 */
 	public static UUID nameUUIDFromBytes(byte[] name) {
 		MessageDigest md;
@@ -149,7 +149,7 @@ public class UUID implements Comparable<UUID> {
 	 * From string.
 	 *
 	 * @param name the name
-	 * @return the uUID
+	 * @return the uuid
 	 */
 	public static UUID fromString(String name) {
 		String[] components = name.split("-");

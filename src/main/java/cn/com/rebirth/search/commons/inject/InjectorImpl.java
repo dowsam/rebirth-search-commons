@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons InjectorImpl.java 2012-3-29 15:15:21 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons InjectorImpl.java 2012-7-6 10:23:50 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.inject;
 
@@ -122,7 +122,7 @@ class InjectorImpl implements Injector, Lookups {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Injector#findBindingsByType(cn.com.summall.search.commons.inject.TypeLiteral)
+	 * @see cn.com.rebirth.search.commons.inject.Injector#findBindingsByType(cn.com.rebirth.search.commons.inject.TypeLiteral)
 	 */
 	public <T> List<Binding<T>> findBindingsByType(TypeLiteral<T> type) {
 		return bindingsMultimap.getAll(type);
@@ -130,7 +130,7 @@ class InjectorImpl implements Injector, Lookups {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Injector#getBinding(cn.com.summall.search.commons.inject.Key)
+	 * @see cn.com.rebirth.search.commons.inject.Injector#getBinding(cn.com.rebirth.search.commons.inject.Key)
 	 */
 	public <T> BindingImpl<T> getBinding(Key<T> key) {
 		Errors errors = new Errors(key);
@@ -166,7 +166,7 @@ class InjectorImpl implements Injector, Lookups {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Injector#getBinding(java.lang.Class)
+	 * @see cn.com.rebirth.search.commons.inject.Injector#getBinding(java.lang.Class)
 	 */
 	public <T> Binding<T> getBinding(Class<T> type) {
 		return getBinding(Key.get(type));
@@ -174,7 +174,7 @@ class InjectorImpl implements Injector, Lookups {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Injector#getParent()
+	 * @see cn.com.rebirth.search.commons.inject.Injector#getParent()
 	 */
 	public Injector getParent() {
 		return parent;
@@ -182,7 +182,7 @@ class InjectorImpl implements Injector, Lookups {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Injector#createChildInjector(java.lang.Iterable)
+	 * @see cn.com.rebirth.search.commons.inject.Injector#createChildInjector(java.lang.Iterable)
 	 */
 	public Injector createChildInjector(Iterable<? extends Module> modules) {
 		return new InjectorBuilder().parentInjector(this).addModules(modules).build();
@@ -190,7 +190,7 @@ class InjectorImpl implements Injector, Lookups {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Injector#createChildInjector(cn.com.summall.search.commons.inject.Module[])
+	 * @see cn.com.rebirth.search.commons.inject.Injector#createChildInjector(cn.com.rebirth.search.commons.inject.Module[])
 	 */
 	public Injector createChildInjector(Module... modules) {
 		return createChildInjector(ImmutableList.copyOf(modules));
@@ -350,7 +350,7 @@ class InjectorImpl implements Injector, Lookups {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.spi.ProviderBinding#getProvidedKey()
+		 * @see cn.com.rebirth.search.commons.inject.spi.ProviderBinding#getProvidedKey()
 		 */
 		public Key<? extends T> getProvidedKey() {
 			return providedBinding.getKey();
@@ -358,7 +358,7 @@ class InjectorImpl implements Injector, Lookups {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binding#acceptTargetVisitor(cn.com.summall.search.commons.inject.spi.BindingTargetVisitor)
+		 * @see cn.com.rebirth.search.commons.inject.Binding#acceptTargetVisitor(cn.com.rebirth.search.commons.inject.spi.BindingTargetVisitor)
 		 */
 		public <V> V acceptTargetVisitor(BindingTargetVisitor<? super Provider<T>, V> visitor) {
 			return visitor.visit(this);
@@ -366,7 +366,7 @@ class InjectorImpl implements Injector, Lookups {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.spi.Element#applyTo(cn.com.summall.search.commons.inject.Binder)
+		 * @see cn.com.rebirth.search.commons.inject.spi.Element#applyTo(cn.com.rebirth.search.commons.inject.Binder)
 		 */
 		public void applyTo(Binder binder) {
 			throw new UnsupportedOperationException("This element represents a synthetic binding.");
@@ -374,7 +374,7 @@ class InjectorImpl implements Injector, Lookups {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.internal.BindingImpl#toString()
+		 * @see cn.com.rebirth.search.commons.inject.internal.BindingImpl#toString()
 		 */
 		@Override
 		public String toString() {
@@ -475,7 +475,7 @@ class InjectorImpl implements Injector, Lookups {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.internal.BindingImpl#getProvider()
+		 * @see cn.com.rebirth.search.commons.inject.internal.BindingImpl#getProvider()
 		 */
 		@Override
 		public Provider<T> getProvider() {
@@ -484,7 +484,7 @@ class InjectorImpl implements Injector, Lookups {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Binding#acceptTargetVisitor(cn.com.summall.search.commons.inject.spi.BindingTargetVisitor)
+		 * @see cn.com.rebirth.search.commons.inject.Binding#acceptTargetVisitor(cn.com.rebirth.search.commons.inject.spi.BindingTargetVisitor)
 		 */
 		public <V> V acceptTargetVisitor(BindingTargetVisitor<? super T, V> visitor) {
 			return visitor.visit(this);
@@ -492,7 +492,7 @@ class InjectorImpl implements Injector, Lookups {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.spi.ConvertedConstantBinding#getValue()
+		 * @see cn.com.rebirth.search.commons.inject.spi.ConvertedConstantBinding#getValue()
 		 */
 		public T getValue() {
 			return value;
@@ -500,7 +500,7 @@ class InjectorImpl implements Injector, Lookups {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.spi.ConvertedConstantBinding#getSourceKey()
+		 * @see cn.com.rebirth.search.commons.inject.spi.ConvertedConstantBinding#getSourceKey()
 		 */
 		public Key<String> getSourceKey() {
 			return originalBinding.getKey();
@@ -508,7 +508,7 @@ class InjectorImpl implements Injector, Lookups {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.spi.ConvertedConstantBinding#getDependencies()
+		 * @see cn.com.rebirth.search.commons.inject.spi.ConvertedConstantBinding#getDependencies()
 		 */
 		public Set<Dependency<?>> getDependencies() {
 			return ImmutableSet.<Dependency<?>> of(Dependency.get(getSourceKey()));
@@ -516,7 +516,7 @@ class InjectorImpl implements Injector, Lookups {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.spi.Element#applyTo(cn.com.summall.search.commons.inject.Binder)
+		 * @see cn.com.rebirth.search.commons.inject.spi.Element#applyTo(cn.com.rebirth.search.commons.inject.Binder)
 		 */
 		public void applyTo(Binder binder) {
 			throw new UnsupportedOperationException("This element represents a synthetic binding.");
@@ -524,7 +524,7 @@ class InjectorImpl implements Injector, Lookups {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.internal.BindingImpl#toString()
+		 * @see cn.com.rebirth.search.commons.inject.internal.BindingImpl#toString()
 		 */
 		@Override
 		public String toString() {
@@ -855,7 +855,7 @@ class InjectorImpl implements Injector, Lookups {
 	
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Injector#getBindings()
+	 * @see cn.com.rebirth.search.commons.inject.Injector#getBindings()
 	 */
 	public Map<Key<?>, Binding<?>> getBindings() {
 		return state.getExplicitBindingsThisLevel();
@@ -985,7 +985,7 @@ class InjectorImpl implements Injector, Lookups {
 	
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Injector#injectMembers(java.lang.Object)
+	 * @see cn.com.rebirth.search.commons.inject.Injector#injectMembers(java.lang.Object)
 	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public void injectMembers(Object instance) {
@@ -995,7 +995,7 @@ class InjectorImpl implements Injector, Lookups {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Injector#getMembersInjector(cn.com.summall.search.commons.inject.TypeLiteral)
+	 * @see cn.com.rebirth.search.commons.inject.Injector#getMembersInjector(cn.com.rebirth.search.commons.inject.TypeLiteral)
 	 */
 	public <T> MembersInjector<T> getMembersInjector(TypeLiteral<T> typeLiteral) {
 		Errors errors = new Errors(typeLiteral);
@@ -1008,7 +1008,7 @@ class InjectorImpl implements Injector, Lookups {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Injector#getMembersInjector(java.lang.Class)
+	 * @see cn.com.rebirth.search.commons.inject.Injector#getMembersInjector(java.lang.Class)
 	 */
 	public <T> MembersInjector<T> getMembersInjector(Class<T> type) {
 		return getMembersInjector(TypeLiteral.get(type));
@@ -1016,7 +1016,7 @@ class InjectorImpl implements Injector, Lookups {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Injector#getProvider(java.lang.Class)
+	 * @see cn.com.rebirth.search.commons.inject.Injector#getProvider(java.lang.Class)
 	 */
 	public <T> Provider<T> getProvider(Class<T> type) {
 		return getProvider(Key.get(type));
@@ -1066,7 +1066,7 @@ class InjectorImpl implements Injector, Lookups {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Injector#getProvider(cn.com.summall.search.commons.inject.Key)
+	 * @see cn.com.rebirth.search.commons.inject.Injector#getProvider(cn.com.rebirth.search.commons.inject.Key)
 	 */
 	public <T> Provider<T> getProvider(final Key<T> key) {
 		Errors errors = new Errors(key);
@@ -1081,7 +1081,7 @@ class InjectorImpl implements Injector, Lookups {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Injector#getInstance(cn.com.summall.search.commons.inject.Key)
+	 * @see cn.com.rebirth.search.commons.inject.Injector#getInstance(cn.com.rebirth.search.commons.inject.Key)
 	 */
 	public <T> T getInstance(Key<T> key) {
 		return getProvider(key).get();
@@ -1089,7 +1089,7 @@ class InjectorImpl implements Injector, Lookups {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Injector#getInstance(java.lang.Class)
+	 * @see cn.com.rebirth.search.commons.inject.Injector#getInstance(java.lang.Class)
 	 */
 	public <T> T getInstance(Class<T> type) {
 		return getProvider(type).get();

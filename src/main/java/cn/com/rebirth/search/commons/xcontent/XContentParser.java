@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons XContentParser.java 2012-3-29 15:15:18 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons XContentParser.java 2012-7-6 10:23:53 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.xcontent;
 
@@ -25,7 +25,7 @@ public interface XContentParser extends Closeable {
 	enum Token {
 		
 		
-		/** The STAR t_ object. */
+		/** The start object. */
 		START_OBJECT {
 			@Override
 			public boolean isValue() {
@@ -34,7 +34,7 @@ public interface XContentParser extends Closeable {
 		},
 
 		
-		/** The EN d_ object. */
+		/** The end object. */
 		END_OBJECT {
 			@Override
 			public boolean isValue() {
@@ -43,7 +43,7 @@ public interface XContentParser extends Closeable {
 		},
 
 		
-		/** The STAR t_ array. */
+		/** The start array. */
 		START_ARRAY {
 			@Override
 			public boolean isValue() {
@@ -52,7 +52,7 @@ public interface XContentParser extends Closeable {
 		},
 
 		
-		/** The EN d_ array. */
+		/** The end array. */
 		END_ARRAY {
 			@Override
 			public boolean isValue() {
@@ -61,7 +61,7 @@ public interface XContentParser extends Closeable {
 		},
 
 		
-		/** The FIEL d_ name. */
+		/** The field name. */
 		FIELD_NAME {
 			@Override
 			public boolean isValue() {
@@ -70,7 +70,7 @@ public interface XContentParser extends Closeable {
 		},
 
 		
-		/** The VALU e_ string. */
+		/** The value string. */
 		VALUE_STRING {
 			@Override
 			public boolean isValue() {
@@ -79,7 +79,7 @@ public interface XContentParser extends Closeable {
 		},
 
 		
-		/** The VALU e_ number. */
+		/** The value number. */
 		VALUE_NUMBER {
 			@Override
 			public boolean isValue() {
@@ -88,7 +88,7 @@ public interface XContentParser extends Closeable {
 		},
 
 		
-		/** The VALU e_ boolean. */
+		/** The value boolean. */
 		VALUE_BOOLEAN {
 			@Override
 			public boolean isValue() {
@@ -98,7 +98,7 @@ public interface XContentParser extends Closeable {
 
 		
 		
-		/** The VALU e_ embedde d_ object. */
+		/** The value embedded object. */
 		VALUE_EMBEDDED_OBJECT {
 			@Override
 			public boolean isValue() {
@@ -107,7 +107,7 @@ public interface XContentParser extends Closeable {
 		},
 
 		
-		/** The VALU e_ null. */
+		/** The value null. */
 		VALUE_NULL {
 			@Override
 			public boolean isValue() {
@@ -133,19 +133,19 @@ public interface XContentParser extends Closeable {
 	enum NumberType {
 		
 		
-		/** The INT. */
+		/** The int. */
 		INT, 
  
  
- /** The LONG. */
+ /** The long. */
  LONG, 
  
  
- /** The FLOAT. */
+ /** The float. */
  FLOAT, 
  
  
- /** The DOUBLE. */
+ /** The double. */
  DOUBLE
 	}
 

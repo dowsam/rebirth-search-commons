@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons ExposureBuilder.java 2012-3-29 15:15:15 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons ExposureBuilder.java 2012-7-6 10:23:51 l.xue.nong$$
  */
 
 
@@ -59,7 +59,7 @@ public class ExposureBuilder<T> implements AnnotatedElementBuilder {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.inject.binder.AnnotatedElementBuilder#annotatedWith(java.lang.Class)
+     * @see cn.com.rebirth.search.commons.inject.binder.AnnotatedElementBuilder#annotatedWith(java.lang.Class)
      */
     public void annotatedWith(Class<? extends Annotation> annotationType) {
         com.google.common.base.Preconditions.checkNotNull(annotationType, "annotationType");
@@ -69,7 +69,7 @@ public class ExposureBuilder<T> implements AnnotatedElementBuilder {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.inject.binder.AnnotatedElementBuilder#annotatedWith(java.lang.annotation.Annotation)
+     * @see cn.com.rebirth.search.commons.inject.binder.AnnotatedElementBuilder#annotatedWith(java.lang.annotation.Annotation)
      */
     public void annotatedWith(Annotation annotation) {
         com.google.common.base.Preconditions.checkNotNull(annotation, "annotation");

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons AllField.java 2012-3-29 15:15:20 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons AllField.java 2012-7-6 10:23:44 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.lucene.all;
 
@@ -12,7 +12,7 @@ import org.apache.lucene.analysis.TokenStream;
 import org.apache.lucene.document.AbstractField;
 import org.apache.lucene.document.Field;
 
-import cn.com.rebirth.commons.exception.RestartException;
+import cn.com.rebirth.commons.exception.RebirthException;
 
 
 /**
@@ -82,7 +82,7 @@ public class AllField extends AbstractField {
 			allEntries.reset(); 
 			return AllTokenStream.allTokenStream(name, allEntries, analyzer);
 		} catch (IOException e) {
-			throw new RestartException("Failed to create token stream");
+			throw new RebirthException("Failed to create token stream");
 		}
 	}
 }

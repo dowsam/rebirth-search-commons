@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons InstanceBindingImpl.java 2012-3-29 15:15:10 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons InstanceBindingImpl.java 2012-7-6 10:23:48 l.xue.nong$$
  */
 
 
@@ -81,7 +81,7 @@ public class InstanceBindingImpl<T> extends BindingImpl<T> implements InstanceBi
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.internal.BindingImpl#getProvider()
+	 * @see cn.com.rebirth.search.commons.inject.internal.BindingImpl#getProvider()
 	 */
 	@Override
 	public Provider<T> getProvider() {
@@ -90,7 +90,7 @@ public class InstanceBindingImpl<T> extends BindingImpl<T> implements InstanceBi
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Binding#acceptTargetVisitor(cn.com.summall.search.commons.inject.spi.BindingTargetVisitor)
+	 * @see cn.com.rebirth.search.commons.inject.Binding#acceptTargetVisitor(cn.com.rebirth.search.commons.inject.spi.BindingTargetVisitor)
 	 */
 	public <V> V acceptTargetVisitor(BindingTargetVisitor<? super T, V> visitor) {
 		return visitor.visit(this);
@@ -98,7 +98,7 @@ public class InstanceBindingImpl<T> extends BindingImpl<T> implements InstanceBi
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.InstanceBinding#getInstance()
+	 * @see cn.com.rebirth.search.commons.inject.spi.InstanceBinding#getInstance()
 	 */
 	public T getInstance() {
 		return instance;
@@ -106,7 +106,7 @@ public class InstanceBindingImpl<T> extends BindingImpl<T> implements InstanceBi
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.InstanceBinding#getInjectionPoints()
+	 * @see cn.com.rebirth.search.commons.inject.spi.InstanceBinding#getInjectionPoints()
 	 */
 	public Set<InjectionPoint> getInjectionPoints() {
 		return injectionPoints;
@@ -114,7 +114,7 @@ public class InstanceBindingImpl<T> extends BindingImpl<T> implements InstanceBi
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.HasDependencies#getDependencies()
+	 * @see cn.com.rebirth.search.commons.inject.spi.HasDependencies#getDependencies()
 	 */
 	public Set<Dependency<?>> getDependencies() {
 		return instance instanceof HasDependencies ? ImmutableSet
@@ -124,7 +124,7 @@ public class InstanceBindingImpl<T> extends BindingImpl<T> implements InstanceBi
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.internal.BindingImpl#withScoping(cn.com.summall.search.commons.inject.internal.Scoping)
+	 * @see cn.com.rebirth.search.commons.inject.internal.BindingImpl#withScoping(cn.com.rebirth.search.commons.inject.internal.Scoping)
 	 */
 	public BindingImpl<T> withScoping(Scoping scoping) {
 		return new InstanceBindingImpl<T>(getSource(), getKey(), scoping, injectionPoints, instance);
@@ -132,7 +132,7 @@ public class InstanceBindingImpl<T> extends BindingImpl<T> implements InstanceBi
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.internal.BindingImpl#withKey(cn.com.summall.search.commons.inject.Key)
+	 * @see cn.com.rebirth.search.commons.inject.internal.BindingImpl#withKey(cn.com.rebirth.search.commons.inject.Key)
 	 */
 	public BindingImpl<T> withKey(Key<T> key) {
 		return new InstanceBindingImpl<T>(getSource(), key, getScoping(), injectionPoints, instance);
@@ -140,7 +140,7 @@ public class InstanceBindingImpl<T> extends BindingImpl<T> implements InstanceBi
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.Element#applyTo(cn.com.summall.search.commons.inject.Binder)
+	 * @see cn.com.rebirth.search.commons.inject.spi.Element#applyTo(cn.com.rebirth.search.commons.inject.Binder)
 	 */
 	public void applyTo(Binder binder) {
 		
@@ -149,7 +149,7 @@ public class InstanceBindingImpl<T> extends BindingImpl<T> implements InstanceBi
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.internal.BindingImpl#toString()
+	 * @see cn.com.rebirth.search.commons.inject.internal.BindingImpl#toString()
 	 */
 	@Override
 	public String toString() {

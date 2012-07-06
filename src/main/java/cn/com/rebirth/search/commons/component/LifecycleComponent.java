@@ -1,10 +1,10 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons LifecycleComponent.java 2012-3-29 15:15:08 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons LifecycleComponent.java 2012-7-6 10:23:45 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.component;
 
-import cn.com.rebirth.commons.exception.RestartException;
+import cn.com.rebirth.commons.exception.RebirthException;
 
 
 
@@ -45,16 +45,16 @@ public interface LifecycleComponent<T> extends CloseableComponent {
 	 * Start.
 	 *
 	 * @return the t
-	 * @throws SumMallSearchException the sum mall search exception
+	 * @throws rebirthException the rebirth exception
 	 */
-	T start() throws RestartException;
+	T start() throws RebirthException;
 
 	
 	/**
 	 * Stop.
 	 *
 	 * @return the t
-	 * @throws SumMallSearchException the sum mall search exception
+	 * @throws rebirthException the rebirth exception
 	 */
-	T stop() throws RestartException;
+	T stop() throws RebirthException;
 }

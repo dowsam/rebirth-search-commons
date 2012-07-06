@@ -1,10 +1,10 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons Lifecycle.java 2012-3-29 15:15:13 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons Lifecycle.java 2012-7-6 10:23:41 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.component;
 
-import cn.com.rebirth.commons.exception.RestartIllegalStateException;
+import cn.com.rebirth.commons.exception.RebirthIllegalStateException;
 
 
 /**
@@ -23,16 +23,16 @@ public class Lifecycle {
 	public static enum State {
 
 		
-		/** The INITIALIZED. */
+		/** The initialized. */
 		INITIALIZED,
 		
-		/** The STOPPED. */
+		/** The stopped. */
 		STOPPED,
 		
-		/** The STARTED. */
+		/** The started. */
 		STARTED,
 		
-		/** The CLOSED. */
+		/** The closed. */
 		CLOSED
 	}
 
@@ -106,9 +106,9 @@ public class Lifecycle {
 	 * Can move to started.
 	 *
 	 * @return true, if successful
-	 * @throws SumMallSearchIllegalStateException the sum mall search illegal state exception
+	 * @throws rebirthIllegalStateException the rebirth illegal state exception
 	 */
-	public boolean canMoveToStarted() throws RestartIllegalStateException {
+	public boolean canMoveToStarted() throws RebirthIllegalStateException {
 		State localState = this.state;
 		if (localState == State.INITIALIZED || localState == State.STOPPED) {
 			return true;
@@ -117,9 +117,9 @@ public class Lifecycle {
 			return false;
 		}
 		if (localState == State.CLOSED) {
-			throw new RestartIllegalStateException("Can't move to started state when closed");
+			throw new RebirthIllegalStateException("Can't move to started state when closed");
 		}
-		throw new RestartIllegalStateException("Can't move to started with unknown state");
+		throw new RebirthIllegalStateException("Can't move to started with unknown state");
 	}
 
 	
@@ -127,9 +127,9 @@ public class Lifecycle {
 	 * Move to started.
 	 *
 	 * @return true, if successful
-	 * @throws SumMallSearchIllegalStateException the sum mall search illegal state exception
+	 * @throws rebirthIllegalStateException the rebirth illegal state exception
 	 */
-	public boolean moveToStarted() throws RestartIllegalStateException {
+	public boolean moveToStarted() throws RebirthIllegalStateException {
 		State localState = this.state;
 		if (localState == State.INITIALIZED || localState == State.STOPPED) {
 			state = State.STARTED;
@@ -139,9 +139,9 @@ public class Lifecycle {
 			return false;
 		}
 		if (localState == State.CLOSED) {
-			throw new RestartIllegalStateException("Can't move to started state when closed");
+			throw new RebirthIllegalStateException("Can't move to started state when closed");
 		}
-		throw new RestartIllegalStateException("Can't move to started with unknown state");
+		throw new RebirthIllegalStateException("Can't move to started with unknown state");
 	}
 
 	
@@ -149,9 +149,9 @@ public class Lifecycle {
 	 * Can move to stopped.
 	 *
 	 * @return true, if successful
-	 * @throws SumMallSearchIllegalStateException the sum mall search illegal state exception
+	 * @throws rebirthIllegalStateException the rebirth illegal state exception
 	 */
-	public boolean canMoveToStopped() throws RestartIllegalStateException {
+	public boolean canMoveToStopped() throws RebirthIllegalStateException {
 		State localState = state;
 		if (localState == State.STARTED) {
 			return true;
@@ -160,9 +160,9 @@ public class Lifecycle {
 			return false;
 		}
 		if (localState == State.CLOSED) {
-			throw new RestartIllegalStateException("Can't move to started state when closed");
+			throw new RebirthIllegalStateException("Can't move to started state when closed");
 		}
-		throw new RestartIllegalStateException("Can't move to started with unknown state");
+		throw new RebirthIllegalStateException("Can't move to started with unknown state");
 	}
 
 	
@@ -170,9 +170,9 @@ public class Lifecycle {
 	 * Move to stopped.
 	 *
 	 * @return true, if successful
-	 * @throws SumMallSearchIllegalStateException the sum mall search illegal state exception
+	 * @throws rebirthIllegalStateException the rebirth illegal state exception
 	 */
-	public boolean moveToStopped() throws RestartIllegalStateException {
+	public boolean moveToStopped() throws RebirthIllegalStateException {
 		State localState = state;
 		if (localState == State.STARTED) {
 			state = State.STOPPED;
@@ -182,9 +182,9 @@ public class Lifecycle {
 			return false;
 		}
 		if (localState == State.CLOSED) {
-			throw new RestartIllegalStateException("Can't move to started state when closed");
+			throw new RebirthIllegalStateException("Can't move to started state when closed");
 		}
-		throw new RestartIllegalStateException("Can't move to started with unknown state");
+		throw new RebirthIllegalStateException("Can't move to started with unknown state");
 	}
 
 	
@@ -192,15 +192,15 @@ public class Lifecycle {
 	 * Can move to closed.
 	 *
 	 * @return true, if successful
-	 * @throws SumMallSearchIllegalStateException the sum mall search illegal state exception
+	 * @throws rebirthIllegalStateException the rebirth illegal state exception
 	 */
-	public boolean canMoveToClosed() throws RestartIllegalStateException {
+	public boolean canMoveToClosed() throws RebirthIllegalStateException {
 		State localState = state;
 		if (localState == State.CLOSED) {
 			return false;
 		}
 		if (localState == State.STARTED) {
-			throw new RestartIllegalStateException("Can't move to closed before moving to stopped mode");
+			throw new RebirthIllegalStateException("Can't move to closed before moving to stopped mode");
 		}
 		return true;
 	}
@@ -210,15 +210,15 @@ public class Lifecycle {
 	 * Move to closed.
 	 *
 	 * @return true, if successful
-	 * @throws SumMallSearchIllegalStateException the sum mall search illegal state exception
+	 * @throws rebirthIllegalStateException the rebirth illegal state exception
 	 */
-	public boolean moveToClosed() throws RestartIllegalStateException {
+	public boolean moveToClosed() throws RebirthIllegalStateException {
 		State localState = state;
 		if (localState == State.CLOSED) {
 			return false;
 		}
 		if (localState == State.STARTED) {
-			throw new RestartIllegalStateException("Can't move to closed before moving to stopped mode");
+			throw new RebirthIllegalStateException("Can't move to closed before moving to stopped mode");
 		}
 		state = State.CLOSED;
 		return true;

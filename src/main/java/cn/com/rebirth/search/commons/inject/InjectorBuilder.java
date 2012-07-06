@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons InjectorBuilder.java 2012-3-29 15:15:07 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons InjectorBuilder.java 2012-7-6 10:23:53 l.xue.nong$$
  */
 
 
@@ -271,7 +271,7 @@ class InjectorBuilder {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Injector#injectMembers(java.lang.Object)
+		 * @see cn.com.rebirth.search.commons.inject.Injector#injectMembers(java.lang.Object)
 		 */
 		public void injectMembers(Object o) {
 			throw new UnsupportedOperationException("Injector.injectMembers(Object) is not supported in Stage.TOOL");
@@ -279,7 +279,7 @@ class InjectorBuilder {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Injector#getBindings()
+		 * @see cn.com.rebirth.search.commons.inject.Injector#getBindings()
 		 */
 		public Map<Key<?>, Binding<?>> getBindings() {
 			return this.delegateInjector.getBindings();
@@ -287,7 +287,7 @@ class InjectorBuilder {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Injector#getBinding(cn.com.summall.search.commons.inject.Key)
+		 * @see cn.com.rebirth.search.commons.inject.Injector#getBinding(cn.com.rebirth.search.commons.inject.Key)
 		 */
 		public <T> Binding<T> getBinding(Key<T> key) {
 			return this.delegateInjector.getBinding(key);
@@ -295,7 +295,7 @@ class InjectorBuilder {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Injector#getBinding(java.lang.Class)
+		 * @see cn.com.rebirth.search.commons.inject.Injector#getBinding(java.lang.Class)
 		 */
 		public <T> Binding<T> getBinding(Class<T> type) {
 			return this.delegateInjector.getBinding(type);
@@ -303,7 +303,7 @@ class InjectorBuilder {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Injector#findBindingsByType(cn.com.summall.search.commons.inject.TypeLiteral)
+		 * @see cn.com.rebirth.search.commons.inject.Injector#findBindingsByType(cn.com.rebirth.search.commons.inject.TypeLiteral)
 		 */
 		public <T> List<Binding<T>> findBindingsByType(TypeLiteral<T> type) {
 			return this.delegateInjector.findBindingsByType(type);
@@ -311,7 +311,7 @@ class InjectorBuilder {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Injector#getParent()
+		 * @see cn.com.rebirth.search.commons.inject.Injector#getParent()
 		 */
 		public Injector getParent() {
 			return delegateInjector.getParent();
@@ -319,7 +319,7 @@ class InjectorBuilder {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Injector#createChildInjector(java.lang.Iterable)
+		 * @see cn.com.rebirth.search.commons.inject.Injector#createChildInjector(java.lang.Iterable)
 		 */
 		public Injector createChildInjector(Iterable<? extends Module> modules) {
 			return delegateInjector.createChildInjector(modules);
@@ -327,7 +327,7 @@ class InjectorBuilder {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Injector#createChildInjector(cn.com.summall.search.commons.inject.Module[])
+		 * @see cn.com.rebirth.search.commons.inject.Injector#createChildInjector(cn.com.rebirth.search.commons.inject.Module[])
 		 */
 		public Injector createChildInjector(Module... modules) {
 			return delegateInjector.createChildInjector(modules);
@@ -335,7 +335,7 @@ class InjectorBuilder {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Injector#getProvider(cn.com.summall.search.commons.inject.Key)
+		 * @see cn.com.rebirth.search.commons.inject.Injector#getProvider(cn.com.rebirth.search.commons.inject.Key)
 		 */
 		public <T> Provider<T> getProvider(Key<T> key) {
 			throw new UnsupportedOperationException("Injector.getProvider(Key<T>) is not supported in Stage.TOOL");
@@ -343,7 +343,7 @@ class InjectorBuilder {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Injector#getProvider(java.lang.Class)
+		 * @see cn.com.rebirth.search.commons.inject.Injector#getProvider(java.lang.Class)
 		 */
 		public <T> Provider<T> getProvider(Class<T> type) {
 			throw new UnsupportedOperationException("Injector.getProvider(Class<T>) is not supported in Stage.TOOL");
@@ -351,7 +351,7 @@ class InjectorBuilder {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Injector#getMembersInjector(cn.com.summall.search.commons.inject.TypeLiteral)
+		 * @see cn.com.rebirth.search.commons.inject.Injector#getMembersInjector(cn.com.rebirth.search.commons.inject.TypeLiteral)
 		 */
 		public <T> MembersInjector<T> getMembersInjector(TypeLiteral<T> typeLiteral) {
 			throw new UnsupportedOperationException(
@@ -360,7 +360,7 @@ class InjectorBuilder {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Injector#getMembersInjector(java.lang.Class)
+		 * @see cn.com.rebirth.search.commons.inject.Injector#getMembersInjector(java.lang.Class)
 		 */
 		public <T> MembersInjector<T> getMembersInjector(Class<T> type) {
 			throw new UnsupportedOperationException(
@@ -369,7 +369,7 @@ class InjectorBuilder {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Injector#getInstance(cn.com.summall.search.commons.inject.Key)
+		 * @see cn.com.rebirth.search.commons.inject.Injector#getInstance(cn.com.rebirth.search.commons.inject.Key)
 		 */
 		public <T> T getInstance(Key<T> key) {
 			throw new UnsupportedOperationException("Injector.getInstance(Key<T>) is not supported in Stage.TOOL");
@@ -377,7 +377,7 @@ class InjectorBuilder {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Injector#getInstance(java.lang.Class)
+		 * @see cn.com.rebirth.search.commons.inject.Injector#getInstance(java.lang.Class)
 		 */
 		public <T> T getInstance(Class<T> type) {
 			throw new UnsupportedOperationException("Injector.getInstance(Class<T>) is not supported in Stage.TOOL");

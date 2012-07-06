@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons LZFStreamOutput.java 2012-3-29 15:15:16 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons LZFStreamOutput.java 2012-7-6 10:23:41 l.xue.nong$$
  */
 
 
@@ -22,7 +22,7 @@ import cn.com.rebirth.commons.io.stream.StreamOutput;
 public class LZFStreamOutput extends StreamOutput {
 
     
-    /** The OUTPU t_ buffe r_ size. */
+    /** The output buffer size. */
     private static int OUTPUT_BUFFER_SIZE = LZFChunk.MAX_CHUNK_LEN;
 
     
@@ -71,7 +71,7 @@ public class LZFStreamOutput extends StreamOutput {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.io.stream.StreamOutput#write(int)
+     * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#write(int)
      */
     @Override
     public void write(final int singleByte) throws IOException {
@@ -83,7 +83,7 @@ public class LZFStreamOutput extends StreamOutput {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.io.stream.StreamOutput#writeByte(byte)
+     * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#writeByte(byte)
      */
     @Override
     public void writeByte(byte b) throws IOException {
@@ -95,7 +95,7 @@ public class LZFStreamOutput extends StreamOutput {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.io.stream.StreamOutput#writeBytes(byte[], int, int)
+     * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#writeBytes(byte[], int, int)
      */
     @Override
     public void writeBytes(byte[] buffer, int offset, int length) throws IOException {
@@ -135,7 +135,7 @@ public class LZFStreamOutput extends StreamOutput {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.io.stream.StreamOutput#flush()
+     * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#flush()
      */
     @Override
     public void flush() throws IOException {
@@ -147,7 +147,7 @@ public class LZFStreamOutput extends StreamOutput {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.io.stream.StreamOutput#close()
+     * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#close()
      */
     @Override
     public void close() throws IOException {
@@ -171,7 +171,7 @@ public class LZFStreamOutput extends StreamOutput {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.io.stream.StreamOutput#reset()
+     * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#reset()
      */
     @Override
     public void reset() throws IOException {

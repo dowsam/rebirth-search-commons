@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons Matchers.java 2012-3-29 15:15:18 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons Matchers.java 2012-7-6 10:23:52 l.xue.nong$$
  */
 
 
@@ -55,7 +55,7 @@ public class Matchers {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
+		 * @see cn.com.rebirth.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
 		 */
 		public boolean matches(Object o) {
 			return true;
@@ -122,7 +122,7 @@ public class Matchers {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
+		 * @see cn.com.rebirth.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
 		 */
 		public boolean matches(T t) {
 			return !delegate.matches(t);
@@ -209,7 +209,7 @@ public class Matchers {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
+		 * @see cn.com.rebirth.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
 		 */
 		public boolean matches(AnnotatedElement element) {
 			return element.getAnnotation(annotationType) != null;
@@ -284,7 +284,7 @@ public class Matchers {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
+		 * @see cn.com.rebirth.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
 		 */
 		public boolean matches(AnnotatedElement element) {
 			Annotation fromElement = element.getAnnotation(annotation.annotationType());
@@ -360,7 +360,7 @@ public class Matchers {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
+		 * @see cn.com.rebirth.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
 		 */
 		public boolean matches(Class subclass) {
 			return superclass.isAssignableFrom(subclass);
@@ -433,7 +433,7 @@ public class Matchers {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
+		 * @see cn.com.rebirth.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
 		 */
 		public boolean matches(Object other) {
 			return value.equals(other);
@@ -506,7 +506,7 @@ public class Matchers {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
+		 * @see cn.com.rebirth.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
 		 */
 		public boolean matches(Object other) {
 			return value == other;
@@ -586,7 +586,7 @@ public class Matchers {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
+		 * @see cn.com.rebirth.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
 		 */
 		public boolean matches(Class c) {
 			return c.getPackage().equals(targetPackage);
@@ -671,7 +671,7 @@ public class Matchers {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
+		 * @see cn.com.rebirth.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
 		 */
 		public boolean matches(Class c) {
 			String classPackageName = c.getPackage().getName();
@@ -745,7 +745,7 @@ public class Matchers {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
+		 * @see cn.com.rebirth.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
 		 */
 		public boolean matches(Method m) {
 			return returnType.matches(m.getReturnType());

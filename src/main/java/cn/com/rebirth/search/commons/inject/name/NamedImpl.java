@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons NamedImpl.java 2012-3-29 15:15:09 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons NamedImpl.java 2012-7-6 10:23:46 l.xue.nong$$
  */
 
 
@@ -36,7 +36,7 @@ class NamedImpl implements Named, Serializable {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.name.Named#value()
+	 * @see cn.com.rebirth.search.commons.inject.name.Named#value()
 	 */
 	public String value() {
 		return this.value;

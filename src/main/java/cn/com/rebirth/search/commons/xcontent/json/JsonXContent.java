@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons JsonXContent.java 2012-3-29 15:15:08 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons JsonXContent.java 2012-7-6 10:23:49 l.xue.nong$$
  */
 
 
@@ -69,7 +69,7 @@ public class JsonXContent implements XContent {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContent#type()
+     * @see cn.com.rebirth.search.commons.xcontent.XContent#type()
      */
     @Override
     public XContentType type() {
@@ -78,7 +78,7 @@ public class JsonXContent implements XContent {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContent#streamSeparator()
+     * @see cn.com.rebirth.search.commons.xcontent.XContent#streamSeparator()
      */
     @Override
     public byte streamSeparator() {
@@ -87,7 +87,7 @@ public class JsonXContent implements XContent {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContent#createGenerator(java.io.OutputStream)
+     * @see cn.com.rebirth.search.commons.xcontent.XContent#createGenerator(java.io.OutputStream)
      */
     @Override
     public XContentGenerator createGenerator(OutputStream os) throws IOException {
@@ -96,7 +96,7 @@ public class JsonXContent implements XContent {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContent#createGenerator(java.io.Writer)
+     * @see cn.com.rebirth.search.commons.xcontent.XContent#createGenerator(java.io.Writer)
      */
     @Override
     public XContentGenerator createGenerator(Writer writer) throws IOException {
@@ -105,7 +105,7 @@ public class JsonXContent implements XContent {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContent#createParser(java.lang.String)
+     * @see cn.com.rebirth.search.commons.xcontent.XContent#createParser(java.lang.String)
      */
     @Override
     public XContentParser createParser(String content) throws IOException {
@@ -114,7 +114,7 @@ public class JsonXContent implements XContent {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContent#createParser(java.io.InputStream)
+     * @see cn.com.rebirth.search.commons.xcontent.XContent#createParser(java.io.InputStream)
      */
     @Override
     public XContentParser createParser(InputStream is) throws IOException {
@@ -123,7 +123,7 @@ public class JsonXContent implements XContent {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContent#createParser(byte[])
+     * @see cn.com.rebirth.search.commons.xcontent.XContent#createParser(byte[])
      */
     @Override
     public XContentParser createParser(byte[] data) throws IOException {
@@ -132,7 +132,7 @@ public class JsonXContent implements XContent {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContent#createParser(byte[], int, int)
+     * @see cn.com.rebirth.search.commons.xcontent.XContent#createParser(byte[], int, int)
      */
     @Override
     public XContentParser createParser(byte[] data, int offset, int length) throws IOException {
@@ -141,7 +141,7 @@ public class JsonXContent implements XContent {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.xcontent.XContent#createParser(java.io.Reader)
+     * @see cn.com.rebirth.search.commons.xcontent.XContent#createParser(java.io.Reader)
      */
     @Override
     public XContentParser createParser(Reader reader) throws IOException {

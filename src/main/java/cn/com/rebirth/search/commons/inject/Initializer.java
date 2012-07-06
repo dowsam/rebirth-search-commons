@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons Initializer.java 2012-3-29 15:15:15 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons Initializer.java 2012-7-6 10:23:53 l.xue.nong$$
  */
 
 
@@ -159,7 +159,7 @@ class Initializer {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.Initializable#get(cn.com.summall.search.commons.inject.internal.Errors)
+		 * @see cn.com.rebirth.search.commons.inject.Initializable#get(cn.com.rebirth.search.commons.inject.internal.Errors)
 		 */
 		public T get(Errors errors) throws ErrorsException {
 			if (ready.getCount() == 0) {

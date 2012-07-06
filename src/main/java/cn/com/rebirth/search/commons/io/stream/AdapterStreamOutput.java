@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons AdapterStreamOutput.java 2012-3-29 15:15:10 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons AdapterStreamOutput.java 2012-7-6 10:23:46 l.xue.nong$$
  */
 
 package cn.com.rebirth.search.commons.io.stream;
@@ -57,7 +57,7 @@ public class AdapterStreamOutput extends StreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#writeByte(byte)
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#writeByte(byte)
 	 */
 	@Override
 	public void writeByte(byte b) throws IOException {
@@ -66,7 +66,7 @@ public class AdapterStreamOutput extends StreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#writeBytes(byte[], int, int)
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#writeBytes(byte[], int, int)
 	 */
 	@Override
 	public void writeBytes(byte[] b, int offset, int length) throws IOException {
@@ -75,7 +75,7 @@ public class AdapterStreamOutput extends StreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#flush()
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#flush()
 	 */
 	@Override
 	public void flush() throws IOException {
@@ -84,7 +84,7 @@ public class AdapterStreamOutput extends StreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#close()
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#close()
 	 */
 	@Override
 	public void close() throws IOException {
@@ -93,7 +93,7 @@ public class AdapterStreamOutput extends StreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#reset()
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#reset()
 	 */
 	@Override
 	public void reset() throws IOException {
@@ -102,7 +102,7 @@ public class AdapterStreamOutput extends StreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#writeBytes(byte[])
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#writeBytes(byte[])
 	 */
 	@Override
 	public void writeBytes(byte[] b) throws IOException {
@@ -111,7 +111,7 @@ public class AdapterStreamOutput extends StreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#writeBytes(byte[], int)
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#writeBytes(byte[], int)
 	 */
 	@Override
 	public void writeBytes(byte[] b, int length) throws IOException {
@@ -120,7 +120,7 @@ public class AdapterStreamOutput extends StreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#writeBytesHolder(byte[], int, int)
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#writeBytesHolder(byte[], int, int)
 	 */
 	@Override
 	public void writeBytesHolder(byte[] bytes, int offset, int length) throws IOException {
@@ -129,7 +129,7 @@ public class AdapterStreamOutput extends StreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#writeBytesHolder(cn.com.summall.search.commons.BytesHolder)
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#writeBytesHolder(cn.com.rebirth.search.commons.BytesHolder)
 	 */
 	@Override
 	public void writeBytesHolder(@Nullable BytesHolder bytes) throws IOException {
@@ -138,7 +138,7 @@ public class AdapterStreamOutput extends StreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#writeInt(int)
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#writeInt(int)
 	 */
 	@Override
 	public void writeInt(int i) throws IOException {
@@ -147,7 +147,7 @@ public class AdapterStreamOutput extends StreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#writeVInt(int)
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#writeVInt(int)
 	 */
 	@Override
 	public void writeVInt(int i) throws IOException {
@@ -156,7 +156,7 @@ public class AdapterStreamOutput extends StreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#writeLong(long)
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#writeLong(long)
 	 */
 	@Override
 	public void writeLong(long i) throws IOException {
@@ -165,7 +165,7 @@ public class AdapterStreamOutput extends StreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#writeVLong(long)
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#writeVLong(long)
 	 */
 	@Override
 	public void writeVLong(long i) throws IOException {
@@ -174,7 +174,7 @@ public class AdapterStreamOutput extends StreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#writeUTF(java.lang.String)
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#writeUTF(java.lang.String)
 	 */
 	@Override
 	public void writeUTF(String str) throws IOException {
@@ -183,7 +183,7 @@ public class AdapterStreamOutput extends StreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#writeFloat(float)
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#writeFloat(float)
 	 */
 	@Override
 	public void writeFloat(float v) throws IOException {
@@ -192,7 +192,7 @@ public class AdapterStreamOutput extends StreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#writeDouble(double)
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#writeDouble(double)
 	 */
 	@Override
 	public void writeDouble(double v) throws IOException {
@@ -201,7 +201,7 @@ public class AdapterStreamOutput extends StreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#writeBoolean(boolean)
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#writeBoolean(boolean)
 	 */
 	@Override
 	public void writeBoolean(boolean b) throws IOException {
@@ -210,7 +210,7 @@ public class AdapterStreamOutput extends StreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#write(int)
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#write(int)
 	 */
 	@Override
 	public void write(int b) throws IOException {
@@ -219,7 +219,7 @@ public class AdapterStreamOutput extends StreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.StreamOutput#write(byte[], int, int)
+	 * @see cn.com.rebirth.search.commons.io.stream.StreamOutput#write(byte[], int, int)
 	 */
 	@Override
 	public void write(byte[] b, int off, int len) throws IOException {

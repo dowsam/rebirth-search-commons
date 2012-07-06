@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons PrivateModule.java 2012-3-29 15:15:20 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons PrivateModule.java 2012-7-6 10:23:43 l.xue.nong$$
  */
 
 
@@ -32,7 +32,7 @@ public abstract class PrivateModule implements Module {
 
     
     /* (non-Javadoc)
-     * @see cn.com.summall.search.commons.inject.Module#configure(cn.com.summall.search.commons.inject.Binder)
+     * @see cn.com.rebirth.search.commons.inject.Module#configure(cn.com.rebirth.search.commons.inject.Binder)
      */
     public final synchronized void configure(Binder binder) {
         checkState(this.binder == null, "Re-entry is not allowed.");

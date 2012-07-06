@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons HandlesStreamOutput.java 2012-3-29 15:15:10 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons HandlesStreamOutput.java 2012-7-6 10:23:53 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.io.stream;
 
@@ -62,7 +62,7 @@ public class HandlesStreamOutput extends AdapterStreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.AdapterStreamOutput#writeUTF(java.lang.String)
+	 * @see cn.com.rebirth.search.commons.io.stream.AdapterStreamOutput#writeUTF(java.lang.String)
 	 */
 	@Override
 	public void writeUTF(String s) throws IOException {
@@ -94,7 +94,7 @@ public class HandlesStreamOutput extends AdapterStreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.AdapterStreamOutput#reset()
+	 * @see cn.com.rebirth.search.commons.io.stream.AdapterStreamOutput#reset()
 	 */
 	@Override
 	public void reset() throws IOException {
@@ -105,7 +105,7 @@ public class HandlesStreamOutput extends AdapterStreamOutput {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.io.stream.AdapterStreamOutput#reset(cn.com.summall.search.commons.io.stream.StreamOutput)
+	 * @see cn.com.rebirth.search.commons.io.stream.AdapterStreamOutput#reset(cn.com.rebirth.search.commons.io.stream.StreamOutput)
 	 */
 	public void reset(StreamOutput out) throws IOException {
 		super.reset(out);

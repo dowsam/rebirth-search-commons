@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons XBooleanFilter.java 2012-3-29 15:15:18 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons XBooleanFilter.java 2012-7-6 10:23:41 l.xue.nong$$
  */
 
 
@@ -46,12 +46,12 @@ public class XBooleanFilter extends Filter {
 
 	
 	/**
-	 * Gets the dISI.
+	 * Gets the disi.
 	 *
 	 * @param filters the filters
 	 * @param index the index
 	 * @param reader the reader
-	 * @return the dISI
+	 * @return the disi
 	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	private DocIdSet getDISI(ArrayList<Filter> filters, int index, IndexReader reader) throws IOException {

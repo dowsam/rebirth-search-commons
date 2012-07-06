@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons SearcherManager.java 2012-3-29 15:15:16 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons SearcherManager.java 2012-7-6 10:23:41 l.xue.nong$$
  */
 
 package cn.com.rebirth.search.commons.lucene.manager;
@@ -60,7 +60,7 @@ public final class SearcherManager extends ReferenceManager<IndexSearcher> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.lucene.manager.ReferenceManager#decRef(java.lang.Object)
+	 * @see cn.com.rebirth.search.commons.lucene.manager.ReferenceManager#decRef(java.lang.Object)
 	 */
 	@Override
 	protected void decRef(IndexSearcher reference) throws IOException {
@@ -69,7 +69,7 @@ public final class SearcherManager extends ReferenceManager<IndexSearcher> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.lucene.manager.ReferenceManager#refreshIfNeeded(java.lang.Object)
+	 * @see cn.com.rebirth.search.commons.lucene.manager.ReferenceManager#refreshIfNeeded(java.lang.Object)
 	 */
 	@Override
 	protected IndexSearcher refreshIfNeeded(IndexSearcher referenceToRefresh) throws IOException {
@@ -83,7 +83,7 @@ public final class SearcherManager extends ReferenceManager<IndexSearcher> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.lucene.manager.ReferenceManager#tryIncRef(java.lang.Object)
+	 * @see cn.com.rebirth.search.commons.lucene.manager.ReferenceManager#tryIncRef(java.lang.Object)
 	 */
 	@Override
 	protected boolean tryIncRef(IndexSearcher reference) {

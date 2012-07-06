@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons SingleFieldInjector.java 2012-3-29 15:15:14 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons SingleFieldInjector.java 2012-7-6 10:23:49 l.xue.nong$$
  */
 
 
@@ -61,7 +61,7 @@ class SingleFieldInjector implements SingleMemberInjector {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.SingleMemberInjector#getInjectionPoint()
+	 * @see cn.com.rebirth.search.commons.inject.SingleMemberInjector#getInjectionPoint()
 	 */
 	public InjectionPoint getInjectionPoint() {
 		return injectionPoint;
@@ -69,7 +69,7 @@ class SingleFieldInjector implements SingleMemberInjector {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.SingleMemberInjector#inject(cn.com.summall.search.commons.inject.internal.Errors, cn.com.summall.search.commons.inject.internal.InternalContext, java.lang.Object)
+	 * @see cn.com.rebirth.search.commons.inject.SingleMemberInjector#inject(cn.com.rebirth.search.commons.inject.internal.Errors, cn.com.rebirth.search.commons.inject.internal.InternalContext, java.lang.Object)
 	 */
 	public void inject(Errors errors, InternalContext context, Object o) {
 		errors = errors.withSource(dependency);

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons EncounterImpl.java 2012-3-29 15:15:17 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons EncounterImpl.java 2012-7-6 10:23:44 l.xue.nong$$
  */
 
 
@@ -91,7 +91,7 @@ final class EncounterImpl<T> implements TypeEncounter<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.TypeEncounter#register(cn.com.summall.search.commons.inject.MembersInjector)
+	 * @see cn.com.rebirth.search.commons.inject.spi.TypeEncounter#register(cn.com.rebirth.search.commons.inject.MembersInjector)
 	 */
 	public void register(MembersInjector<? super T> membersInjector) {
 		checkState(valid, "Encounters may not be used after hear() returns.");
@@ -105,7 +105,7 @@ final class EncounterImpl<T> implements TypeEncounter<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.TypeEncounter#register(cn.com.summall.search.commons.inject.spi.InjectionListener)
+	 * @see cn.com.rebirth.search.commons.inject.spi.TypeEncounter#register(cn.com.rebirth.search.commons.inject.spi.InjectionListener)
 	 */
 	public void register(InjectionListener<? super T> injectionListener) {
 		checkState(valid, "Encounters may not be used after hear() returns.");
@@ -119,7 +119,7 @@ final class EncounterImpl<T> implements TypeEncounter<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.TypeEncounter#addError(java.lang.String, java.lang.Object[])
+	 * @see cn.com.rebirth.search.commons.inject.spi.TypeEncounter#addError(java.lang.String, java.lang.Object[])
 	 */
 	public void addError(String message, Object... arguments) {
 		checkState(valid, "Encounters may not be used after hear() returns.");
@@ -128,7 +128,7 @@ final class EncounterImpl<T> implements TypeEncounter<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.TypeEncounter#addError(java.lang.Throwable)
+	 * @see cn.com.rebirth.search.commons.inject.spi.TypeEncounter#addError(java.lang.Throwable)
 	 */
 	public void addError(Throwable t) {
 		checkState(valid, "Encounters may not be used after hear() returns.");
@@ -137,7 +137,7 @@ final class EncounterImpl<T> implements TypeEncounter<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.TypeEncounter#addError(cn.com.summall.search.commons.inject.spi.Message)
+	 * @see cn.com.rebirth.search.commons.inject.spi.TypeEncounter#addError(cn.com.rebirth.search.commons.inject.spi.Message)
 	 */
 	public void addError(Message message) {
 		checkState(valid, "Encounters may not be used after hear() returns.");
@@ -146,7 +146,7 @@ final class EncounterImpl<T> implements TypeEncounter<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.TypeEncounter#getProvider(cn.com.summall.search.commons.inject.Key)
+	 * @see cn.com.rebirth.search.commons.inject.spi.TypeEncounter#getProvider(cn.com.rebirth.search.commons.inject.Key)
 	 */
 	@SuppressWarnings("hiding")
 	public <T> Provider<T> getProvider(Key<T> key) {
@@ -156,7 +156,7 @@ final class EncounterImpl<T> implements TypeEncounter<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.TypeEncounter#getProvider(java.lang.Class)
+	 * @see cn.com.rebirth.search.commons.inject.spi.TypeEncounter#getProvider(java.lang.Class)
 	 */
 	@SuppressWarnings("hiding")
 	public <T> Provider<T> getProvider(Class<T> type) {
@@ -165,7 +165,7 @@ final class EncounterImpl<T> implements TypeEncounter<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.TypeEncounter#getMembersInjector(cn.com.summall.search.commons.inject.TypeLiteral)
+	 * @see cn.com.rebirth.search.commons.inject.spi.TypeEncounter#getMembersInjector(cn.com.rebirth.search.commons.inject.TypeLiteral)
 	 */
 	@SuppressWarnings("hiding")
 	public <T> MembersInjector<T> getMembersInjector(TypeLiteral<T> typeLiteral) {
@@ -175,7 +175,7 @@ final class EncounterImpl<T> implements TypeEncounter<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.TypeEncounter#getMembersInjector(java.lang.Class)
+	 * @see cn.com.rebirth.search.commons.inject.spi.TypeEncounter#getMembersInjector(java.lang.Class)
 	 */
 	@SuppressWarnings("hiding")
 	public <T> MembersInjector<T> getMembersInjector(Class<T> type) {

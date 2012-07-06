@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons AbstractMatcher.java 2012-3-29 15:15:07 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons AbstractMatcher.java 2012-7-6 10:23:51 l.xue.nong$$
  */
 
 
@@ -19,7 +19,7 @@ public abstract class AbstractMatcher<T> implements Matcher<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.matcher.Matcher#and(cn.com.summall.search.commons.inject.matcher.Matcher)
+	 * @see cn.com.rebirth.search.commons.inject.matcher.Matcher#and(cn.com.rebirth.search.commons.inject.matcher.Matcher)
 	 */
 	public Matcher<T> and(final Matcher<? super T> other) {
 		return new AndMatcher<T>(this, other);
@@ -27,7 +27,7 @@ public abstract class AbstractMatcher<T> implements Matcher<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.matcher.Matcher#or(cn.com.summall.search.commons.inject.matcher.Matcher)
+	 * @see cn.com.rebirth.search.commons.inject.matcher.Matcher#or(cn.com.rebirth.search.commons.inject.matcher.Matcher)
 	 */
 	public Matcher<T> or(Matcher<? super T> other) {
 		return new OrMatcher<T>(this, other);
@@ -60,7 +60,7 @@ public abstract class AbstractMatcher<T> implements Matcher<T> {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
+		 * @see cn.com.rebirth.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
 		 */
 		public boolean matches(T t) {
 			return a.matches(t) && b.matches(t);
@@ -126,7 +126,7 @@ public abstract class AbstractMatcher<T> implements Matcher<T> {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
+		 * @see cn.com.rebirth.search.commons.inject.matcher.Matcher#matches(java.lang.Object)
 		 */
 		public boolean matches(T t) {
 			return a.matches(t) || b.matches(t);

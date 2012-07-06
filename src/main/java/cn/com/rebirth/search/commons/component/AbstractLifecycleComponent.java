@@ -1,13 +1,13 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons AbstractLifecycleComponent.java 2012-3-29 15:15:14 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons AbstractLifecycleComponent.java 2012-7-6 10:23:47 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.component;
 
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-import cn.com.rebirth.commons.exception.RestartException;
+import cn.com.rebirth.commons.exception.RebirthException;
 import cn.com.rebirth.commons.settings.Settings;
 
 
@@ -98,44 +98,32 @@ public abstract class AbstractLifecycleComponent<T> extends AbstractComponent im
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.component.LifecycleComponent#lifecycleState()
-	 */
 	@Override
 	public Lifecycle.State lifecycleState() {
 		return this.lifecycle.state();
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.component.LifecycleComponent#addLifecycleListener(cn.com.summall.search.commons.component.LifecycleListener)
-	 */
 	@Override
 	public void addLifecycleListener(LifecycleListener listener) {
 		listeners.add(listener);
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.component.LifecycleComponent#removeLifecycleListener(cn.com.summall.search.commons.component.LifecycleListener)
-	 */
 	@Override
 	public void removeLifecycleListener(LifecycleListener listener) {
 		listeners.remove(listener);
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.component.LifecycleComponent#start()
-	 */
 	@SuppressWarnings({ "unchecked" })
 	@Override
-	public T start() throws RestartException {
+	public T start() throws RebirthException {
 		if (!lifecycle.canMoveToStarted()) {
 			return (T) this;
 		}
 		for (LifecycleListener listener : listeners) {
-			listener.beforeStart();
+			listener.beforebirth();
 		}
 		doStart();
 		lifecycle.moveToStarted();
@@ -149,17 +137,14 @@ public abstract class AbstractLifecycleComponent<T> extends AbstractComponent im
 	/**
 	 * Do start.
 	 *
-	 * @throws SumMallSearchException the sum mall search exception
+	 * @throws rebirthException the rebirth exception
 	 */
-	protected abstract void doStart() throws RestartException;
+	protected abstract void doStart() throws RebirthException;
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.component.LifecycleComponent#stop()
-	 */
 	@SuppressWarnings({ "unchecked" })
 	@Override
-	public T stop() throws RestartException {
+	public T stop() throws RebirthException {
 		if (!lifecycle.canMoveToStopped()) {
 			return (T) this;
 		}
@@ -178,16 +163,13 @@ public abstract class AbstractLifecycleComponent<T> extends AbstractComponent im
 	/**
 	 * Do stop.
 	 *
-	 * @throws SumMallSearchException the sum mall search exception
+	 * @throws rebirthException the rebirth exception
 	 */
-	protected abstract void doStop() throws RestartException;
+	protected abstract void doStop() throws RebirthException;
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.component.CloseableComponent#close()
-	 */
 	@Override
-	public void close() throws RestartException {
+	public void close() throws RebirthException {
 		if (lifecycle.started()) {
 			stop();
 		}
@@ -208,7 +190,7 @@ public abstract class AbstractLifecycleComponent<T> extends AbstractComponent im
 	/**
 	 * Do close.
 	 *
-	 * @throws SumMallSearchException the sum mall search exception
+	 * @throws rebirthException the rebirth exception
 	 */
-	protected abstract void doClose() throws RestartException;
+	protected abstract void doClose() throws RebirthException;
 }

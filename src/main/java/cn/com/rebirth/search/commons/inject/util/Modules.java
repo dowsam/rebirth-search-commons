@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons Modules.java 2012-3-29 15:15:08 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons Modules.java 2012-7-6 10:23:43 l.xue.nong$$
  */
 
 
@@ -156,7 +156,7 @@ public final class Modules {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.util.Modules.OverriddenModuleBuilder#with(cn.com.summall.search.commons.inject.Module[])
+		 * @see cn.com.rebirth.search.commons.inject.util.Modules.OverriddenModuleBuilder#with(cn.com.rebirth.search.commons.inject.Module[])
 		 */
 		public Module with(Module... overrides) {
 			return with(Arrays.asList(overrides));
@@ -164,7 +164,7 @@ public final class Modules {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.util.Modules.OverriddenModuleBuilder#with(java.lang.Iterable)
+		 * @see cn.com.rebirth.search.commons.inject.util.Modules.OverriddenModuleBuilder#with(java.lang.Iterable)
 		 */
 		public Module with(final Iterable<? extends Module> overrides) {
 			return new AbstractModule() {
@@ -309,7 +309,7 @@ public final class Modules {
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.spi.DefaultElementVisitor#visitOther(cn.com.summall.search.commons.inject.spi.Element)
+		 * @see cn.com.rebirth.search.commons.inject.spi.DefaultElementVisitor#visitOther(cn.com.rebirth.search.commons.inject.spi.Element)
 		 */
 		@Override
 		protected Void visitOther(Element element) {

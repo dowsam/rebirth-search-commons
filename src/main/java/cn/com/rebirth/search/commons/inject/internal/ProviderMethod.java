@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons ProviderMethod.java 2012-3-29 15:15:07 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons ProviderMethod.java 2012-7-6 10:23:50 l.xue.nong$$
  */
 
 
@@ -138,7 +138,7 @@ public class ProviderMethod<T> implements ProviderWithDependencies<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Provider#get()
+	 * @see cn.com.rebirth.search.commons.inject.Provider#get()
 	 */
 	public T get() {
 		Object[] parameters = new Object[parameterProviders.size()];
@@ -160,7 +160,7 @@ public class ProviderMethod<T> implements ProviderWithDependencies<T> {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.HasDependencies#getDependencies()
+	 * @see cn.com.rebirth.search.commons.inject.spi.HasDependencies#getDependencies()
 	 */
 	public Set<Dependency<?>> getDependencies() {
 		return dependencies;

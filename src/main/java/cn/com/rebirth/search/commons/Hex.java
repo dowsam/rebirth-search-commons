@@ -1,12 +1,12 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons Hex.java 2012-3-29 15:15:15 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons Hex.java 2012-7-6 10:23:46 l.xue.nong$$
  */
 
 
 package cn.com.rebirth.search.commons;
 
-import cn.com.rebirth.commons.exception.RestartIllegalStateException;
+import cn.com.rebirth.commons.exception.RebirthIllegalStateException;
 
 
 
@@ -86,9 +86,9 @@ public class Hex {
 	 *
 	 * @param data the data
 	 * @return the byte[]
-	 * @throws SumMallSearchIllegalStateException the sum mall search illegal state exception
+	 * @throws rebirthIllegalStateException the rebirth illegal state exception
 	 */
-	public static byte[] decodeHex(String data) throws RestartIllegalStateException {
+	public static byte[] decodeHex(String data) throws RebirthIllegalStateException {
 		return decodeHex(data.toCharArray());
 	}
 
@@ -98,14 +98,14 @@ public class Hex {
 	 *
 	 * @param data the data
 	 * @return the byte[]
-	 * @throws SumMallSearchIllegalStateException the sum mall search illegal state exception
+	 * @throws rebirthIllegalStateException the rebirth illegal state exception
 	 */
-	public static byte[] decodeHex(char[] data) throws RestartIllegalStateException {
+	public static byte[] decodeHex(char[] data) throws RebirthIllegalStateException {
 
 		int len = data.length;
 
 		if ((len & 0x01) != 0) {
-			throw new RestartIllegalStateException("Odd number of characters.");
+			throw new RebirthIllegalStateException("Odd number of characters.");
 		}
 
 		byte[] out = new byte[len >> 1];
@@ -129,12 +129,12 @@ public class Hex {
 	 * @param ch the ch
 	 * @param index the index
 	 * @return the int
-	 * @throws SumMallSearchIllegalStateException the sum mall search illegal state exception
+	 * @throws rebirthIllegalStateException the rebirth illegal state exception
 	 */
-	protected static int toDigit(char ch, int index) throws RestartIllegalStateException {
+	protected static int toDigit(char ch, int index) throws RebirthIllegalStateException {
 		int digit = Character.digit(ch, 16);
 		if (digit == -1) {
-			throw new RestartIllegalStateException("Illegal hexadecimal character " + ch + " at index " + index);
+			throw new RebirthIllegalStateException("Illegal hexadecimal character " + ch + " at index " + index);
 		}
 		return digit;
 	}

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons ConstructorBindingImpl.java 2012-3-29 15:15:14 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons ConstructorBindingImpl.java 2012-7-6 10:23:47 l.xue.nong$$
  */
 
 
@@ -85,7 +85,7 @@ class ConstructorBindingImpl<T> extends BindingImpl<T> implements ConstructorBin
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Binding#acceptTargetVisitor(cn.com.summall.search.commons.inject.spi.BindingTargetVisitor)
+	 * @see cn.com.rebirth.search.commons.inject.Binding#acceptTargetVisitor(cn.com.rebirth.search.commons.inject.spi.BindingTargetVisitor)
 	 */
 	public <V> V acceptTargetVisitor(BindingTargetVisitor<? super T, V> visitor) {
 		checkState(factory.constructorInjector != null, "not initialized");
@@ -94,7 +94,7 @@ class ConstructorBindingImpl<T> extends BindingImpl<T> implements ConstructorBin
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.ConstructorBinding#getConstructor()
+	 * @see cn.com.rebirth.search.commons.inject.spi.ConstructorBinding#getConstructor()
 	 */
 	public InjectionPoint getConstructor() {
 		checkState(factory.constructorInjector != null, "Binding is not ready");
@@ -103,7 +103,7 @@ class ConstructorBindingImpl<T> extends BindingImpl<T> implements ConstructorBin
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.ConstructorBinding#getInjectableMembers()
+	 * @see cn.com.rebirth.search.commons.inject.spi.ConstructorBinding#getInjectableMembers()
 	 */
 	public Set<InjectionPoint> getInjectableMembers() {
 		checkState(factory.constructorInjector != null, "Binding is not ready");
@@ -112,7 +112,7 @@ class ConstructorBindingImpl<T> extends BindingImpl<T> implements ConstructorBin
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.HasDependencies#getDependencies()
+	 * @see cn.com.rebirth.search.commons.inject.spi.HasDependencies#getDependencies()
 	 */
 	public Set<Dependency<?>> getDependencies() {
 		return Dependency.forInjectionPoints(new ImmutableSet.Builder<InjectionPoint>().add(getConstructor())
@@ -121,7 +121,7 @@ class ConstructorBindingImpl<T> extends BindingImpl<T> implements ConstructorBin
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.Element#applyTo(cn.com.summall.search.commons.inject.Binder)
+	 * @see cn.com.rebirth.search.commons.inject.spi.Element#applyTo(cn.com.rebirth.search.commons.inject.Binder)
 	 */
 	public void applyTo(Binder binder) {
 		throw new UnsupportedOperationException("This element represents a synthetic binding.");
@@ -129,7 +129,7 @@ class ConstructorBindingImpl<T> extends BindingImpl<T> implements ConstructorBin
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.internal.BindingImpl#toString()
+	 * @see cn.com.rebirth.search.commons.inject.internal.BindingImpl#toString()
 	 */
 	@Override
 	public String toString() {
@@ -152,7 +152,7 @@ class ConstructorBindingImpl<T> extends BindingImpl<T> implements ConstructorBin
 
 		
 		/* (non-Javadoc)
-		 * @see cn.com.summall.search.commons.inject.internal.InternalFactory#get(cn.com.summall.search.commons.inject.internal.Errors, cn.com.summall.search.commons.inject.internal.InternalContext, cn.com.summall.search.commons.inject.spi.Dependency)
+		 * @see cn.com.rebirth.search.commons.inject.internal.InternalFactory#get(cn.com.rebirth.search.commons.inject.internal.Errors, cn.com.rebirth.search.commons.inject.internal.InternalContext, cn.com.rebirth.search.commons.inject.spi.Dependency)
 		 */
 		@SuppressWarnings("unchecked")
 		public T get(Errors errors, InternalContext context, Dependency<?> dependency) throws ErrorsException {

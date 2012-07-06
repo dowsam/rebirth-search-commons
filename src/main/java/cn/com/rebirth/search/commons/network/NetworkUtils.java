@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons NetworkUtils.java 2012-3-29 15:15:08 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons NetworkUtils.java 2012-7-6 10:23:45 l.xue.nong$$
  */
 
 
@@ -25,7 +25,7 @@ import java.util.Set;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import cn.com.rebirth.commons.exception.RestartIllegalStateException;
+import cn.com.rebirth.commons.exception.RebirthIllegalStateException;
 import cn.com.rebirth.commons.utils.OsUtils;
 
 import com.google.common.collect.Lists;
@@ -191,7 +191,7 @@ public abstract class NetworkUtils {
 						return ((Integer) getIndexMethod.invoke(o1)).intValue()
 								- ((Integer) getIndexMethod.invoke(o2)).intValue();
 					} catch (Exception e) {
-						throw new RestartIllegalStateException("failed to fetch index of network interface");
+						throw new RebirthIllegalStateException("failed to fetch index of network interface");
 					}
 				}
 			});

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons FactoryProvider.java 2012-3-29 15:15:08 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons FactoryProvider.java 2012-7-6 10:23:42 l.xue.nong$$
  */
 
 package cn.com.rebirth.search.commons.inject.assistedinject;
@@ -249,9 +249,6 @@ public class FactoryProvider<F> implements Provider<F>, HasDependencies {
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.HasDependencies#getDependencies()
-	 */
 	public Set<Dependency<?>> getDependencies() {
 		List<Dependency<?>> dependencies = Lists.newArrayList();
 		for (AssistedConstructor<?> constructor : factoryMethodToConstructor.values()) {
@@ -265,9 +262,6 @@ public class FactoryProvider<F> implements Provider<F>, HasDependencies {
 	}
 
 	
-	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.Provider#get()
-	 */
 	@SuppressWarnings({ "rawtypes", "unchecked" })
 	public F get() {
 		InvocationHandler invocationHandler = new InvocationHandler() {

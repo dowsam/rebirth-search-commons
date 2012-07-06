@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons BindingProcessor.java 2012-3-29 15:15:14 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons BindingProcessor.java 2012-7-6 10:23:52 l.xue.nong$$
  */
 
 
@@ -73,7 +73,7 @@ class BindingProcessor extends AbstractProcessor {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.AbstractProcessor#visit(cn.com.summall.search.commons.inject.Binding)
+	 * @see cn.com.rebirth.search.commons.inject.AbstractProcessor#visit(cn.com.rebirth.search.commons.inject.Binding)
 	 */
 	@SuppressWarnings("rawtypes")
 	@Override
@@ -207,7 +207,7 @@ class BindingProcessor extends AbstractProcessor {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.AbstractProcessor#visit(cn.com.summall.search.commons.inject.spi.PrivateElements)
+	 * @see cn.com.rebirth.search.commons.inject.AbstractProcessor#visit(cn.com.rebirth.search.commons.inject.spi.PrivateElements)
 	 */
 	@Override
 	public Boolean visit(PrivateElements privateElements) {

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons MembersInjectorLookup.java 2012-3-29 15:15:07 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons MembersInjectorLookup.java 2012-7-6 10:23:42 l.xue.nong$$
  */
 
 
@@ -47,7 +47,7 @@ public final class MembersInjectorLookup<T> implements Element {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.Element#getSource()
+	 * @see cn.com.rebirth.search.commons.inject.spi.Element#getSource()
 	 */
 	public Object getSource() {
 		return source;
@@ -65,7 +65,7 @@ public final class MembersInjectorLookup<T> implements Element {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.Element#acceptVisitor(cn.com.summall.search.commons.inject.spi.ElementVisitor)
+	 * @see cn.com.rebirth.search.commons.inject.spi.Element#acceptVisitor(cn.com.rebirth.search.commons.inject.spi.ElementVisitor)
 	 */
 	@SuppressWarnings("hiding")
 	public <T> T acceptVisitor(ElementVisitor<T> visitor) {
@@ -85,7 +85,7 @@ public final class MembersInjectorLookup<T> implements Element {
 
 	
 	/* (non-Javadoc)
-	 * @see cn.com.summall.search.commons.inject.spi.Element#applyTo(cn.com.summall.search.commons.inject.Binder)
+	 * @see cn.com.rebirth.search.commons.inject.spi.Element#applyTo(cn.com.rebirth.search.commons.inject.Binder)
 	 */
 	public void applyTo(Binder binder) {
 		initializeDelegate(binder.withSource(getSource()).getMembersInjector(type));

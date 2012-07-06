@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 2005-2012 www.summall.com.cn All rights reserved
- * Info:summall-search-commons XContentFactory.java 2012-3-29 15:15:07 l.xue.nong$$
+ * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
+ * Info:rebirth-search-commons XContentFactory.java 2012-7-6 10:23:47 l.xue.nong$$
  */
 
 
@@ -11,8 +11,8 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Arrays;
 
-import cn.com.rebirth.commons.exception.RestartIllegalArgumentException;
-import cn.com.rebirth.commons.exception.RestartParseException;
+import cn.com.rebirth.commons.exception.RebirthIllegalArgumentException;
+import cn.com.rebirth.commons.exception.RebirthParseException;
 import cn.com.rebirth.search.commons.xcontent.json.JsonXContent;
 import cn.com.rebirth.search.commons.xcontent.smile.SmileXContent;
 
@@ -26,7 +26,7 @@ import com.fasterxml.jackson.dataformat.smile.SmileConstants;
 public class XContentFactory {
 
 	
-	/** The GUES s_ heade r_ length. */
+	/** The guess header length. */
 	private static int GUESS_HEADER_LENGTH = 20;
 
 	
@@ -100,7 +100,7 @@ public class XContentFactory {
 		} else if (type == XContentType.SMILE) {
 			return smileBuilder(outputStream);
 		}
-		throw new RestartIllegalArgumentException("No matching content type for " + type);
+		throw new RebirthIllegalArgumentException("No matching content type for " + type);
 	}
 
 	
@@ -117,7 +117,7 @@ public class XContentFactory {
 		} else if (type == XContentType.SMILE) {
 			return SmileXContent.contentBuilder();
 		}
-		throw new RestartIllegalArgumentException("No matching content type for " + type);
+		throw new RebirthIllegalArgumentException("No matching content type for " + type);
 	}
 
 	
@@ -159,7 +159,7 @@ public class XContentFactory {
 	public static XContent xContent(CharSequence content) {
 		XContentType type = xContentType(content);
 		if (type == null) {
-			throw new RestartParseException("Failed to derive xcontent from " + content);
+			throw new RebirthParseException("Failed to derive xcontent from " + content);
 		}
 		return xContent(type);
 	}
@@ -187,7 +187,7 @@ public class XContentFactory {
 	public static XContent xContent(byte[] data, int offset, int length) {
 		XContentType type = xContentType(data, offset, length);
 		if (type == null) {
-			throw new RestartParseException("Failed to derive xcontent from (offset=" + offset + ", length="
+			throw new RebirthParseException("Failed to derive xcontent from (offset=" + offset + ", length="
 					+ length + "): " + Arrays.toString(data));
 		}
 		return xContent(type);
