@@ -3,14 +3,14 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>cn.com.restart</groupId>
-		<artifactId>restart-parent</artifactId>
+		<groupId>cn.com.rebirth</groupId>
+		<artifactId>rebirth-parent</artifactId>
 		<version>0.0.1.RC1-SNAPSHOT</version>
 	</parent>
-	<artifactId>restart-search-commons</artifactId>
+	<artifactId>rebirth-search-commons</artifactId>
 	<packaging>jar</packaging>
 	<version>0.0.1.RC1-SNAPSHOT</version>
-	<name>Restart :: Module :: summall-search-commons</name>
+	<name>Rebirth :: Module :: rebirth-search-commons</name>
 
 	<dependencies>
 		<dependency>
@@ -29,8 +29,8 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
-			<groupId>cn.com.restart</groupId>
-			<artifactId>restart-commons</artifactId>
+			<groupId>cn.com.rebirth</groupId>
+			<artifactId>rebirth-commons</artifactId>
 			<optional>true</optional>
 		</dependency>
 		<!-- logging begin -->
