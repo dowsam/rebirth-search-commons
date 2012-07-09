@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
- * Info:rebirth-search-commons PropertiesSettingsLoader.java 2012-7-6 10:23:51 l.xue.nong$$
+ * Info:rebirth-search-commons PropertiesSettingsLoader.java 2012-7-9 12:29:29 l.xue.nong$$
  */
 package cn.com.rebirth.search.commons.settings.loader;
 
@@ -10,9 +10,11 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.Properties;
 
+import cn.com.rebirth.commons.utils.TemplateMatcher;
 import cn.com.rebirth.search.commons.io.FastByteArrayInputStream;
 import cn.com.rebirth.search.commons.io.FastStringReader;
 
+import com.google.common.collect.Maps;
 import com.google.common.io.Closeables;
 
 /**
@@ -35,7 +37,7 @@ public class PropertiesSettingsLoader implements SettingsLoader {
 			for (Map.Entry<Object, Object> entry : props.entrySet()) {
 				result.put((String) entry.getKey(), (String) entry.getValue());
 			}
-			return result;
+			return actionParam(result);
 		} finally {
 			Closeables.closeQuietly(reader);
 		}
@@ -54,9 +56,59 @@ public class PropertiesSettingsLoader implements SettingsLoader {
 			for (Map.Entry<Object, Object> entry : props.entrySet()) {
 				result.put((String) entry.getKey(), (String) entry.getValue());
 			}
-			return result;
+			return actionParam(result);
 		} finally {
 			Closeables.closeQuietly(stream);
 		}
+	}
+
+	/**
+	 * Action param.
+	 *
+	 * @param result the result
+	 * @return the map
+	 */
+	protected Map<String, String> actionParam(final Map<String, String> result) {
+		if (result == null || result.isEmpty())
+			return result;
+		TemplateMatcher templateMatcher = new TemplateMatcher("${", "}");
+		TemplateMatcher.VariableResolver variableResolver = new TemplateMatcher.VariableResolver() {
+
+			@Override
+			public String resolve(String variable) {
+				return bulidValue(variable);
+			}
+		};
+		Map<String, String> proxy = Maps.newHashMapWithExpectedSize(result.size());
+		for (Map.Entry<String, String> entry : result.entrySet()) {
+			String key = entry.getKey();
+			String value = entry.getValue();
+			key = templateMatcher.replace(key, variableResolver);
+			String _value = bulidValue(key);
+			if (_value == key) {
+				proxy.put(key, value);
+			} else {
+				proxy.put(key, _value);
+			}
+		}
+		return proxy;
+	}
+
+	/**
+	 * Bulid value.
+	 *
+	 * @param variable the variable
+	 * @return the string
+	 */
+	protected String bulidValue(String variable) {
+		String value = System.getProperty(variable);
+		if (value != null) {
+			return value;
+		}
+		value = System.getenv(variable);
+		if (value != null) {
+			return value;
+		}
+		return variable;
 	}
 }
