@@ -6,7 +6,7 @@
 
 package cn.com.rebirth.search.commons.network;
 
-import cn.com.rebirth.search.commons.inject.AbstractModule;
+import cn.com.rebirth.core.inject.AbstractModule;
 
 
 /**

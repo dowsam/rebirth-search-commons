@@ -1,14 +1,15 @@
 /*
  * Copyright (c) 2005-2012 www.china-cti.com All rights reserved
- * Info:rebirth-search-commons FsBlobStore.java 2012-7-6 10:23:48 l.xue.nong$$
+ * Info:rebirth-search-commons FsBlobStore.java 2012-7-17 10:46:00 l.xue.nong$$
  */
-
 
 package cn.com.rebirth.search.commons.blobstore.fs;
 
 import java.io.File;
 import java.util.concurrent.Executor;
 
+import cn.com.rebirth.commons.component.AbstractComponent;
+import cn.com.rebirth.commons.io.FileSystemUtils;
 import cn.com.rebirth.commons.settings.Settings;
 import cn.com.rebirth.commons.unit.ByteSizeUnit;
 import cn.com.rebirth.commons.unit.ByteSizeValue;
@@ -16,9 +17,6 @@ import cn.com.rebirth.search.commons.blobstore.BlobPath;
 import cn.com.rebirth.search.commons.blobstore.BlobStore;
 import cn.com.rebirth.search.commons.blobstore.BlobStoreException;
 import cn.com.rebirth.search.commons.blobstore.ImmutableBlobContainer;
-import cn.com.rebirth.search.commons.component.AbstractComponent;
-import cn.com.rebirth.search.commons.io.FileSystemUtils;
-
 
 /**
  * The Class FsBlobStore.
@@ -27,19 +25,15 @@ import cn.com.rebirth.search.commons.io.FileSystemUtils;
  */
 public class FsBlobStore extends AbstractComponent implements BlobStore {
 
-	
 	/** The executor. */
 	private final Executor executor;
 
-	
 	/** The path. */
 	private final File path;
 
-	
 	/** The buffer size in bytes. */
 	private final int bufferSizeInBytes;
 
-	
 	/**
 	 * Instantiates a new fs blob store.
 	 *
@@ -64,16 +58,19 @@ public class FsBlobStore extends AbstractComponent implements BlobStore {
 		this.executor = executor;
 	}
 
-	
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
+	 */
+	/**
+	 * To string.
+	 *
+	 * @return the string
 	 */
 	@Override
 	public String toString() {
 		return path.toString();
 	}
 
-	
 	/**
 	 * Path.
 	 *
@@ -83,7 +80,6 @@ public class FsBlobStore extends AbstractComponent implements BlobStore {
 		return path;
 	}
 
-	
 	/**
 	 * Buffer size in bytes.
 	 *
@@ -93,7 +89,6 @@ public class FsBlobStore extends AbstractComponent implements BlobStore {
 		return this.bufferSizeInBytes;
 	}
 
-	
 	/**
 	 * Executor.
 	 *
@@ -103,25 +98,30 @@ public class FsBlobStore extends AbstractComponent implements BlobStore {
 		return executor;
 	}
 
-	
+	/* (non-Javadoc)
+	 * @see cn.com.rebirth.search.commons.blobstore.BlobStore#immutableBlobContainer(cn.com.rebirth.search.commons.blobstore.BlobPath)
+	 */
 	@Override
 	public ImmutableBlobContainer immutableBlobContainer(BlobPath path) {
 		return new FsImmutableBlobContainer(this, path, buildAndCreate(path));
 	}
 
-	
+	/* (non-Javadoc)
+	 * @see cn.com.rebirth.search.commons.blobstore.BlobStore#delete(cn.com.rebirth.search.commons.blobstore.BlobPath)
+	 */
 	@Override
 	public void delete(BlobPath path) {
 		FileSystemUtils.deleteRecursively(buildPath(path));
 	}
 
-	
+	/* (non-Javadoc)
+	 * @see cn.com.rebirth.search.commons.blobstore.BlobStore#close()
+	 */
 	@Override
 	public void close() {
-		
+
 	}
 
-	
 	/**
 	 * Builds the and create.
 	 *
@@ -134,7 +134,6 @@ public class FsBlobStore extends AbstractComponent implements BlobStore {
 		return f;
 	}
 
-	
 	/**
 	 * Builds the path.
 	 *

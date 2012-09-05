@@ -3,7 +3,6 @@
  * Info:rebirth-search-commons MoreLikeThisQuery.java 2012-7-6 10:23:46 l.xue.nong$$
  */
 
-
 package cn.com.rebirth.search.commons.lucene.search;
 
 import java.io.IOException;
@@ -18,8 +17,7 @@ import org.apache.lucene.search.Query;
 import org.apache.lucene.search.Similarity;
 import org.apache.lucene.search.similar.MoreLikeThis;
 
-import cn.com.rebirth.search.commons.io.FastStringReader;
-
+import cn.com.rebirth.commons.io.FastStringReader;
 
 /**
  * The Class MoreLikeThisQuery.
@@ -28,71 +26,54 @@ import cn.com.rebirth.search.commons.io.FastStringReader;
  */
 public class MoreLikeThisQuery extends Query {
 
-	
 	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = -1982006752290212276L;
 
-	
 	/** The Constant DEFAULT_PERCENT_TERMS_TO_MATCH. */
 	public static final float DEFAULT_PERCENT_TERMS_TO_MATCH = 0.3f;
 
-	
 	/** The similarity. */
 	private Similarity similarity;
 
-	
 	/** The like text. */
 	private String likeText;
 
-	
 	/** The more like fields. */
 	private String[] moreLikeFields;
 
-	
 	/** The analyzer. */
 	private Analyzer analyzer;
 
-	
 	/** The percent terms to match. */
 	private float percentTermsToMatch = DEFAULT_PERCENT_TERMS_TO_MATCH;
 
-	
 	/** The min term frequency. */
 	private int minTermFrequency = MoreLikeThis.DEFAULT_MIN_TERM_FREQ;
 
-	
 	/** The max query terms. */
 	private int maxQueryTerms = MoreLikeThis.DEFAULT_MAX_QUERY_TERMS;
 
-	
 	/** The stop words. */
 	private Set<?> stopWords = MoreLikeThis.DEFAULT_STOP_WORDS;
 
-	
 	/** The min doc freq. */
 	private int minDocFreq = MoreLikeThis.DEFAULT_MIN_DOC_FREQ;
 
-	
 	/** The max doc freq. */
 	private int maxDocFreq = MoreLikeThis.DEFAULT_MAX_DOC_FREQ;
 
-	
 	/** The min word len. */
 	private int minWordLen = MoreLikeThis.DEFAULT_MIN_WORD_LENGTH;
 
-	
 	/** The max word len. */
 	private int maxWordLen = MoreLikeThis.DEFAULT_MAX_WORD_LENGTH;
 
-	
 	/** The boost terms. */
 	private boolean boostTerms = MoreLikeThis.DEFAULT_BOOST;
 
-	
 	/** The boost terms factor. */
 	private float boostTermsFactor = 1;
 
-	
 	/**
 	 * Instantiates a new more like this query.
 	 */
@@ -100,7 +81,6 @@ public class MoreLikeThisQuery extends Query {
 
 	}
 
-	
 	/**
 	 * Instantiates a new more like this query.
 	 *
@@ -114,7 +94,6 @@ public class MoreLikeThisQuery extends Query {
 		this.analyzer = analyzer;
 	}
 
-	
 	/* (non-Javadoc)
 	 * @see org.apache.lucene.search.Query#rewrite(org.apache.lucene.index.IndexReader)
 	 */
@@ -143,7 +122,6 @@ public class MoreLikeThisQuery extends Query {
 		return bq;
 	}
 
-	
 	/* (non-Javadoc)
 	 * @see org.apache.lucene.search.Query#toString(java.lang.String)
 	 */
@@ -152,7 +130,6 @@ public class MoreLikeThisQuery extends Query {
 		return "like:" + likeText;
 	}
 
-	
 	/**
 	 * Gets the like text.
 	 *
@@ -162,7 +139,6 @@ public class MoreLikeThisQuery extends Query {
 		return likeText;
 	}
 
-	
 	/**
 	 * Sets the like text.
 	 *
@@ -172,7 +148,6 @@ public class MoreLikeThisQuery extends Query {
 		this.likeText = likeText;
 	}
 
-	
 	/**
 	 * Gets the more like fields.
 	 *
@@ -182,7 +157,6 @@ public class MoreLikeThisQuery extends Query {
 		return moreLikeFields;
 	}
 
-	
 	/**
 	 * Sets the more like fields.
 	 *
@@ -192,7 +166,6 @@ public class MoreLikeThisQuery extends Query {
 		this.moreLikeFields = moreLikeFields;
 	}
 
-	
 	/**
 	 * Gets the similarity.
 	 *
@@ -202,7 +175,6 @@ public class MoreLikeThisQuery extends Query {
 		return similarity;
 	}
 
-	
 	/**
 	 * Sets the similarity.
 	 *
@@ -212,7 +184,6 @@ public class MoreLikeThisQuery extends Query {
 		this.similarity = similarity;
 	}
 
-	
 	/**
 	 * Gets the analyzer.
 	 *
@@ -222,7 +193,6 @@ public class MoreLikeThisQuery extends Query {
 		return analyzer;
 	}
 
-	
 	/**
 	 * Sets the analyzer.
 	 *
@@ -232,7 +202,6 @@ public class MoreLikeThisQuery extends Query {
 		this.analyzer = analyzer;
 	}
 
-	
 	/**
 	 * Gets the percent terms to match.
 	 *
@@ -242,7 +211,6 @@ public class MoreLikeThisQuery extends Query {
 		return percentTermsToMatch;
 	}
 
-	
 	/**
 	 * Sets the percent terms to match.
 	 *
@@ -252,7 +220,6 @@ public class MoreLikeThisQuery extends Query {
 		this.percentTermsToMatch = percentTermsToMatch;
 	}
 
-	
 	/**
 	 * Gets the min term frequency.
 	 *
@@ -262,7 +229,6 @@ public class MoreLikeThisQuery extends Query {
 		return minTermFrequency;
 	}
 
-	
 	/**
 	 * Sets the min term frequency.
 	 *
@@ -272,7 +238,6 @@ public class MoreLikeThisQuery extends Query {
 		this.minTermFrequency = minTermFrequency;
 	}
 
-	
 	/**
 	 * Gets the max query terms.
 	 *
@@ -282,7 +247,6 @@ public class MoreLikeThisQuery extends Query {
 		return maxQueryTerms;
 	}
 
-	
 	/**
 	 * Sets the max query terms.
 	 *
@@ -292,7 +256,6 @@ public class MoreLikeThisQuery extends Query {
 		this.maxQueryTerms = maxQueryTerms;
 	}
 
-	
 	/**
 	 * Gets the stop words.
 	 *
@@ -302,7 +265,6 @@ public class MoreLikeThisQuery extends Query {
 		return stopWords;
 	}
 
-	
 	/**
 	 * Sets the stop words.
 	 *
@@ -312,7 +274,6 @@ public class MoreLikeThisQuery extends Query {
 		this.stopWords = stopWords;
 	}
 
-	
 	/**
 	 * Gets the min doc freq.
 	 *
@@ -322,7 +283,6 @@ public class MoreLikeThisQuery extends Query {
 		return minDocFreq;
 	}
 
-	
 	/**
 	 * Sets the min doc freq.
 	 *
@@ -332,7 +292,6 @@ public class MoreLikeThisQuery extends Query {
 		this.minDocFreq = minDocFreq;
 	}
 
-	
 	/**
 	 * Gets the max doc freq.
 	 *
@@ -342,7 +301,6 @@ public class MoreLikeThisQuery extends Query {
 		return maxDocFreq;
 	}
 
-	
 	/**
 	 * Sets the max doc freq.
 	 *
@@ -352,7 +310,6 @@ public class MoreLikeThisQuery extends Query {
 		this.maxDocFreq = maxDocFreq;
 	}
 
-	
 	/**
 	 * Gets the min word len.
 	 *
@@ -362,7 +319,6 @@ public class MoreLikeThisQuery extends Query {
 		return minWordLen;
 	}
 
-	
 	/**
 	 * Sets the min word len.
 	 *
@@ -372,7 +328,6 @@ public class MoreLikeThisQuery extends Query {
 		this.minWordLen = minWordLen;
 	}
 
-	
 	/**
 	 * Gets the max word len.
 	 *
@@ -382,7 +337,6 @@ public class MoreLikeThisQuery extends Query {
 		return maxWordLen;
 	}
 
-	
 	/**
 	 * Sets the max word len.
 	 *
@@ -392,7 +346,6 @@ public class MoreLikeThisQuery extends Query {
 		this.maxWordLen = maxWordLen;
 	}
 
-	
 	/**
 	 * Checks if is boost terms.
 	 *
@@ -402,7 +355,6 @@ public class MoreLikeThisQuery extends Query {
 		return boostTerms;
 	}
 
-	
 	/**
 	 * Sets the boost terms.
 	 *
@@ -412,7 +364,6 @@ public class MoreLikeThisQuery extends Query {
 		this.boostTerms = boostTerms;
 	}
 
-	
 	/**
 	 * Gets the boost terms factor.
 	 *
@@ -422,7 +373,6 @@ public class MoreLikeThisQuery extends Query {
 		return boostTermsFactor;
 	}
 
-	
 	/**
 	 * Sets the boost terms factor.
 	 *

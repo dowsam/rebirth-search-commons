@@ -13,8 +13,8 @@ import java.util.Map;
 
 import org.yaml.snakeyaml.Yaml;
 
-import cn.com.rebirth.search.commons.io.FastByteArrayInputStream;
-
+import cn.com.rebirth.commons.io.FastByteArrayInputStream;
+import cn.com.rebirth.commons.settings.loader.SettingsLoader;
 
 /**
  * The Class YamlSettingsLoader.
@@ -23,14 +23,13 @@ import cn.com.rebirth.search.commons.io.FastByteArrayInputStream;
  */
 public class YamlSettingsLoader implements SettingsLoader {
 
-	
 	/* (non-Javadoc)
 	 * @see cn.com.rebirth.search.commons.settings.loader.SettingsLoader#load(java.lang.String)
 	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public Map<String, String> load(String source) throws IOException {
-		
+
 		source = source.replace("\t", "  ");
 		Yaml yaml = new Yaml();
 		Map<Object, Object> yamlMap = (Map<Object, Object>) yaml.load(source);
@@ -44,7 +43,6 @@ public class YamlSettingsLoader implements SettingsLoader {
 		return settings;
 	}
 
-	
 	/* (non-Javadoc)
 	 * @see cn.com.rebirth.search.commons.settings.loader.SettingsLoader#load(byte[])
 	 */
@@ -63,7 +61,6 @@ public class YamlSettingsLoader implements SettingsLoader {
 		return settings;
 	}
 
-	
 	/**
 	 * Serialize map.
 	 *
@@ -90,7 +87,6 @@ public class YamlSettingsLoader implements SettingsLoader {
 		}
 	}
 
-	
 	/**
 	 * Serialize list.
 	 *
@@ -118,7 +114,6 @@ public class YamlSettingsLoader implements SettingsLoader {
 		}
 	}
 
-	
 	/**
 	 * Serialize value.
 	 *

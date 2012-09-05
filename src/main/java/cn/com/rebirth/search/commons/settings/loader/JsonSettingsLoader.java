@@ -11,10 +11,10 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-import cn.com.rebirth.search.commons.xcontent.XContentFactory;
-import cn.com.rebirth.search.commons.xcontent.XContentParser;
-import cn.com.rebirth.search.commons.xcontent.XContentType;
-
+import cn.com.rebirth.commons.settings.loader.SettingsLoader;
+import cn.com.rebirth.commons.xcontent.XContentFactory;
+import cn.com.rebirth.commons.xcontent.XContentParser;
+import cn.com.rebirth.commons.xcontent.XContentType;
 
 /**
  * The Class JsonSettingsLoader.
@@ -23,7 +23,6 @@ import cn.com.rebirth.search.commons.xcontent.XContentType;
  */
 public class JsonSettingsLoader implements SettingsLoader {
 
-	
 	/* (non-Javadoc)
 	 * @see cn.com.rebirth.search.commons.settings.loader.SettingsLoader#load(java.lang.String)
 	 */
@@ -37,7 +36,6 @@ public class JsonSettingsLoader implements SettingsLoader {
 		}
 	}
 
-	
 	/* (non-Javadoc)
 	 * @see cn.com.rebirth.search.commons.settings.loader.SettingsLoader#load(byte[])
 	 */
@@ -51,7 +49,6 @@ public class JsonSettingsLoader implements SettingsLoader {
 		}
 	}
 
-	
 	/**
 	 * Load.
 	 *
@@ -68,7 +65,6 @@ public class JsonSettingsLoader implements SettingsLoader {
 		return settings;
 	}
 
-	
 	/**
 	 * Serialize object.
 	 *
@@ -95,7 +91,7 @@ public class JsonSettingsLoader implements SettingsLoader {
 			} else if (token == XContentParser.Token.FIELD_NAME) {
 				currentFieldName = parser.currentName();
 			} else if (token == XContentParser.Token.VALUE_NULL) {
-				
+
 			} else {
 				serializeValue(settings, sb, path, parser, currentFieldName);
 
@@ -107,7 +103,6 @@ public class JsonSettingsLoader implements SettingsLoader {
 		}
 	}
 
-	
 	/**
 	 * Serialize array.
 	 *
@@ -130,14 +125,13 @@ public class JsonSettingsLoader implements SettingsLoader {
 			} else if (token == XContentParser.Token.FIELD_NAME) {
 				fieldName = parser.currentName();
 			} else if (token == XContentParser.Token.VALUE_NULL) {
-				
+
 			} else {
 				serializeValue(settings, sb, path, parser, fieldName + '.' + (counter++));
 			}
 		}
 	}
 
-	
 	/**
 	 * Serialize value.
 	 *

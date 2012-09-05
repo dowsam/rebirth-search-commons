@@ -4,6 +4,7 @@
  */
 package cn.com.rebirth.search;
 
+import cn.com.rebirth.commons.AbstractVersion;
 import cn.com.rebirth.commons.Version;
 
 /**
@@ -11,18 +12,10 @@ import cn.com.rebirth.commons.Version;
  *
  * @author l.xue.nong
  */
-public class RebirthSearchCommonsVersion implements Version {
+public class RebirthSearchCommonsVersion extends AbstractVersion implements Version {
 
 	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = -2459348649169511884L;
-
-	/* (non-Javadoc)
-	 * @see cn.com.rebirth.commons.Version#getModuleVersion()
-	 */
-	@Override
-	public String getModuleVersion() {
-		return "0.0.1.RC1-SNAPSHOT";
-	}
 
 	/* (non-Javadoc)
 	 * @see cn.com.rebirth.commons.Version#getModuleName()

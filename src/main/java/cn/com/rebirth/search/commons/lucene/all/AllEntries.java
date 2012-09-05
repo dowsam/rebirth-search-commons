@@ -3,7 +3,6 @@
  * Info:rebirth-search-commons AllEntries.java 2012-7-6 10:23:53 l.xue.nong$$
  */
 
-
 package cn.com.rebirth.search.commons.lucene.all;
 
 import static com.google.common.collect.Sets.newHashSet;
@@ -15,11 +14,10 @@ import java.util.List;
 import java.util.Set;
 
 import cn.com.rebirth.commons.exception.RebirthIllegalStateException;
-import cn.com.rebirth.search.commons.io.FastCharArrayWriter;
-import cn.com.rebirth.search.commons.io.FastStringReader;
+import cn.com.rebirth.commons.io.FastCharArrayWriter;
+import cn.com.rebirth.commons.io.FastStringReader;
 
 import com.google.common.collect.Lists;
-
 
 /**
  * The Class AllEntries.
@@ -28,7 +26,6 @@ import com.google.common.collect.Lists;
  */
 public class AllEntries extends Reader {
 
-	
 	/**
 	 * The Class Entry.
 	 *
@@ -36,19 +33,15 @@ public class AllEntries extends Reader {
 	 */
 	public static class Entry {
 
-		
 		/** The name. */
 		private final String name;
 
-		
 		/** The reader. */
 		private final FastStringReader reader;
 
-		
 		/** The boost. */
 		private final float boost;
 
-		
 		/**
 		 * Instantiates a new entry.
 		 *
@@ -62,7 +55,6 @@ public class AllEntries extends Reader {
 			this.boost = boost;
 		}
 
-		
 		/**
 		 * Name.
 		 *
@@ -72,7 +64,6 @@ public class AllEntries extends Reader {
 			return this.name;
 		}
 
-		
 		/**
 		 * Boost.
 		 *
@@ -82,7 +73,6 @@ public class AllEntries extends Reader {
 			return this.boost;
 		}
 
-		
 		/**
 		 * Reader.
 		 *
@@ -93,27 +83,21 @@ public class AllEntries extends Reader {
 		}
 	}
 
-	
 	/** The entries. */
 	private final List<Entry> entries = Lists.newArrayList();
 
-	
 	/** The current. */
 	private Entry current;
 
-	
 	/** The it. */
 	private Iterator<Entry> it;
 
-	
 	/** The its separator time. */
 	private boolean itsSeparatorTime = false;
 
-	
 	/** The custom boost. */
 	private boolean customBoost = false;
 
-	
 	/**
 	 * Adds the text.
 	 *
@@ -129,7 +113,6 @@ public class AllEntries extends Reader {
 		entries.add(entry);
 	}
 
-	
 	/**
 	 * Clear.
 	 */
@@ -140,7 +123,6 @@ public class AllEntries extends Reader {
 		itsSeparatorTime = false;
 	}
 
-	
 	/* (non-Javadoc)
 	 * @see java.io.Reader#reset()
 	 */
@@ -159,7 +141,6 @@ public class AllEntries extends Reader {
 		}
 	}
 
-	
 	/**
 	 * Builds the text.
 	 *
@@ -176,7 +157,6 @@ public class AllEntries extends Reader {
 		return writer.toString();
 	}
 
-	
 	/**
 	 * Entries.
 	 *
@@ -186,7 +166,6 @@ public class AllEntries extends Reader {
 		return this.entries;
 	}
 
-	
 	/**
 	 * Fields.
 	 *
@@ -200,7 +179,6 @@ public class AllEntries extends Reader {
 		return fields;
 	}
 
-	
 	/**
 	 * Current.
 	 *
@@ -210,7 +188,6 @@ public class AllEntries extends Reader {
 		return this.current;
 	}
 
-	
 	/* (non-Javadoc)
 	 * @see java.io.Reader#read(char[], int, int)
 	 */
@@ -228,7 +205,7 @@ public class AllEntries extends Reader {
 					return 1;
 				}
 				itsSeparatorTime = true;
-				
+
 				if (it.hasNext()) {
 					current = it.next();
 				} else {
@@ -264,7 +241,6 @@ public class AllEntries extends Reader {
 		}
 	}
 
-	
 	/* (non-Javadoc)
 	 * @see java.io.Reader#close()
 	 */
@@ -276,7 +252,6 @@ public class AllEntries extends Reader {
 		}
 	}
 
-	
 	/* (non-Javadoc)
 	 * @see java.io.Reader#ready()
 	 */
@@ -285,7 +260,6 @@ public class AllEntries extends Reader {
 		return (current != null) && current.reader().ready();
 	}
 
-	
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */

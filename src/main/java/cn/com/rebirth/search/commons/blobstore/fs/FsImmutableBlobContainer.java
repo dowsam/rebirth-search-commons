@@ -3,7 +3,6 @@
  * Info:rebirth-search-commons FsImmutableBlobContainer.java 2012-7-6 10:23:53 l.xue.nong$$
  */
 
-
 package cn.com.rebirth.search.commons.blobstore.fs;
 
 import java.io.File;
@@ -12,11 +11,10 @@ import java.io.InputStream;
 import java.io.RandomAccessFile;
 
 import cn.com.rebirth.commons.exception.RebirthIllegalStateException;
+import cn.com.rebirth.commons.io.FileSystemUtils;
 import cn.com.rebirth.search.commons.blobstore.BlobPath;
 import cn.com.rebirth.search.commons.blobstore.ImmutableBlobContainer;
 import cn.com.rebirth.search.commons.blobstore.support.BlobStores;
-import cn.com.rebirth.search.commons.io.FileSystemUtils;
-
 
 /**
  * The Class FsImmutableBlobContainer.
@@ -25,7 +23,6 @@ import cn.com.rebirth.search.commons.io.FileSystemUtils;
  */
 public class FsImmutableBlobContainer extends AbstractFsBlobContainer implements ImmutableBlobContainer {
 
-	
 	/**
 	 * Instantiates a new fs immutable blob container.
 	 *
@@ -37,7 +34,6 @@ public class FsImmutableBlobContainer extends AbstractFsBlobContainer implements
 		super(blobStore, blobPath, path);
 	}
 
-	
 	@Override
 	public void writeBlob(final String blobName, final InputStream is, final long sizeInBytes,
 			final WriterListener listener) {
@@ -48,7 +44,7 @@ public class FsImmutableBlobContainer extends AbstractFsBlobContainer implements
 				RandomAccessFile raf;
 				try {
 					raf = new RandomAccessFile(file, "rw");
-					
+
 					raf.setLength(0);
 				} catch (Exception e) {
 					listener.onFailure(e);
@@ -72,24 +68,24 @@ public class FsImmutableBlobContainer extends AbstractFsBlobContainer implements
 						try {
 							is.close();
 						} catch (IOException ex) {
-							
+
 						}
 						try {
 							raf.close();
 						} catch (IOException ex) {
-							
+
 						}
 					}
 					FileSystemUtils.syncFile(file);
 					listener.onCompleted();
 				} catch (Exception e) {
-					
+
 					try {
 						if (file.exists()) {
 							file.delete();
 						}
 					} catch (Exception e1) {
-						
+
 					}
 					listener.onFailure(e);
 				}
@@ -97,7 +93,6 @@ public class FsImmutableBlobContainer extends AbstractFsBlobContainer implements
 		});
 	}
 
-	
 	@Override
 	public void writeBlob(String blobName, InputStream is, long sizeInBytes) throws IOException {
 		BlobStores.syncWriteBlob(this, blobName, is, sizeInBytes);
